@@ -776,21 +776,11 @@ def main():
                 sort_keys=False,
             )
         )
-        render_config = make_lidar_render_config(lidar_src, base_lidar_data)
-        try:
-            schematic = CustomSchematic(
-                str(cleaned_base_lidar_yml),
-                pdk=None,
-                config=render_config,
-            )
-        except TypeError as exc:
-            if "config" not in str(exc):
-                raise
-            schematic = CustomSchematic(str(cleaned_base_lidar_yml), pdk=None)
-            try:
-                schematic.config = render_config
-            except Exception:
-                pass
+        schematic = CustomSchematic(
+            str(cleaned_base_lidar_yml),
+            pdk=None,
+            config=make_lidar_render_config(lidar_src, base_lidar_data),
+        )
         schematic.load_gp()
         component = schematic.layout
         gf_port_by_db_name = {}

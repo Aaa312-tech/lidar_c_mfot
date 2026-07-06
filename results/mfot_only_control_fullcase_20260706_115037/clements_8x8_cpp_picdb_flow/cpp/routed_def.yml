@@ -1,0 +1,5651 @@
+name: clements_8x8
+bbox:
+  -
+    - 0
+    - 0
+  -
+    - 4800
+    - 1600
+instances:
+  gc1:
+    component: m_grating_coupler_ellipti_4c46b398_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+        - -2.4298362615732447
+        - 0.1
+        - 0.48007023217536954
+        - 0.1
+        - 0.607397685752365
+        - 0.1
+        - 0.4498844003086115
+        - 0.1
+        - 0.4274116312627637
+        - 0.1
+        - 0.4757904248387285
+        - 0.1
+        - 0.5026649898504233
+        - 0.10002922416240886
+        - 0.5100366774007897
+        - 0.1
+        - 0.494399635363353
+        - 0.1079599958465788
+        - 0.47400592737426483
+        - 0.14972685326277918
+        - 0.43272750134545823
+        - 0.1839530796530385
+        - 0.3872023336708212
+        - 0.2360175325711591
+        - 0.36032212454768675
+        - 0.24261846353500535
+        - 0.35770350120764394
+        - 0.2606637836858316
+        - 0.3526104381544335
+        - 0.24668202254540886
+        - 0.3717488388788273
+        - 0.22920754299702897
+        - 0.37769616507688464
+        - 0.2246528336925301
+        - 0.3765437598650894
+        - 0.22041773376471022
+        - 0.38047596041838994
+        - 0.21923601658169187
+        - 0.3798873698864591
+        - 0.21700438236445285
+        - 0.38291698672245644
+        - 0.21827768053295463
+        - 0.3641322152037017
+        - 0.23729077006065105
+        - 0.3676834419346081
+        - 0.24865079519725933
+        - 0.34415050295044936
+        - 0.2733570818755685
+        - 0.3306230780901629
+        - 0.27350446437732157
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      info: ~
+      bias_gap: 0
+      cross_section: strip
+      macro_type: m_grating_coupler_ellipti_4c46b398_0
+      placement:
+        - FIXED
+        -
+          - 0
+          - 800
+        - FN
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  fanout_yb_0_0:
+    component: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+    generator: mmi1x2
+    settings:
+      width: ~
+      width_taper: 1
+      length_taper: 10
+      length_mmi: 5.5
+      width_mmi: 2.5
+      gap_mmi: 0.25
+      taper: taper
+      straight: straight
+      cross_section: strip
+      macro_type: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+      placement:
+        - UNPLACED
+        -
+          - 100
+          - 798.75
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  fanout_yb_1_0:
+    component: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+    generator: mmi1x2
+    settings:
+      width: ~
+      width_taper: 1
+      length_taper: 10
+      length_mmi: 5.5
+      width_mmi: 2.5
+      gap_mmi: 0.25
+      taper: taper
+      straight: straight
+      cross_section: strip
+      macro_type: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+      placement:
+        - UNPLACED
+        -
+          - 200
+          - 748.75
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  fanout_yb_1_1:
+    component: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+    generator: mmi1x2
+    settings:
+      width: ~
+      width_taper: 1
+      length_taper: 10
+      length_mmi: 5.5
+      width_mmi: 2.5
+      gap_mmi: 0.25
+      taper: taper
+      straight: straight
+      cross_section: strip
+      macro_type: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+      placement:
+        - UNPLACED
+        -
+          - 200
+          - 848.75
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  fanout_yb_2_0:
+    component: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+    generator: mmi1x2
+    settings:
+      width: ~
+      width_taper: 1
+      length_taper: 10
+      length_mmi: 5.5
+      width_mmi: 2.5
+      gap_mmi: 0.25
+      taper: taper
+      straight: straight
+      cross_section: strip
+      macro_type: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+      placement:
+        - UNPLACED
+        -
+          - 375.5
+          - 648.75
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  fanout_yb_2_1:
+    component: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+    generator: mmi1x2
+    settings:
+      width: ~
+      width_taper: 1
+      length_taper: 10
+      length_mmi: 5.5
+      width_mmi: 2.5
+      gap_mmi: 0.25
+      taper: taper
+      straight: straight
+      cross_section: strip
+      macro_type: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+      placement:
+        - UNPLACED
+        -
+          - 375.5
+          - 748.75
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  fanout_yb_2_2:
+    component: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+    generator: mmi1x2
+    settings:
+      width: ~
+      width_taper: 1
+      length_taper: 10
+      length_mmi: 5.5
+      width_mmi: 2.5
+      gap_mmi: 0.25
+      taper: taper
+      straight: straight
+      cross_section: strip
+      macro_type: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+      placement:
+        - UNPLACED
+        -
+          - 375.5
+          - 848.75
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  fanout_yb_2_3:
+    component: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+    generator: mmi1x2
+    settings:
+      width: ~
+      width_taper: 1
+      length_taper: 10
+      length_mmi: 5.5
+      width_mmi: 2.5
+      gap_mmi: 0.25
+      taper: taper
+      straight: straight
+      cross_section: strip
+      macro_type: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+      placement:
+        - UNPLACED
+        -
+          - 375.5
+          - 948.75
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mod_mzi1x2_0:
+    component: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 0.1
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: ~
+      straight_x_bot: ~
+      splitter: mmi1x2
+      combiner: mmi1x2
+      with_splitter: true
+      port_e1_splitter: o2
+      port_e0_splitter: o3
+      port_e1_combiner: o2
+      port_e0_combiner: o3
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+      placement:
+        - UNPLACED
+        -
+          - 501
+          - 450
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mod_mzi1x2_1:
+    component: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 0.1
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: ~
+      straight_x_bot: ~
+      splitter: mmi1x2
+      combiner: mmi1x2
+      with_splitter: true
+      port_e1_splitter: o2
+      port_e0_splitter: o3
+      port_e1_combiner: o2
+      port_e0_combiner: o3
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+      placement:
+        - UNPLACED
+        -
+          - 501
+          - 550
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mod_mzi1x2_2:
+    component: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 0.1
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: ~
+      straight_x_bot: ~
+      splitter: mmi1x2
+      combiner: mmi1x2
+      with_splitter: true
+      port_e1_splitter: o2
+      port_e0_splitter: o3
+      port_e1_combiner: o2
+      port_e0_combiner: o3
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+      placement:
+        - UNPLACED
+        -
+          - 501
+          - 650
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mod_mzi1x2_3:
+    component: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 0.1
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: ~
+      straight_x_bot: ~
+      splitter: mmi1x2
+      combiner: mmi1x2
+      with_splitter: true
+      port_e1_splitter: o2
+      port_e0_splitter: o3
+      port_e1_combiner: o2
+      port_e0_combiner: o3
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+      placement:
+        - UNPLACED
+        -
+          - 501
+          - 750
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mod_mzi1x2_4:
+    component: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 0.1
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: ~
+      straight_x_bot: ~
+      splitter: mmi1x2
+      combiner: mmi1x2
+      with_splitter: true
+      port_e1_splitter: o2
+      port_e0_splitter: o3
+      port_e1_combiner: o2
+      port_e0_combiner: o3
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+      placement:
+        - UNPLACED
+        -
+          - 501
+          - 850
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mod_mzi1x2_5:
+    component: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 0.1
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: ~
+      straight_x_bot: ~
+      splitter: mmi1x2
+      combiner: mmi1x2
+      with_splitter: true
+      port_e1_splitter: o2
+      port_e0_splitter: o3
+      port_e1_combiner: o2
+      port_e0_combiner: o3
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+      placement:
+        - UNPLACED
+        -
+          - 501
+          - 950
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mod_mzi1x2_6:
+    component: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 0.1
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: ~
+      straight_x_bot: ~
+      splitter: mmi1x2
+      combiner: mmi1x2
+      with_splitter: true
+      port_e1_splitter: o2
+      port_e0_splitter: o3
+      port_e1_combiner: o2
+      port_e0_combiner: o3
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+      placement:
+        - UNPLACED
+        -
+          - 501
+          - 1050
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mod_mzi1x2_7:
+    component: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 0.1
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: ~
+      straight_x_bot: ~
+      splitter: mmi1x2
+      combiner: mmi1x2
+      with_splitter: true
+      port_e1_splitter: o2
+      port_e0_splitter: o3
+      port_e1_combiner: o2
+      port_e0_combiner: o3
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX0p1_Bben_6240c649_2
+      placement:
+        - UNPLACED
+        -
+          - 501
+          - 1150
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_0_mzi_0:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 672.1
+          - 622.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_0_mzi_1:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 672.1
+          - 722.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_0_mzi_2:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 672.1
+          - 822.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_0_mzi_3:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 672.1
+          - 922.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_1_mzi_0:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 1043.1
+          - 672.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_1_mzi_1:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 1043.1
+          - 772.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_1_mzi_2:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 1043.1
+          - 872.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_2_mzi_0:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 1414.1
+          - 622.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_2_mzi_1:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 1414.1
+          - 722.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_2_mzi_2:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 1414.1
+          - 822.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_2_mzi_3:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 1414.1
+          - 922.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_3_mzi_0:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 1785.1
+          - 672.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_3_mzi_1:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 1785.1
+          - 772.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_3_mzi_2:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 1785.1
+          - 872.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_4_mzi_0:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 2156.1
+          - 622.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_4_mzi_1:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 2156.1
+          - 722.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_4_mzi_2:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 2156.1
+          - 822.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_4_mzi_3:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 2156.1
+          - 922.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_5_mzi_0:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 2527.1
+          - 672.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_5_mzi_1:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 2527.1
+          - 772.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_5_mzi_2:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 2527.1
+          - 872.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_6_mzi_0:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 2898.1
+          - 622.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_6_mzi_1:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 2898.1
+          - 722.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_6_mzi_2:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 2898.1
+          - 822.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_6_mzi_3:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 2898.1
+          - 922.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_7_mzi_0:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 3269.1
+          - 672.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_7_mzi_1:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 3269.1
+          - 772.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mzi_array_7_mzi_2:
+    component: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+    generator: mzi
+    settings:
+      delta_length: 10
+      length_y: 2
+      length_x: 200
+      bend: bend_euler
+      straight: straight
+      straight_y: ~
+      straight_x_top: straight_heater_metal
+      straight_x_bot: ~
+      splitter: mmi2x2
+      combiner: mmi2x2
+      with_splitter: true
+      port_e1_splitter: o3
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e0_combiner: o4
+      port1: o1
+      port2: o2
+      nbends: 2
+      cross_section: strip
+      cross_section_x_top: ~
+      cross_section_x_bot: ~
+      mirror_bot: false
+      add_optical_ports_arms: false
+      min_length: 0.01
+      auto_rename_ports: true
+      macro_type: m_mzi_DL10_LY2_LX200_Bben_45028f49_3
+      placement:
+        - UNPLACED
+        -
+          - 3269.1
+          - 872.125
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  gc_array_out_gc_0:
+    component: m_grating_coupler_ellipti_4c46b398_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+        - -2.4298362615732447
+        - 0.1
+        - 0.48007023217536954
+        - 0.1
+        - 0.607397685752365
+        - 0.1
+        - 0.4498844003086115
+        - 0.1
+        - 0.4274116312627637
+        - 0.1
+        - 0.4757904248387285
+        - 0.1
+        - 0.5026649898504233
+        - 0.10002922416240886
+        - 0.5100366774007897
+        - 0.1
+        - 0.494399635363353
+        - 0.1079599958465788
+        - 0.47400592737426483
+        - 0.14972685326277918
+        - 0.43272750134545823
+        - 0.1839530796530385
+        - 0.3872023336708212
+        - 0.2360175325711591
+        - 0.36032212454768675
+        - 0.24261846353500535
+        - 0.35770350120764394
+        - 0.2606637836858316
+        - 0.3526104381544335
+        - 0.24668202254540886
+        - 0.3717488388788273
+        - 0.22920754299702897
+        - 0.37769616507688464
+        - 0.2246528336925301
+        - 0.3765437598650894
+        - 0.22041773376471022
+        - 0.38047596041838994
+        - 0.21923601658169187
+        - 0.3798873698864591
+        - 0.21700438236445285
+        - 0.38291698672245644
+        - 0.21827768053295463
+        - 0.3641322152037017
+        - 0.23729077006065105
+        - 0.3676834419346081
+        - 0.24865079519725933
+        - 0.34415050295044936
+        - 0.2733570818755685
+        - 0.3306230780901629
+        - 0.27350446437732157
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      info: ~
+      bias_gap: 0
+      cross_section: strip
+      macro_type: m_grating_coupler_ellipti_4c46b398_0
+      placement:
+        - FIXED
+        -
+          - 4772.836
+          - 437.127
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  gc_array_out_gc_1:
+    component: m_grating_coupler_ellipti_4c46b398_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+        - -2.4298362615732447
+        - 0.1
+        - 0.48007023217536954
+        - 0.1
+        - 0.607397685752365
+        - 0.1
+        - 0.4498844003086115
+        - 0.1
+        - 0.4274116312627637
+        - 0.1
+        - 0.4757904248387285
+        - 0.1
+        - 0.5026649898504233
+        - 0.10002922416240886
+        - 0.5100366774007897
+        - 0.1
+        - 0.494399635363353
+        - 0.1079599958465788
+        - 0.47400592737426483
+        - 0.14972685326277918
+        - 0.43272750134545823
+        - 0.1839530796530385
+        - 0.3872023336708212
+        - 0.2360175325711591
+        - 0.36032212454768675
+        - 0.24261846353500535
+        - 0.35770350120764394
+        - 0.2606637836858316
+        - 0.3526104381544335
+        - 0.24668202254540886
+        - 0.3717488388788273
+        - 0.22920754299702897
+        - 0.37769616507688464
+        - 0.2246528336925301
+        - 0.3765437598650894
+        - 0.22041773376471022
+        - 0.38047596041838994
+        - 0.21923601658169187
+        - 0.3798873698864591
+        - 0.21700438236445285
+        - 0.38291698672245644
+        - 0.21827768053295463
+        - 0.3641322152037017
+        - 0.23729077006065105
+        - 0.3676834419346081
+        - 0.24865079519725933
+        - 0.34415050295044936
+        - 0.2733570818755685
+        - 0.3306230780901629
+        - 0.27350446437732157
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      info: ~
+      bias_gap: 0
+      cross_section: strip
+      macro_type: m_grating_coupler_ellipti_4c46b398_0
+      placement:
+        - FIXED
+        -
+          - 4772.836
+          - 537.127
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  gc_array_out_gc_2:
+    component: m_grating_coupler_ellipti_4c46b398_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+        - -2.4298362615732447
+        - 0.1
+        - 0.48007023217536954
+        - 0.1
+        - 0.607397685752365
+        - 0.1
+        - 0.4498844003086115
+        - 0.1
+        - 0.4274116312627637
+        - 0.1
+        - 0.4757904248387285
+        - 0.1
+        - 0.5026649898504233
+        - 0.10002922416240886
+        - 0.5100366774007897
+        - 0.1
+        - 0.494399635363353
+        - 0.1079599958465788
+        - 0.47400592737426483
+        - 0.14972685326277918
+        - 0.43272750134545823
+        - 0.1839530796530385
+        - 0.3872023336708212
+        - 0.2360175325711591
+        - 0.36032212454768675
+        - 0.24261846353500535
+        - 0.35770350120764394
+        - 0.2606637836858316
+        - 0.3526104381544335
+        - 0.24668202254540886
+        - 0.3717488388788273
+        - 0.22920754299702897
+        - 0.37769616507688464
+        - 0.2246528336925301
+        - 0.3765437598650894
+        - 0.22041773376471022
+        - 0.38047596041838994
+        - 0.21923601658169187
+        - 0.3798873698864591
+        - 0.21700438236445285
+        - 0.38291698672245644
+        - 0.21827768053295463
+        - 0.3641322152037017
+        - 0.23729077006065105
+        - 0.3676834419346081
+        - 0.24865079519725933
+        - 0.34415050295044936
+        - 0.2733570818755685
+        - 0.3306230780901629
+        - 0.27350446437732157
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      info: ~
+      bias_gap: 0
+      cross_section: strip
+      macro_type: m_grating_coupler_ellipti_4c46b398_0
+      placement:
+        - FIXED
+        -
+          - 4772.836
+          - 637.127
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  gc_array_out_gc_3:
+    component: m_grating_coupler_ellipti_4c46b398_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+        - -2.4298362615732447
+        - 0.1
+        - 0.48007023217536954
+        - 0.1
+        - 0.607397685752365
+        - 0.1
+        - 0.4498844003086115
+        - 0.1
+        - 0.4274116312627637
+        - 0.1
+        - 0.4757904248387285
+        - 0.1
+        - 0.5026649898504233
+        - 0.10002922416240886
+        - 0.5100366774007897
+        - 0.1
+        - 0.494399635363353
+        - 0.1079599958465788
+        - 0.47400592737426483
+        - 0.14972685326277918
+        - 0.43272750134545823
+        - 0.1839530796530385
+        - 0.3872023336708212
+        - 0.2360175325711591
+        - 0.36032212454768675
+        - 0.24261846353500535
+        - 0.35770350120764394
+        - 0.2606637836858316
+        - 0.3526104381544335
+        - 0.24668202254540886
+        - 0.3717488388788273
+        - 0.22920754299702897
+        - 0.37769616507688464
+        - 0.2246528336925301
+        - 0.3765437598650894
+        - 0.22041773376471022
+        - 0.38047596041838994
+        - 0.21923601658169187
+        - 0.3798873698864591
+        - 0.21700438236445285
+        - 0.38291698672245644
+        - 0.21827768053295463
+        - 0.3641322152037017
+        - 0.23729077006065105
+        - 0.3676834419346081
+        - 0.24865079519725933
+        - 0.34415050295044936
+        - 0.2733570818755685
+        - 0.3306230780901629
+        - 0.27350446437732157
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      info: ~
+      bias_gap: 0
+      cross_section: strip
+      macro_type: m_grating_coupler_ellipti_4c46b398_0
+      placement:
+        - FIXED
+        -
+          - 4772.836
+          - 737.127
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  gc_array_out_gc_4:
+    component: m_grating_coupler_ellipti_4c46b398_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+        - -2.4298362615732447
+        - 0.1
+        - 0.48007023217536954
+        - 0.1
+        - 0.607397685752365
+        - 0.1
+        - 0.4498844003086115
+        - 0.1
+        - 0.4274116312627637
+        - 0.1
+        - 0.4757904248387285
+        - 0.1
+        - 0.5026649898504233
+        - 0.10002922416240886
+        - 0.5100366774007897
+        - 0.1
+        - 0.494399635363353
+        - 0.1079599958465788
+        - 0.47400592737426483
+        - 0.14972685326277918
+        - 0.43272750134545823
+        - 0.1839530796530385
+        - 0.3872023336708212
+        - 0.2360175325711591
+        - 0.36032212454768675
+        - 0.24261846353500535
+        - 0.35770350120764394
+        - 0.2606637836858316
+        - 0.3526104381544335
+        - 0.24668202254540886
+        - 0.3717488388788273
+        - 0.22920754299702897
+        - 0.37769616507688464
+        - 0.2246528336925301
+        - 0.3765437598650894
+        - 0.22041773376471022
+        - 0.38047596041838994
+        - 0.21923601658169187
+        - 0.3798873698864591
+        - 0.21700438236445285
+        - 0.38291698672245644
+        - 0.21827768053295463
+        - 0.3641322152037017
+        - 0.23729077006065105
+        - 0.3676834419346081
+        - 0.24865079519725933
+        - 0.34415050295044936
+        - 0.2733570818755685
+        - 0.3306230780901629
+        - 0.27350446437732157
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      info: ~
+      bias_gap: 0
+      cross_section: strip
+      macro_type: m_grating_coupler_ellipti_4c46b398_0
+      placement:
+        - FIXED
+        -
+          - 4772.836
+          - 837.127
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  gc_array_out_gc_5:
+    component: m_grating_coupler_ellipti_4c46b398_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+        - -2.4298362615732447
+        - 0.1
+        - 0.48007023217536954
+        - 0.1
+        - 0.607397685752365
+        - 0.1
+        - 0.4498844003086115
+        - 0.1
+        - 0.4274116312627637
+        - 0.1
+        - 0.4757904248387285
+        - 0.1
+        - 0.5026649898504233
+        - 0.10002922416240886
+        - 0.5100366774007897
+        - 0.1
+        - 0.494399635363353
+        - 0.1079599958465788
+        - 0.47400592737426483
+        - 0.14972685326277918
+        - 0.43272750134545823
+        - 0.1839530796530385
+        - 0.3872023336708212
+        - 0.2360175325711591
+        - 0.36032212454768675
+        - 0.24261846353500535
+        - 0.35770350120764394
+        - 0.2606637836858316
+        - 0.3526104381544335
+        - 0.24668202254540886
+        - 0.3717488388788273
+        - 0.22920754299702897
+        - 0.37769616507688464
+        - 0.2246528336925301
+        - 0.3765437598650894
+        - 0.22041773376471022
+        - 0.38047596041838994
+        - 0.21923601658169187
+        - 0.3798873698864591
+        - 0.21700438236445285
+        - 0.38291698672245644
+        - 0.21827768053295463
+        - 0.3641322152037017
+        - 0.23729077006065105
+        - 0.3676834419346081
+        - 0.24865079519725933
+        - 0.34415050295044936
+        - 0.2733570818755685
+        - 0.3306230780901629
+        - 0.27350446437732157
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      info: ~
+      bias_gap: 0
+      cross_section: strip
+      macro_type: m_grating_coupler_ellipti_4c46b398_0
+      placement:
+        - FIXED
+        -
+          - 4772.836
+          - 937.127
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  gc_array_out_gc_6:
+    component: m_grating_coupler_ellipti_4c46b398_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+        - -2.4298362615732447
+        - 0.1
+        - 0.48007023217536954
+        - 0.1
+        - 0.607397685752365
+        - 0.1
+        - 0.4498844003086115
+        - 0.1
+        - 0.4274116312627637
+        - 0.1
+        - 0.4757904248387285
+        - 0.1
+        - 0.5026649898504233
+        - 0.10002922416240886
+        - 0.5100366774007897
+        - 0.1
+        - 0.494399635363353
+        - 0.1079599958465788
+        - 0.47400592737426483
+        - 0.14972685326277918
+        - 0.43272750134545823
+        - 0.1839530796530385
+        - 0.3872023336708212
+        - 0.2360175325711591
+        - 0.36032212454768675
+        - 0.24261846353500535
+        - 0.35770350120764394
+        - 0.2606637836858316
+        - 0.3526104381544335
+        - 0.24668202254540886
+        - 0.3717488388788273
+        - 0.22920754299702897
+        - 0.37769616507688464
+        - 0.2246528336925301
+        - 0.3765437598650894
+        - 0.22041773376471022
+        - 0.38047596041838994
+        - 0.21923601658169187
+        - 0.3798873698864591
+        - 0.21700438236445285
+        - 0.38291698672245644
+        - 0.21827768053295463
+        - 0.3641322152037017
+        - 0.23729077006065105
+        - 0.3676834419346081
+        - 0.24865079519725933
+        - 0.34415050295044936
+        - 0.2733570818755685
+        - 0.3306230780901629
+        - 0.27350446437732157
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      info: ~
+      bias_gap: 0
+      cross_section: strip
+      macro_type: m_grating_coupler_ellipti_4c46b398_0
+      placement:
+        - FIXED
+        -
+          - 4772.836
+          - 1037.127
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  gc_array_out_gc_7:
+    component: m_grating_coupler_ellipti_4c46b398_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+        - -2.4298362615732447
+        - 0.1
+        - 0.48007023217536954
+        - 0.1
+        - 0.607397685752365
+        - 0.1
+        - 0.4498844003086115
+        - 0.1
+        - 0.4274116312627637
+        - 0.1
+        - 0.4757904248387285
+        - 0.1
+        - 0.5026649898504233
+        - 0.10002922416240886
+        - 0.5100366774007897
+        - 0.1
+        - 0.494399635363353
+        - 0.1079599958465788
+        - 0.47400592737426483
+        - 0.14972685326277918
+        - 0.43272750134545823
+        - 0.1839530796530385
+        - 0.3872023336708212
+        - 0.2360175325711591
+        - 0.36032212454768675
+        - 0.24261846353500535
+        - 0.35770350120764394
+        - 0.2606637836858316
+        - 0.3526104381544335
+        - 0.24668202254540886
+        - 0.3717488388788273
+        - 0.22920754299702897
+        - 0.37769616507688464
+        - 0.2246528336925301
+        - 0.3765437598650894
+        - 0.22041773376471022
+        - 0.38047596041838994
+        - 0.21923601658169187
+        - 0.3798873698864591
+        - 0.21700438236445285
+        - 0.38291698672245644
+        - 0.21827768053295463
+        - 0.3641322152037017
+        - 0.23729077006065105
+        - 0.3676834419346081
+        - 0.24865079519725933
+        - 0.34415050295044936
+        - 0.2733570818755685
+        - 0.3306230780901629
+        - 0.27350446437732157
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      info: ~
+      bias_gap: 0
+      cross_section: strip
+      macro_type: m_grating_coupler_ellipti_4c46b398_0
+      placement:
+        - FIXED
+        -
+          - 4772.836
+          - 1137.127
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  n_0_wg_0:
+    component: waveguide
+  n_1_wg_0:
+    component: waveguide
+  n_2_wg_0:
+    component: waveguide
+  n_3_wg_0:
+    component: waveguide
+  n_4_wg_0:
+    component: waveguide
+  n_5_wg_0:
+    component: waveguide
+  n_6_wg_0:
+    component: waveguide
+  n_7_wg_0:
+    component: waveguide
+  n_8_wg_0:
+    component: waveguide
+  n_9_wg_0:
+    component: waveguide
+  n_10_wg_0:
+    component: waveguide
+  n_11_wg_0:
+    component: waveguide
+  n_12_wg_0:
+    component: waveguide
+  n_13_wg_0:
+    component: waveguide
+  n_14_wg_0:
+    component: waveguide
+  n_15_wg_0:
+    component: waveguide
+  n_16_wg_0:
+    component: waveguide
+  n_17_wg_0:
+    component: waveguide
+  n_18_wg_0:
+    component: waveguide
+  n_19_wg_0:
+    component: waveguide
+  n_20_wg_0:
+    component: waveguide
+  n_21_wg_0:
+    component: waveguide
+  n_22_wg_0:
+    component: waveguide
+  n_23_wg_0:
+    component: waveguide
+  n_24_wg_0:
+    component: waveguide
+  n_25_wg_0:
+    component: waveguide
+  n_26_wg_0:
+    component: waveguide
+  n_27_wg_0:
+    component: waveguide
+  n_28_wg_0:
+    component: waveguide
+  n_29_wg_0:
+    component: waveguide
+  n_30_wg_0:
+    component: waveguide
+  n_31_wg_0:
+    component: waveguide
+  n_32_wg_0:
+    component: waveguide
+  n_33_wg_0:
+    component: waveguide
+  n_34_wg_0:
+    component: waveguide
+  n_35_wg_0:
+    component: waveguide
+  n_36_wg_0:
+    component: waveguide
+  n_37_wg_0:
+    component: waveguide
+  n_38_wg_0:
+    component: waveguide
+  n_39_wg_0:
+    component: waveguide
+  n_40_wg_0:
+    component: waveguide
+  n_41_wg_0:
+    component: waveguide
+  n_42_wg_0:
+    component: waveguide
+  n_43_wg_0:
+    component: waveguide
+  n_44_wg_0:
+    component: waveguide
+  n_45_wg_0:
+    component: waveguide
+  n_46_wg_0:
+    component: waveguide
+  n_47_wg_0:
+    component: waveguide
+  n_48_wg_0:
+    component: waveguide
+  n_49_wg_0:
+    component: waveguide
+  n_50_wg_0:
+    component: waveguide
+  n_51_wg_0:
+    component: waveguide
+  n_52_wg_0:
+    component: waveguide
+  n_53_wg_0:
+    component: waveguide
+  n_54_wg_0:
+    component: waveguide
+  n_55_wg_0:
+    component: waveguide
+  n_56_wg_0:
+    component: waveguide
+  n_57_wg_0:
+    component: waveguide
+  n_58_wg_0:
+    component: waveguide
+  n_59_wg_0:
+    component: waveguide
+  n_60_wg_0:
+    component: waveguide
+  n_61_wg_0:
+    component: waveguide
+  n_62_wg_0:
+    component: waveguide
+  n_63_wg_0:
+    component: waveguide
+  n_64_wg_0:
+    component: waveguide
+  n_65_wg_0:
+    component: waveguide
+  n_66_wg_0:
+    component: waveguide
+  n_67_wg_0:
+    component: waveguide
+  n_68_wg_0:
+    component: waveguide
+  n_69_wg_0:
+    component: waveguide
+  n_70_wg_0:
+    component: waveguide
+  n_71_wg_0:
+    component: waveguide
+  n_72_wg_0:
+    component: waveguide
+  n_73_wg_0:
+    component: waveguide
+  n_74_wg_0:
+    component: waveguide
+  n_75_wg_0:
+    component: waveguide
+  n_76_wg_0:
+    component: waveguide
+  n_77_wg_0:
+    component: waveguide
+  n_78_wg_0:
+    component: waveguide
+placements:
+  gc1:
+    x: 13.582
+    y: 812.873
+    rotation: 0
+    mirror: true
+    status: FIXED
+  fanout_yb_0_0:
+    x: 112.75
+    y: 800
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  fanout_yb_1_0:
+    x: 212.75
+    y: 750
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  fanout_yb_1_1:
+    x: 212.75
+    y: 850
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  fanout_yb_2_0:
+    x: 388.25
+    y: 650
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  fanout_yb_2_1:
+    x: 388.25
+    y: 750
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  fanout_yb_2_2:
+    x: 388.25
+    y: 850
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  fanout_yb_2_3:
+    x: 388.25
+    y: 950
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mod_mzi1x2_0:
+    x: 546.55
+    y: 475.375
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mod_mzi1x2_1:
+    x: 546.55
+    y: 575.375
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mod_mzi1x2_2:
+    x: 546.55
+    y: 675.375
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mod_mzi1x2_3:
+    x: 546.55
+    y: 775.375
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mod_mzi1x2_4:
+    x: 546.55
+    y: 875.375
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mod_mzi1x2_5:
+    x: 546.55
+    y: 975.375
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mod_mzi1x2_6:
+    x: 546.55
+    y: 1075.375
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mod_mzi1x2_7:
+    x: 546.55
+    y: 1175.375
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_0_mzi_0:
+    x: 817.6
+    y: 650.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_0_mzi_1:
+    x: 817.6
+    y: 750.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_0_mzi_2:
+    x: 817.6
+    y: 850.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_0_mzi_3:
+    x: 817.6
+    y: 950.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_1_mzi_0:
+    x: 1188.6
+    y: 700.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_1_mzi_1:
+    x: 1188.6
+    y: 800.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_1_mzi_2:
+    x: 1188.6
+    y: 900.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_2_mzi_0:
+    x: 1559.6
+    y: 650.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_2_mzi_1:
+    x: 1559.6
+    y: 750.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_2_mzi_2:
+    x: 1559.6
+    y: 850.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_2_mzi_3:
+    x: 1559.6
+    y: 950.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_3_mzi_0:
+    x: 1930.6
+    y: 700.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_3_mzi_1:
+    x: 1930.6
+    y: 800.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_3_mzi_2:
+    x: 1930.6
+    y: 900.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_4_mzi_0:
+    x: 2301.6
+    y: 650.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_4_mzi_1:
+    x: 2301.6
+    y: 750.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_4_mzi_2:
+    x: 2301.6
+    y: 850.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_4_mzi_3:
+    x: 2301.6
+    y: 950.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_5_mzi_0:
+    x: 2672.6
+    y: 700.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_5_mzi_1:
+    x: 2672.6
+    y: 800.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_5_mzi_2:
+    x: 2672.6
+    y: 900.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_6_mzi_0:
+    x: 3043.6
+    y: 650.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_6_mzi_1:
+    x: 3043.6
+    y: 750.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_6_mzi_2:
+    x: 3043.6
+    y: 850.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_6_mzi_3:
+    x: 3043.6
+    y: 950.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_7_mzi_0:
+    x: 3414.6
+    y: 700.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_7_mzi_1:
+    x: 3414.6
+    y: 800.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  mzi_array_7_mzi_2:
+    x: 3414.6
+    y: 900.125
+    rotation: 0
+    mirror: false
+    status: UNPLACED
+  gc_array_out_gc_0:
+    x: 4786.418000000001
+    y: 450
+    rotation: 0
+    mirror: false
+    status: FIXED
+  gc_array_out_gc_1:
+    x: 4786.418000000001
+    y: 550
+    rotation: 0
+    mirror: false
+    status: FIXED
+  gc_array_out_gc_2:
+    x: 4786.418000000001
+    y: 650
+    rotation: 0
+    mirror: false
+    status: FIXED
+  gc_array_out_gc_3:
+    x: 4786.418000000001
+    y: 750
+    rotation: 0
+    mirror: false
+    status: FIXED
+  gc_array_out_gc_4:
+    x: 4786.418000000001
+    y: 850
+    rotation: 0
+    mirror: false
+    status: FIXED
+  gc_array_out_gc_5:
+    x: 4786.418000000001
+    y: 950
+    rotation: 0
+    mirror: false
+    status: FIXED
+  gc_array_out_gc_6:
+    x: 4786.418000000001
+    y: 1050
+    rotation: 0
+    mirror: false
+    status: FIXED
+  gc_array_out_gc_7:
+    x: 4786.418000000001
+    y: 1150
+    rotation: 0
+    mirror: false
+    status: FIXED
+connections:
+  n_0:
+    source: fanout_yb_0_0,o3
+    target: fanout_yb_1_0,o1
+    segments:
+      n_0_wg_0:
+        source:
+          - 125.5
+          - 799.375
+          - 0
+        target:
+          - 200
+          - 750
+          - 180
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 125.5
+            - 799.375
+          -
+            - 137
+            - 799.375
+          -
+            - 145
+            - 799.375
+          -
+            - 193
+            - 750
+          -
+            - 197
+            - 750
+          -
+            - 200
+            - 750
+  n_1:
+    source: fanout_yb_0_0,o2
+    target: fanout_yb_1_1,o1
+    segments:
+      n_1_wg_0:
+        source:
+          - 125.5
+          - 800.625
+          - 0
+        target:
+          - 200
+          - 850
+          - 180
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 125.5
+            - 800.625
+          -
+            - 137
+            - 800.625
+          -
+            - 145
+            - 800.625
+          -
+            - 193
+            - 850
+          -
+            - 197
+            - 850
+          -
+            - 200
+            - 850
+  n_2:
+    source: fanout_yb_1_0,o3
+    target: fanout_yb_2_0,o1
+    segments:
+      n_2_wg_0:
+        source:
+          - 225.5
+          - 749.375
+          - 0
+        target:
+          - 375.5
+          - 650
+          - 180
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 225.5
+            - 749.375
+          -
+            - 237
+            - 749.375
+          -
+            - 271
+            - 749.375
+          -
+            - 369
+            - 650
+          -
+            - 373
+            - 650
+          -
+            - 375.5
+            - 650
+  n_3:
+    source: fanout_yb_1_0,o2
+    target: fanout_yb_2_1,o1
+    segments:
+      n_3_wg_0:
+        source:
+          - 225.5
+          - 750.625
+          - 0
+        target:
+          - 375.5
+          - 750
+          - 180
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 225.5
+            - 750.625
+          -
+            - 237
+            - 750.625
+          -
+            - 351
+            - 750.625
+          -
+            - 357
+            - 747
+          -
+            - 365
+            - 747
+          -
+            - 369
+            - 750
+          -
+            - 373
+            - 750
+          -
+            - 375.5
+            - 750
+  n_4:
+    source: fanout_yb_1_1,o3
+    target: fanout_yb_2_2,o1
+    segments:
+      n_4_wg_0:
+        source:
+          - 225.5
+          - 849.375
+          - 0
+        target:
+          - 375.5
+          - 850
+          - 180
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 225.5
+            - 849.375
+          -
+            - 237
+            - 849.375
+          -
+            - 351
+            - 849.375
+          -
+            - 357
+            - 855
+          -
+            - 365
+            - 855
+          -
+            - 369
+            - 850
+          -
+            - 373
+            - 850
+          -
+            - 375.5
+            - 850
+  n_5:
+    source: fanout_yb_1_1,o2
+    target: fanout_yb_2_3,o1
+    segments:
+      n_5_wg_0:
+        source:
+          - 225.5
+          - 850.625
+          - 0
+        target:
+          - 375.5
+          - 950
+          - 180
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 225.5
+            - 850.625
+          -
+            - 237
+            - 850.625
+          -
+            - 271
+            - 850.625
+          -
+            - 369
+            - 950
+          -
+            - 373
+            - 950
+          -
+            - 375.5
+            - 950
+  n_6:
+    source: fanout_yb_0_0,o1
+    target: gc1,o1
+    segments:
+      n_6_wg_0:
+        source:
+          - 100
+          - 800
+          - 180
+        target:
+          - 27.164
+          - 812.873
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 100
+            - 800
+          -
+            - 97
+            - 800
+          -
+            - 47
+            - 800
+          -
+            - 35
+            - 812.873
+          -
+            - 31
+            - 812.873
+          -
+            - 27.164
+            - 812.873
+  n_7:
+    source: fanout_yb_2_0,o3
+    target: mod_mzi1x2_0,o1
+    segments:
+      n_7_wg_0:
+        source:
+          - 401
+          - 649.375
+          - 0
+        target:
+          - 501
+          - 477.875
+          - 180
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 401
+            - 649.375
+          -
+            - 413
+            - 649.375
+          -
+            - 417
+            - 649.375
+          -
+            - 483
+            - 583
+          -
+            - 483
+            - 477.875
+          -
+            - 489
+            - 477.875
+          -
+            - 501
+            - 477.875
+  n_8:
+    source: fanout_yb_2_0,o2
+    target: mod_mzi1x2_1,o1
+    segments:
+      n_8_wg_0:
+        source:
+          - 401
+          - 650.625
+          - 0
+        target:
+          - 501
+          - 577.875
+          - 180
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 401
+            - 650.625
+          -
+            - 413
+            - 650.625
+          -
+            - 425
+            - 650.625
+          -
+            - 489
+            - 589
+          -
+            - 489
+            - 577.875
+          -
+            - 495
+            - 577.875
+          -
+            - 501
+            - 577.875
+  n_9:
+    source: fanout_yb_2_1,o3
+    target: mod_mzi1x2_2,o1
+    segments:
+      n_9_wg_0:
+        source:
+          - 401
+          - 749.375
+          - 0
+        target:
+          - 501
+          - 677.875
+          - 180
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 401
+            - 749.375
+          -
+            - 413
+            - 749.375
+          -
+            - 423
+            - 749.375
+          -
+            - 495
+            - 677.875
+          -
+            - 499
+            - 677.875
+          -
+            - 501
+            - 677.875
+  n_10:
+    source: fanout_yb_2_1,o2
+    target: mod_mzi1x2_3,o1
+    segments:
+      n_10_wg_0:
+        source:
+          - 401
+          - 750.625
+          - 0
+        target:
+          - 501
+          - 777.875
+          - 180
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 401
+            - 750.625
+          -
+            - 413
+            - 750.625
+          -
+            - 471
+            - 750.625
+          -
+            - 495
+            - 777.875
+          -
+            - 499
+            - 777.875
+          -
+            - 501
+            - 777.875
+  n_11:
+    source: fanout_yb_2_2,o3
+    target: mod_mzi1x2_4,o1
+    segments:
+      n_11_wg_0:
+        source:
+          - 401
+          - 849.375
+          - 0
+        target:
+          - 501
+          - 877.875
+          - 180
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 401
+            - 849.375
+          -
+            - 413
+            - 849.375
+          -
+            - 467
+            - 849.375
+          -
+            - 495
+            - 877.875
+          -
+            - 499
+            - 877.875
+          -
+            - 501
+            - 877.875
+  n_12:
+    source: fanout_yb_2_2,o2
+    target: mod_mzi1x2_5,o1
+    segments:
+      n_12_wg_0:
+        source:
+          - 401
+          - 850.625
+          - 0
+        target:
+          - 501
+          - 977.875
+          - 180
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 401
+            - 850.625
+          -
+            - 413
+            - 850.625
+          -
+            - 417
+            - 850.625
+          -
+            - 489
+            - 925
+          -
+            - 489
+            - 977.875
+          -
+            - 495
+            - 977.875
+          -
+            - 501
+            - 977.875
+  n_13:
+    source: fanout_yb_2_3,o3
+    target: mod_mzi1x2_6,o1
+    segments:
+      n_13_wg_0:
+        source:
+          - 401
+          - 949.375
+          - 0
+        target:
+          - 501
+          - 1077.875
+          - 180
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 401
+            - 949.375
+          -
+            - 413
+            - 949.375
+          -
+            - 425
+            - 949.375
+          -
+            - 489
+            - 1013
+          -
+            - 489
+            - 1077.875
+          -
+            - 495
+            - 1077.875
+          -
+            - 501
+            - 1077.875
+  n_14:
+    source: fanout_yb_2_3,o2
+    target: mod_mzi1x2_7,o1
+    segments:
+      n_14_wg_0:
+        source:
+          - 401
+          - 950.625
+          - 0
+        target:
+          - 501
+          - 1177.875
+          - 180
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 401
+            - 950.625
+          -
+            - 413
+            - 950.625
+          -
+            - 417
+            - 950.625
+          -
+            - 483
+            - 1019
+          -
+            - 483
+            - 1177.875
+          -
+            - 489
+            - 1177.875
+          -
+            - 501
+            - 1177.875
+  n_15:
+    source: mzi_array_0_mzi_0,o1
+    target: mod_mzi1x2_0,o2
+    segments:
+      n_15_wg_0:
+        source:
+          - 672.1
+          - 649.375
+          - 180
+        target:
+          - 592.0999999999999
+          - 477.875
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 672.1
+            - 649.375
+          -
+            - 661
+            - 649.375
+          -
+            - 657
+            - 649.375
+          -
+            - 611
+            - 603
+          -
+            - 611
+            - 477.875
+          -
+            - 605
+            - 477.875
+          -
+            - 592.0999999999999
+            - 477.875
+  n_16:
+    source: mzi_array_0_mzi_0,o2
+    target: mod_mzi1x2_1,o2
+    segments:
+      n_16_wg_0:
+        source:
+          - 672.1
+          - 650.625
+          - 180
+        target:
+          - 592.0999999999999
+          - 577.875
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 672.1
+            - 650.625
+          -
+            - 661
+            - 650.625
+          -
+            - 649
+            - 650.625
+          -
+            - 605
+            - 609
+          -
+            - 605
+            - 577.875
+          -
+            - 599
+            - 577.875
+          -
+            - 592.0999999999999
+            - 577.875
+  n_17:
+    source: mzi_array_0_mzi_1,o1
+    target: mod_mzi1x2_2,o2
+    segments:
+      n_17_wg_0:
+        source:
+          - 672.1
+          - 749.375
+          - 180
+        target:
+          - 592.0999999999999
+          - 677.875
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 672.1
+            - 749.375
+          -
+            - 661
+            - 749.375
+          -
+            - 657
+            - 749.375
+          -
+            - 605
+            - 697
+          -
+            - 605
+            - 677.875
+          -
+            - 599
+            - 677.875
+          -
+            - 592.0999999999999
+            - 677.875
+  n_18:
+    source: mzi_array_0_mzi_1,o2
+    target: mod_mzi1x2_3,o2
+    segments:
+      n_18_wg_0:
+        source:
+          - 672.1
+          - 750.625
+          - 180
+        target:
+          - 592.0999999999999
+          - 777.875
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 672.1
+            - 750.625
+          -
+            - 661
+            - 750.625
+          -
+            - 623
+            - 750.625
+          -
+            - 599
+            - 777.875
+          -
+            - 595
+            - 777.875
+          -
+            - 592.0999999999999
+            - 777.875
+  n_19:
+    source: mzi_array_0_mzi_2,o1
+    target: mod_mzi1x2_4,o2
+    segments:
+      n_19_wg_0:
+        source:
+          - 672.1
+          - 849.375
+          - 180
+        target:
+          - 592.0999999999999
+          - 877.875
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 672.1
+            - 849.375
+          -
+            - 661
+            - 849.375
+          -
+            - 627
+            - 849.375
+          -
+            - 599
+            - 877.875
+          -
+            - 595
+            - 877.875
+          -
+            - 592.0999999999999
+            - 877.875
+  n_20:
+    source: mzi_array_0_mzi_2,o2
+    target: mod_mzi1x2_5,o2
+    segments:
+      n_20_wg_0:
+        source:
+          - 672.1
+          - 850.625
+          - 180
+        target:
+          - 592.0999999999999
+          - 977.875
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 672.1
+            - 850.625
+          -
+            - 661
+            - 850.625
+          -
+            - 657
+            - 850.625
+          -
+            - 605
+            - 905
+          -
+            - 605
+            - 977.875
+          -
+            - 599
+            - 977.875
+          -
+            - 592.0999999999999
+            - 977.875
+  n_21:
+    source: mzi_array_0_mzi_3,o1
+    target: mod_mzi1x2_6,o2
+    segments:
+      n_21_wg_0:
+        source:
+          - 672.1
+          - 949.375
+          - 180
+        target:
+          - 592.0999999999999
+          - 1077.875
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 672.1
+            - 949.375
+          -
+            - 661
+            - 949.375
+          -
+            - 649
+            - 949.375
+          -
+            - 605
+            - 993
+          -
+            - 605
+            - 1077.875
+          -
+            - 599
+            - 1077.875
+          -
+            - 592.0999999999999
+            - 1077.875
+  n_22:
+    source: mzi_array_0_mzi_3,o2
+    target: mod_mzi1x2_7,o2
+    segments:
+      n_22_wg_0:
+        source:
+          - 672.1
+          - 950.625
+          - 180
+        target:
+          - 592.0999999999999
+          - 1177.875
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 672.1
+            - 950.625
+          -
+            - 661
+            - 950.625
+          -
+            - 657
+            - 950.625
+          -
+            - 611
+            - 999
+          -
+            - 611
+            - 1177.875
+          -
+            - 605
+            - 1177.875
+          -
+            - 592.0999999999999
+            - 1177.875
+  n_23:
+    source: mzi_array_1_mzi_0,o1
+    target: mzi_array_0_mzi_0,o3
+    segments:
+      n_23_wg_0:
+        source:
+          - 1043.1
+          - 699.375
+          - 180
+        target:
+          - 963.1
+          - 650.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1043.1
+            - 699.375
+          -
+            - 1033
+            - 699.375
+          -
+            - 1025
+            - 699.375
+          -
+            - 979
+            - 650.625
+          -
+            - 975
+            - 650.625
+          -
+            - 963.1
+            - 650.625
+  n_24:
+    source: mzi_array_1_mzi_0,o2
+    target: mzi_array_0_mzi_1,o4
+    segments:
+      n_24_wg_0:
+        source:
+          - 1043.1
+          - 700.625
+          - 180
+        target:
+          - 963.1
+          - 749.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1043.1
+            - 700.625
+          -
+            - 1033
+            - 700.625
+          -
+            - 1025
+            - 700.625
+          -
+            - 979
+            - 749.375
+          -
+            - 975
+            - 749.375
+          -
+            - 963.1
+            - 749.375
+  n_25:
+    source: mzi_array_1_mzi_1,o1
+    target: mzi_array_0_mzi_1,o3
+    segments:
+      n_25_wg_0:
+        source:
+          - 1043.1
+          - 799.375
+          - 180
+        target:
+          - 963.1
+          - 750.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1043.1
+            - 799.375
+          -
+            - 1033
+            - 799.375
+          -
+            - 1025
+            - 799.375
+          -
+            - 979
+            - 750.625
+          -
+            - 975
+            - 750.625
+          -
+            - 963.1
+            - 750.625
+  n_26:
+    source: mzi_array_1_mzi_1,o2
+    target: mzi_array_0_mzi_2,o4
+    segments:
+      n_26_wg_0:
+        source:
+          - 1043.1
+          - 800.625
+          - 180
+        target:
+          - 963.1
+          - 849.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1043.1
+            - 800.625
+          -
+            - 1033
+            - 800.625
+          -
+            - 1025
+            - 800.625
+          -
+            - 979
+            - 849.375
+          -
+            - 975
+            - 849.375
+          -
+            - 963.1
+            - 849.375
+  n_27:
+    source: mzi_array_1_mzi_2,o1
+    target: mzi_array_0_mzi_2,o3
+    segments:
+      n_27_wg_0:
+        source:
+          - 1043.1
+          - 899.375
+          - 180
+        target:
+          - 963.1
+          - 850.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1043.1
+            - 899.375
+          -
+            - 1033
+            - 899.375
+          -
+            - 1025
+            - 899.375
+          -
+            - 979
+            - 850.625
+          -
+            - 975
+            - 850.625
+          -
+            - 963.1
+            - 850.625
+  n_28:
+    source: mzi_array_1_mzi_2,o2
+    target: mzi_array_0_mzi_3,o4
+    segments:
+      n_28_wg_0:
+        source:
+          - 1043.1
+          - 900.625
+          - 180
+        target:
+          - 963.1
+          - 949.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1043.1
+            - 900.625
+          -
+            - 1033
+            - 900.625
+          -
+            - 1025
+            - 900.625
+          -
+            - 979
+            - 949.375
+          -
+            - 975
+            - 949.375
+          -
+            - 963.1
+            - 949.375
+  n_29:
+    source: mzi_array_2_mzi_0,o1
+    target: mzi_array_0_mzi_0,o4
+    segments:
+      n_29_wg_0:
+        source:
+          - 1414.1
+          - 649.375
+          - 180
+        target:
+          - 963.1
+          - 649.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1414.1
+            - 649.375
+          -
+            - 1403
+            - 649.375
+          -
+            - 989
+            - 649.375
+          -
+            - 963.1
+            - 649.375
+  n_30:
+    source: mzi_array_2_mzi_0,o2
+    target: mzi_array_1_mzi_0,o4
+    segments:
+      n_30_wg_0:
+        source:
+          - 1414.1
+          - 650.625
+          - 180
+        target:
+          - 1334.1
+          - 699.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1414.1
+            - 650.625
+          -
+            - 1403
+            - 650.625
+          -
+            - 1395
+            - 650.625
+          -
+            - 1349
+            - 699.375
+          -
+            - 1345
+            - 699.375
+          -
+            - 1334.1
+            - 699.375
+  n_31:
+    source: mzi_array_2_mzi_1,o1
+    target: mzi_array_1_mzi_0,o3
+    segments:
+      n_31_wg_0:
+        source:
+          - 1414.1
+          - 749.375
+          - 180
+        target:
+          - 1334.1
+          - 700.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1414.1
+            - 749.375
+          -
+            - 1403
+            - 749.375
+          -
+            - 1395
+            - 749.375
+          -
+            - 1349
+            - 700.625
+          -
+            - 1345
+            - 700.625
+          -
+            - 1334.1
+            - 700.625
+  n_32:
+    source: mzi_array_2_mzi_1,o2
+    target: mzi_array_1_mzi_1,o4
+    segments:
+      n_32_wg_0:
+        source:
+          - 1414.1
+          - 750.625
+          - 180
+        target:
+          - 1334.1
+          - 799.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1414.1
+            - 750.625
+          -
+            - 1403
+            - 750.625
+          -
+            - 1395
+            - 750.625
+          -
+            - 1349
+            - 799.375
+          -
+            - 1345
+            - 799.375
+          -
+            - 1334.1
+            - 799.375
+  n_33:
+    source: mzi_array_2_mzi_2,o1
+    target: mzi_array_1_mzi_1,o3
+    segments:
+      n_33_wg_0:
+        source:
+          - 1414.1
+          - 849.375
+          - 180
+        target:
+          - 1334.1
+          - 800.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1414.1
+            - 849.375
+          -
+            - 1403
+            - 849.375
+          -
+            - 1395
+            - 849.375
+          -
+            - 1349
+            - 800.625
+          -
+            - 1345
+            - 800.625
+          -
+            - 1334.1
+            - 800.625
+  n_34:
+    source: mzi_array_2_mzi_2,o2
+    target: mzi_array_1_mzi_2,o4
+    segments:
+      n_34_wg_0:
+        source:
+          - 1414.1
+          - 850.625
+          - 180
+        target:
+          - 1334.1
+          - 899.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1414.1
+            - 850.625
+          -
+            - 1403
+            - 850.625
+          -
+            - 1395
+            - 850.625
+          -
+            - 1349
+            - 899.375
+          -
+            - 1345
+            - 899.375
+          -
+            - 1334.1
+            - 899.375
+  n_35:
+    source: mzi_array_2_mzi_3,o1
+    target: mzi_array_1_mzi_2,o3
+    segments:
+      n_35_wg_0:
+        source:
+          - 1414.1
+          - 949.375
+          - 180
+        target:
+          - 1334.1
+          - 900.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1414.1
+            - 949.375
+          -
+            - 1403
+            - 949.375
+          -
+            - 1395
+            - 949.375
+          -
+            - 1349
+            - 900.625
+          -
+            - 1345
+            - 900.625
+          -
+            - 1334.1
+            - 900.625
+  n_36:
+    source: mzi_array_2_mzi_3,o2
+    target: mzi_array_0_mzi_3,o3
+    segments:
+      n_36_wg_0:
+        source:
+          - 1414.1
+          - 950.625
+          - 180
+        target:
+          - 963.1
+          - 950.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1414.1
+            - 950.625
+          -
+            - 1403
+            - 950.625
+          -
+            - 989
+            - 950.625
+          -
+            - 963.1
+            - 950.625
+  n_37:
+    source: mzi_array_3_mzi_0,o1
+    target: mzi_array_2_mzi_0,o3
+    segments:
+      n_37_wg_0:
+        source:
+          - 1785.1
+          - 699.375
+          - 180
+        target:
+          - 1705.1
+          - 650.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1785.1
+            - 699.375
+          -
+            - 1775
+            - 699.375
+          -
+            - 1767
+            - 699.375
+          -
+            - 1721
+            - 650.625
+          -
+            - 1717
+            - 650.625
+          -
+            - 1705.1
+            - 650.625
+  n_38:
+    source: mzi_array_3_mzi_0,o2
+    target: mzi_array_2_mzi_1,o4
+    segments:
+      n_38_wg_0:
+        source:
+          - 1785.1
+          - 700.625
+          - 180
+        target:
+          - 1705.1
+          - 749.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1785.1
+            - 700.625
+          -
+            - 1775
+            - 700.625
+          -
+            - 1767
+            - 700.625
+          -
+            - 1721
+            - 749.375
+          -
+            - 1717
+            - 749.375
+          -
+            - 1705.1
+            - 749.375
+  n_39:
+    source: mzi_array_3_mzi_1,o1
+    target: mzi_array_2_mzi_1,o3
+    segments:
+      n_39_wg_0:
+        source:
+          - 1785.1
+          - 799.375
+          - 180
+        target:
+          - 1705.1
+          - 750.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1785.1
+            - 799.375
+          -
+            - 1775
+            - 799.375
+          -
+            - 1767
+            - 799.375
+          -
+            - 1721
+            - 750.625
+          -
+            - 1717
+            - 750.625
+          -
+            - 1705.1
+            - 750.625
+  n_40:
+    source: mzi_array_3_mzi_1,o2
+    target: mzi_array_2_mzi_2,o4
+    segments:
+      n_40_wg_0:
+        source:
+          - 1785.1
+          - 800.625
+          - 180
+        target:
+          - 1705.1
+          - 849.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1785.1
+            - 800.625
+          -
+            - 1775
+            - 800.625
+          -
+            - 1767
+            - 800.625
+          -
+            - 1721
+            - 849.375
+          -
+            - 1717
+            - 849.375
+          -
+            - 1705.1
+            - 849.375
+  n_41:
+    source: mzi_array_3_mzi_2,o1
+    target: mzi_array_2_mzi_2,o3
+    segments:
+      n_41_wg_0:
+        source:
+          - 1785.1
+          - 899.375
+          - 180
+        target:
+          - 1705.1
+          - 850.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1785.1
+            - 899.375
+          -
+            - 1775
+            - 899.375
+          -
+            - 1767
+            - 899.375
+          -
+            - 1721
+            - 850.625
+          -
+            - 1717
+            - 850.625
+          -
+            - 1705.1
+            - 850.625
+  n_42:
+    source: mzi_array_3_mzi_2,o2
+    target: mzi_array_2_mzi_3,o4
+    segments:
+      n_42_wg_0:
+        source:
+          - 1785.1
+          - 900.625
+          - 180
+        target:
+          - 1705.1
+          - 949.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 1785.1
+            - 900.625
+          -
+            - 1775
+            - 900.625
+          -
+            - 1767
+            - 900.625
+          -
+            - 1721
+            - 949.375
+          -
+            - 1717
+            - 949.375
+          -
+            - 1705.1
+            - 949.375
+  n_43:
+    source: mzi_array_4_mzi_0,o1
+    target: mzi_array_2_mzi_0,o4
+    segments:
+      n_43_wg_0:
+        source:
+          - 2156.1
+          - 649.375
+          - 180
+        target:
+          - 1705.1
+          - 649.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2156.1
+            - 649.375
+          -
+            - 2145
+            - 649.375
+          -
+            - 1731
+            - 649.375
+          -
+            - 1705.1
+            - 649.375
+  n_44:
+    source: mzi_array_4_mzi_0,o2
+    target: mzi_array_3_mzi_0,o4
+    segments:
+      n_44_wg_0:
+        source:
+          - 2156.1
+          - 650.625
+          - 180
+        target:
+          - 2076.1
+          - 699.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2156.1
+            - 650.625
+          -
+            - 2145
+            - 650.625
+          -
+            - 2137
+            - 650.625
+          -
+            - 2091
+            - 699.375
+          -
+            - 2087
+            - 699.375
+          -
+            - 2076.1
+            - 699.375
+  n_45:
+    source: mzi_array_4_mzi_1,o1
+    target: mzi_array_3_mzi_0,o3
+    segments:
+      n_45_wg_0:
+        source:
+          - 2156.1
+          - 749.375
+          - 180
+        target:
+          - 2076.1
+          - 700.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2156.1
+            - 749.375
+          -
+            - 2145
+            - 749.375
+          -
+            - 2137
+            - 749.375
+          -
+            - 2091
+            - 700.625
+          -
+            - 2087
+            - 700.625
+          -
+            - 2076.1
+            - 700.625
+  n_46:
+    source: mzi_array_4_mzi_1,o2
+    target: mzi_array_3_mzi_1,o4
+    segments:
+      n_46_wg_0:
+        source:
+          - 2156.1
+          - 750.625
+          - 180
+        target:
+          - 2076.1
+          - 799.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2156.1
+            - 750.625
+          -
+            - 2145
+            - 750.625
+          -
+            - 2137
+            - 750.625
+          -
+            - 2091
+            - 799.375
+          -
+            - 2087
+            - 799.375
+          -
+            - 2076.1
+            - 799.375
+  n_47:
+    source: mzi_array_4_mzi_2,o1
+    target: mzi_array_3_mzi_1,o3
+    segments:
+      n_47_wg_0:
+        source:
+          - 2156.1
+          - 849.375
+          - 180
+        target:
+          - 2076.1
+          - 800.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2156.1
+            - 849.375
+          -
+            - 2145
+            - 849.375
+          -
+            - 2137
+            - 849.375
+          -
+            - 2091
+            - 800.625
+          -
+            - 2087
+            - 800.625
+          -
+            - 2076.1
+            - 800.625
+  n_48:
+    source: mzi_array_4_mzi_2,o2
+    target: mzi_array_3_mzi_2,o4
+    segments:
+      n_48_wg_0:
+        source:
+          - 2156.1
+          - 850.625
+          - 180
+        target:
+          - 2076.1
+          - 899.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2156.1
+            - 850.625
+          -
+            - 2145
+            - 850.625
+          -
+            - 2137
+            - 850.625
+          -
+            - 2091
+            - 899.375
+          -
+            - 2087
+            - 899.375
+          -
+            - 2076.1
+            - 899.375
+  n_49:
+    source: mzi_array_4_mzi_3,o1
+    target: mzi_array_3_mzi_2,o3
+    segments:
+      n_49_wg_0:
+        source:
+          - 2156.1
+          - 949.375
+          - 180
+        target:
+          - 2076.1
+          - 900.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2156.1
+            - 949.375
+          -
+            - 2145
+            - 949.375
+          -
+            - 2137
+            - 949.375
+          -
+            - 2091
+            - 900.625
+          -
+            - 2087
+            - 900.625
+          -
+            - 2076.1
+            - 900.625
+  n_50:
+    source: mzi_array_4_mzi_3,o2
+    target: mzi_array_2_mzi_3,o3
+    segments:
+      n_50_wg_0:
+        source:
+          - 2156.1
+          - 950.625
+          - 180
+        target:
+          - 1705.1
+          - 950.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2156.1
+            - 950.625
+          -
+            - 2145
+            - 950.625
+          -
+            - 1731
+            - 950.625
+          -
+            - 1705.1
+            - 950.625
+  n_51:
+    source: mzi_array_5_mzi_0,o1
+    target: mzi_array_4_mzi_0,o3
+    segments:
+      n_51_wg_0:
+        source:
+          - 2527.1
+          - 699.375
+          - 180
+        target:
+          - 2447.1
+          - 650.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2527.1
+            - 699.375
+          -
+            - 2517
+            - 699.375
+          -
+            - 2509
+            - 699.375
+          -
+            - 2463
+            - 650.625
+          -
+            - 2459
+            - 650.625
+          -
+            - 2447.1
+            - 650.625
+  n_52:
+    source: mzi_array_5_mzi_0,o2
+    target: mzi_array_4_mzi_1,o4
+    segments:
+      n_52_wg_0:
+        source:
+          - 2527.1
+          - 700.625
+          - 180
+        target:
+          - 2447.1
+          - 749.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2527.1
+            - 700.625
+          -
+            - 2517
+            - 700.625
+          -
+            - 2509
+            - 700.625
+          -
+            - 2463
+            - 749.375
+          -
+            - 2459
+            - 749.375
+          -
+            - 2447.1
+            - 749.375
+  n_53:
+    source: mzi_array_5_mzi_1,o1
+    target: mzi_array_4_mzi_1,o3
+    segments:
+      n_53_wg_0:
+        source:
+          - 2527.1
+          - 799.375
+          - 180
+        target:
+          - 2447.1
+          - 750.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2527.1
+            - 799.375
+          -
+            - 2517
+            - 799.375
+          -
+            - 2509
+            - 799.375
+          -
+            - 2463
+            - 750.625
+          -
+            - 2459
+            - 750.625
+          -
+            - 2447.1
+            - 750.625
+  n_54:
+    source: mzi_array_5_mzi_1,o2
+    target: mzi_array_4_mzi_2,o4
+    segments:
+      n_54_wg_0:
+        source:
+          - 2527.1
+          - 800.625
+          - 180
+        target:
+          - 2447.1
+          - 849.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2527.1
+            - 800.625
+          -
+            - 2517
+            - 800.625
+          -
+            - 2509
+            - 800.625
+          -
+            - 2463
+            - 849.375
+          -
+            - 2459
+            - 849.375
+          -
+            - 2447.1
+            - 849.375
+  n_55:
+    source: mzi_array_5_mzi_2,o1
+    target: mzi_array_4_mzi_2,o3
+    segments:
+      n_55_wg_0:
+        source:
+          - 2527.1
+          - 899.375
+          - 180
+        target:
+          - 2447.1
+          - 850.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2527.1
+            - 899.375
+          -
+            - 2517
+            - 899.375
+          -
+            - 2509
+            - 899.375
+          -
+            - 2463
+            - 850.625
+          -
+            - 2459
+            - 850.625
+          -
+            - 2447.1
+            - 850.625
+  n_56:
+    source: mzi_array_5_mzi_2,o2
+    target: mzi_array_4_mzi_3,o4
+    segments:
+      n_56_wg_0:
+        source:
+          - 2527.1
+          - 900.625
+          - 180
+        target:
+          - 2447.1
+          - 949.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2527.1
+            - 900.625
+          -
+            - 2517
+            - 900.625
+          -
+            - 2509
+            - 900.625
+          -
+            - 2463
+            - 949.375
+          -
+            - 2459
+            - 949.375
+          -
+            - 2447.1
+            - 949.375
+  n_57:
+    source: mzi_array_6_mzi_0,o1
+    target: mzi_array_4_mzi_0,o4
+    segments:
+      n_57_wg_0:
+        source:
+          - 2898.1
+          - 649.375
+          - 180
+        target:
+          - 2447.1
+          - 649.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2898.1
+            - 649.375
+          -
+            - 2887
+            - 649.375
+          -
+            - 2473
+            - 649.375
+          -
+            - 2447.1
+            - 649.375
+  n_58:
+    source: mzi_array_6_mzi_0,o2
+    target: mzi_array_5_mzi_0,o4
+    segments:
+      n_58_wg_0:
+        source:
+          - 2898.1
+          - 650.625
+          - 180
+        target:
+          - 2818.1
+          - 699.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2898.1
+            - 650.625
+          -
+            - 2887
+            - 650.625
+          -
+            - 2879
+            - 650.625
+          -
+            - 2833
+            - 699.375
+          -
+            - 2829
+            - 699.375
+          -
+            - 2818.1
+            - 699.375
+  n_59:
+    source: mzi_array_6_mzi_1,o1
+    target: mzi_array_5_mzi_0,o3
+    segments:
+      n_59_wg_0:
+        source:
+          - 2898.1
+          - 749.375
+          - 180
+        target:
+          - 2818.1
+          - 700.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2898.1
+            - 749.375
+          -
+            - 2887
+            - 749.375
+          -
+            - 2879
+            - 749.375
+          -
+            - 2833
+            - 700.625
+          -
+            - 2829
+            - 700.625
+          -
+            - 2818.1
+            - 700.625
+  n_60:
+    source: mzi_array_6_mzi_1,o2
+    target: mzi_array_5_mzi_1,o4
+    segments:
+      n_60_wg_0:
+        source:
+          - 2898.1
+          - 750.625
+          - 180
+        target:
+          - 2818.1
+          - 799.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2898.1
+            - 750.625
+          -
+            - 2887
+            - 750.625
+          -
+            - 2879
+            - 750.625
+          -
+            - 2833
+            - 799.375
+          -
+            - 2829
+            - 799.375
+          -
+            - 2818.1
+            - 799.375
+  n_61:
+    source: mzi_array_6_mzi_2,o1
+    target: mzi_array_5_mzi_1,o3
+    segments:
+      n_61_wg_0:
+        source:
+          - 2898.1
+          - 849.375
+          - 180
+        target:
+          - 2818.1
+          - 800.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2898.1
+            - 849.375
+          -
+            - 2887
+            - 849.375
+          -
+            - 2879
+            - 849.375
+          -
+            - 2833
+            - 800.625
+          -
+            - 2829
+            - 800.625
+          -
+            - 2818.1
+            - 800.625
+  n_62:
+    source: mzi_array_6_mzi_2,o2
+    target: mzi_array_5_mzi_2,o4
+    segments:
+      n_62_wg_0:
+        source:
+          - 2898.1
+          - 850.625
+          - 180
+        target:
+          - 2818.1
+          - 899.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2898.1
+            - 850.625
+          -
+            - 2887
+            - 850.625
+          -
+            - 2879
+            - 850.625
+          -
+            - 2833
+            - 899.375
+          -
+            - 2829
+            - 899.375
+          -
+            - 2818.1
+            - 899.375
+  n_63:
+    source: mzi_array_6_mzi_3,o1
+    target: mzi_array_5_mzi_2,o3
+    segments:
+      n_63_wg_0:
+        source:
+          - 2898.1
+          - 949.375
+          - 180
+        target:
+          - 2818.1
+          - 900.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2898.1
+            - 949.375
+          -
+            - 2887
+            - 949.375
+          -
+            - 2879
+            - 949.375
+          -
+            - 2833
+            - 900.625
+          -
+            - 2829
+            - 900.625
+          -
+            - 2818.1
+            - 900.625
+  n_64:
+    source: mzi_array_6_mzi_3,o2
+    target: mzi_array_4_mzi_3,o3
+    segments:
+      n_64_wg_0:
+        source:
+          - 2898.1
+          - 950.625
+          - 180
+        target:
+          - 2447.1
+          - 950.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 2898.1
+            - 950.625
+          -
+            - 2887
+            - 950.625
+          -
+            - 2473
+            - 950.625
+          -
+            - 2447.1
+            - 950.625
+  n_65:
+    source: mzi_array_7_mzi_0,o1
+    target: mzi_array_6_mzi_0,o3
+    segments:
+      n_65_wg_0:
+        source:
+          - 3269.1
+          - 699.375
+          - 180
+        target:
+          - 3189.1
+          - 650.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 3269.1
+            - 699.375
+          -
+            - 3259
+            - 699.375
+          -
+            - 3251
+            - 699.375
+          -
+            - 3205
+            - 650.625
+          -
+            - 3201
+            - 650.625
+          -
+            - 3189.1
+            - 650.625
+  n_66:
+    source: mzi_array_7_mzi_0,o2
+    target: mzi_array_6_mzi_1,o4
+    segments:
+      n_66_wg_0:
+        source:
+          - 3269.1
+          - 700.625
+          - 180
+        target:
+          - 3189.1
+          - 749.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 3269.1
+            - 700.625
+          -
+            - 3259
+            - 700.625
+          -
+            - 3251
+            - 700.625
+          -
+            - 3205
+            - 749.375
+          -
+            - 3201
+            - 749.375
+          -
+            - 3189.1
+            - 749.375
+  n_67:
+    source: mzi_array_7_mzi_1,o1
+    target: mzi_array_6_mzi_1,o3
+    segments:
+      n_67_wg_0:
+        source:
+          - 3269.1
+          - 799.375
+          - 180
+        target:
+          - 3189.1
+          - 750.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 3269.1
+            - 799.375
+          -
+            - 3259
+            - 799.375
+          -
+            - 3251
+            - 799.375
+          -
+            - 3205
+            - 750.625
+          -
+            - 3201
+            - 750.625
+          -
+            - 3189.1
+            - 750.625
+  n_68:
+    source: mzi_array_7_mzi_1,o2
+    target: mzi_array_6_mzi_2,o4
+    segments:
+      n_68_wg_0:
+        source:
+          - 3269.1
+          - 800.625
+          - 180
+        target:
+          - 3189.1
+          - 849.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 3269.1
+            - 800.625
+          -
+            - 3259
+            - 800.625
+          -
+            - 3251
+            - 800.625
+          -
+            - 3205
+            - 849.375
+          -
+            - 3201
+            - 849.375
+          -
+            - 3189.1
+            - 849.375
+  n_69:
+    source: mzi_array_7_mzi_2,o1
+    target: mzi_array_6_mzi_2,o3
+    segments:
+      n_69_wg_0:
+        source:
+          - 3269.1
+          - 899.375
+          - 180
+        target:
+          - 3189.1
+          - 850.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 3269.1
+            - 899.375
+          -
+            - 3259
+            - 899.375
+          -
+            - 3251
+            - 899.375
+          -
+            - 3205
+            - 850.625
+          -
+            - 3201
+            - 850.625
+          -
+            - 3189.1
+            - 850.625
+  n_70:
+    source: mzi_array_7_mzi_2,o2
+    target: mzi_array_6_mzi_3,o4
+    segments:
+      n_70_wg_0:
+        source:
+          - 3269.1
+          - 900.625
+          - 180
+        target:
+          - 3189.1
+          - 949.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 3269.1
+            - 900.625
+          -
+            - 3259
+            - 900.625
+          -
+            - 3251
+            - 900.625
+          -
+            - 3205
+            - 949.375
+          -
+            - 3201
+            - 949.375
+          -
+            - 3189.1
+            - 949.375
+  n_71:
+    source: gc_array_out_gc_0,o1
+    target: mzi_array_6_mzi_0,o4
+    segments:
+      n_71_wg_0:
+        source:
+          - 4772.836
+          - 450
+          - 180
+        target:
+          - 3189.1
+          - 649.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 4772.836
+            - 450
+          -
+            - 4769
+            - 450
+          -
+            - 3403
+            - 450
+          -
+            - 3205
+            - 649.375
+          -
+            - 3201
+            - 649.375
+          -
+            - 3189.1
+            - 649.375
+  n_72:
+    source: gc_array_out_gc_1,o1
+    target: mzi_array_7_mzi_0,o4
+    segments:
+      n_72_wg_0:
+        source:
+          - 4772.836
+          - 550
+          - 180
+        target:
+          - 3560.1
+          - 699.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 4772.836
+            - 550
+          -
+            - 4769
+            - 550
+          -
+            - 3723
+            - 550
+          -
+            - 3575
+            - 699.375
+          -
+            - 3571
+            - 699.375
+          -
+            - 3560.1
+            - 699.375
+  n_73:
+    source: gc_array_out_gc_2,o1
+    target: mzi_array_7_mzi_0,o3
+    segments:
+      n_73_wg_0:
+        source:
+          - 4772.836
+          - 650
+          - 180
+        target:
+          - 3560.1
+          - 700.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 4772.836
+            - 650
+          -
+            - 4769
+            - 650
+          -
+            - 3635
+            - 650
+          -
+            - 3583
+            - 700.625
+          -
+            - 3579
+            - 700.625
+          -
+            - 3560.1
+            - 700.625
+  n_74:
+    source: gc_array_out_gc_3,o1
+    target: mzi_array_7_mzi_1,o4
+    segments:
+      n_74_wg_0:
+        source:
+          - 4772.836
+          - 750
+          - 180
+        target:
+          - 3560.1
+          - 799.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 4772.836
+            - 750
+          -
+            - 4769
+            - 750
+          -
+            - 3623
+            - 750
+          -
+            - 3575
+            - 799.375
+          -
+            - 3571
+            - 799.375
+          -
+            - 3560.1
+            - 799.375
+  n_75:
+    source: gc_array_out_gc_4,o1
+    target: mzi_array_7_mzi_1,o3
+    segments:
+      n_75_wg_0:
+        source:
+          - 4772.836
+          - 850
+          - 180
+        target:
+          - 3560.1
+          - 800.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 4772.836
+            - 850
+          -
+            - 4769
+            - 850
+          -
+            - 3623
+            - 850
+          -
+            - 3575
+            - 800.625
+          -
+            - 3571
+            - 800.625
+          -
+            - 3560.1
+            - 800.625
+  n_76:
+    source: gc_array_out_gc_5,o1
+    target: mzi_array_7_mzi_2,o4
+    segments:
+      n_76_wg_0:
+        source:
+          - 4772.836
+          - 950
+          - 180
+        target:
+          - 3560.1
+          - 899.375
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 4772.836
+            - 950
+          -
+            - 4769
+            - 950
+          -
+            - 3635
+            - 950
+          -
+            - 3583
+            - 899.375
+          -
+            - 3579
+            - 899.375
+          -
+            - 3560.1
+            - 899.375
+  n_77:
+    source: gc_array_out_gc_6,o1
+    target: mzi_array_7_mzi_2,o3
+    segments:
+      n_77_wg_0:
+        source:
+          - 4772.836
+          - 1050
+          - 180
+        target:
+          - 3560.1
+          - 900.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 4772.836
+            - 1050
+          -
+            - 4769
+            - 1050
+          -
+            - 3723
+            - 1050
+          -
+            - 3575
+            - 900.625
+          -
+            - 3571
+            - 900.625
+          -
+            - 3560.1
+            - 900.625
+  n_78:
+    source: gc_array_out_gc_7,o1
+    target: mzi_array_6_mzi_3,o3
+    segments:
+      n_78_wg_0:
+        source:
+          - 4772.836
+          - 1150
+          - 180
+        target:
+          - 3189.1
+          - 950.625
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 4772.836
+            - 1150
+          -
+            - 4769
+            - 1150
+          -
+            - 3403
+            - 1150
+          -
+            - 3205
+            - 950.625
+          -
+            - 3201
+            - 950.625
+          -
+            - 3189.1
+            - 950.625

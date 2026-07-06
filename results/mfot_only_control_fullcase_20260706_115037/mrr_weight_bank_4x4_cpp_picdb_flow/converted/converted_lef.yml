@@ -1,0 +1,168 @@
+header:
+  description: mrr_weight_bank_4x4_converted
+xsections:
+  strip:
+    width: 0.5
+  metal1:
+    width: 10.0
+blocks:
+  m_grating_coupler_elliptical_lumerical_0:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 27.164
+      - 0.0
+    - - 27.164
+      - 25.746000000000002
+    - - 0.0
+      - 25.746000000000002
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 12.873000000000001
+        - 180.0
+    settings:
+      property: null
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
+  m_ring_double_pn_1:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 14.852
+      - 0.0
+    - - 14.852
+      - 12.1
+    - - 0.0
+      - 12.1
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 3.739
+        - 0.25
+        - 180.0
+      o2:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 11.112
+        - 0.25
+        - 0.0
+      o3:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 11.112
+        - 11.85
+        - 0.0
+      o4:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 3.739
+        - 11.85
+        - 180.0
+    settings:
+      property: null
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
+  m_mmi1x2_2:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 25.5
+      - 0.0
+    - - 25.5
+      - 2.5
+    - - 0.0
+      - 2.5
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 1.25
+        - 180.0
+      o2:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 25.5
+        - 1.875
+        - 0.0
+      o3:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 25.5
+        - 0.625
+        - 0.0
+    settings:
+      property: null
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
+  m_ring_single_pn_43ee7534_3:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 10.498999999999999
+      - 0.0
+    - - 10.498999999999999
+      - 12.676
+    - - 0.0
+      - 12.676
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 1.8709999999999996
+        - 1.5540000000000003
+        - 180.0
+      o2:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 8.626999999999999
+        - 1.5540000000000003
+        - 0.0
+    settings:
+      property: null
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core

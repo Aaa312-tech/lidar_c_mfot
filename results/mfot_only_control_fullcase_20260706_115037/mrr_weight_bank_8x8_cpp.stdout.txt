@@ -1,0 +1,637 @@
+cmd=D:\conda\python.exe "D:/xprogram/PIC-DB-main/PIC-DB-main/tools/pr_lidar_native/scripts\lidar_yml_to_picdb_yml.py" "D:\xprogram\PIC-DB-main\PIC-DB-main\lidar_c_benchmarks\picroute\mrr_weight_bank_8x8\mrr_weight_bank_8x8.yml" "D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\converted"
+lef=D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\converted\converted_lef.yml
+def=D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\converted\converted_def.yml
+lidar=D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\converted\converted_lidar.yml
+manifest=D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\converted\conversion_manifest.yml
+[2026-07-06 11:51:02.639] [OPDB] [info] [YML] Loading YAML file: D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\converted\converted_lef.yml
+[2026-07-06 11:51:02.652] [OPDB] [info] [LEFYML] Library name: mrr_weight_bank_8x8_converted
+[2026-07-06 11:51:02.653] [OPDB] [info] [LEFYML] Added cross-section: strip with width: 0.5
+[2026-07-06 11:51:02.653] [OPDB] [info] [LEFYML] Added cross-section: metal1 with width: 10
+[2026-07-06 11:51:02.653] [OPDB] [info] [LEFYML] Processing block: m_grating_coupler_elliptical_lumerical_0
+[2026-07-06 11:51:02.653] [OPDB] [info] [LEFYML] Block 'm_grating_coupler_elliptical_lumerical_0' type: cell
+[2026-07-06 11:51:02.653] [OPDB] [info] [LEFYML] Block 'm_grating_coupler_elliptical_lumerical_0' bbox:
+[2026-07-06 11:51:02.653] [OPDB] [info] [LEFYML] bbox [0.000000,0.000000]
+[2026-07-06 11:51:02.653] [OPDB] [info] [LEFYML] bbox [27.164000,0.000000]
+[2026-07-06 11:51:02.653] [OPDB] [info] [LEFYML] bbox [27.164000,25.746000]
+[2026-07-06 11:51:02.653] [OPDB] [info] [LEFYML] bbox [0.000000,25.746000]
+[2026-07-06 11:51:02.653] [OPDB] [info] [LEFYML] Block 'm_grating_coupler_elliptical_lumerical_0' doc: LiDAR native macro converted for PIC-DB smoke tests.
+[2026-07-06 11:51:02.653] [OPDB] [info] [LEFYML] Processing pin: o1
+[2026-07-06 11:51:02.653] [OPDB] [info] [LEFYML] Pin 'o1' doc: null
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Pin 'o1' width: 0.500000
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Pin 'o1' xsection: strip
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Pin 'o1' position: (0.000000, 12.873000), rotation: 180.000000
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Added pin: o1 to instance: m_grating_coupler_elliptical_lumerical_0
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Added block as instance: m_grating_coupler_elliptical_lumerical_0
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Processing block: m_ring_double_pn_1
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Block 'm_ring_double_pn_1' type: cell
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Block 'm_ring_double_pn_1' bbox:
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] bbox [0.000000,0.000000]
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] bbox [14.852000,0.000000]
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] bbox [14.852000,18.100000]
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] bbox [0.000000,18.100000]
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Block 'm_ring_double_pn_1' doc: LiDAR native macro converted for PIC-DB smoke tests.
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Processing pin: o1
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Pin 'o1' doc: null
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Pin 'o1' width: 0.500000
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Pin 'o1' xsection: strip
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Pin 'o1' position: (3.739000, 3.250000), rotation: 180.000000
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Added pin: o1 to instance: m_ring_double_pn_1
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Processing pin: o2
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Pin 'o2' doc: null
+[2026-07-06 11:51:02.654] [OPDB] [info] [LEFYML] Pin 'o2' width: 0.500000
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Pin 'o2' xsection: strip
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Pin 'o2' position: (11.112000, 3.250000), rotation: 0.000000
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Added pin: o2 to instance: m_ring_double_pn_1
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Processing pin: o3
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Pin 'o3' doc: null
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Pin 'o3' width: 0.500000
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Pin 'o3' xsection: strip
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Pin 'o3' position: (11.112000, 14.850000), rotation: 0.000000
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Added pin: o3 to instance: m_ring_double_pn_1
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Processing pin: o4
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Pin 'o4' doc: null
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Pin 'o4' width: 0.500000
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Pin 'o4' xsection: strip
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Pin 'o4' position: (3.739000, 14.850000), rotation: 180.000000
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Added pin: o4 to instance: m_ring_double_pn_1
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Added block as instance: m_ring_double_pn_1
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Processing block: m_mmi1x2_2
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Block 'm_mmi1x2_2' type: cell
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] Block 'm_mmi1x2_2' bbox:
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] bbox [0.000000,0.000000]
+[2026-07-06 11:51:02.655] [OPDB] [info] [LEFYML] bbox [25.500000,0.000000]
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] bbox [25.500000,2.500000]
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] bbox [0.000000,2.500000]
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Block 'm_mmi1x2_2' doc: LiDAR native macro converted for PIC-DB smoke tests.
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Processing pin: o1
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Pin 'o1' doc: null
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Pin 'o1' width: 0.500000
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Pin 'o1' xsection: strip
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Pin 'o1' position: (0.000000, 1.250000), rotation: 180.000000
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Added pin: o1 to instance: m_mmi1x2_2
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Processing pin: o2
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Pin 'o2' doc: null
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Pin 'o2' width: 0.500000
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Pin 'o2' xsection: strip
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Pin 'o2' position: (25.500000, 1.875000), rotation: 0.000000
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Added pin: o2 to instance: m_mmi1x2_2
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Processing pin: o3
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Pin 'o3' doc: null
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Pin 'o3' width: 0.500000
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Pin 'o3' xsection: strip
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Pin 'o3' position: (25.500000, 0.625000), rotation: 0.000000
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Added pin: o3 to instance: m_mmi1x2_2
+[2026-07-06 11:51:02.656] [OPDB] [info] [LEFYML] Added block as instance: m_mmi1x2_2
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Processing block: m_ring_single_pn_43ee7534_3
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Block 'm_ring_single_pn_43ee7534_3' type: cell
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Block 'm_ring_single_pn_43ee7534_3' bbox:
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] bbox [0.000000,0.000000]
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] bbox [16.490000,0.000000]
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] bbox [16.490000,15.894000]
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] bbox [0.000000,15.894000]
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Block 'm_ring_single_pn_43ee7534_3' doc: LiDAR native macro converted for PIC-DB smoke tests.
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Processing pin: o1
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Pin 'o1' doc: null
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Pin 'o1' width: 0.500000
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Pin 'o1' xsection: strip
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Pin 'o1' position: (4.872000, 3.250000), rotation: 180.000000
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Added pin: o1 to instance: m_ring_single_pn_43ee7534_3
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Processing pin: o2
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Pin 'o2' doc: null
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Pin 'o2' width: 0.500000
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Pin 'o2' xsection: strip
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Pin 'o2' position: (11.628000, 3.250000), rotation: 0.000000
+[2026-07-06 11:51:02.657] [OPDB] [info] [LEFYML] Added pin: o2 to instance: m_ring_single_pn_43ee7534_3
+[2026-07-06 11:51:02.658] [OPDB] [info] [LEFYML] Added block as instance: m_ring_single_pn_43ee7534_3
+[2026-07-06 11:51:02.658] [OPDB] [info] [YML] Loading YAML file: D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\converted\converted_def.yml
+[2026-07-06 11:51:02.689] [OPDB] [info] [DEFYML] Design name: mrr_weight_bank_8x8
+[2026-07-06 11:51:02.689] [OPDB] [info] [DEFYML] Bounding box:
+[2026-07-06 11:51:02.689] [OPDB] [info] [DEFYML]  [0, 0]
+[2026-07-06 11:51:02.689] [OPDB] [info] [DEFYML]  [1600, 1600]
+[2026-07-06 11:51:02.689] [OPDB] [info] [DEFYML] Added cell: gc_array_in_gc_0 (Total cells: 1)
+[2026-07-06 11:51:02.689] [OPDB] [info] [DEFYML] Added cell: gc_array_in_gc_1 (Total cells: 2)
+[2026-07-06 11:51:02.689] [OPDB] [info] [DEFYML] Added cell: gc_array_in_gc_2 (Total cells: 3)
+[2026-07-06 11:51:02.689] [OPDB] [info] [DEFYML] Added cell: gc_array_in_gc_3 (Total cells: 4)
+[2026-07-06 11:51:02.689] [OPDB] [info] [DEFYML] Added cell: gc_array_in_gc_4 (Total cells: 5)
+[2026-07-06 11:51:02.689] [OPDB] [info] [DEFYML] Added cell: gc_array_in_gc_5 (Total cells: 6)
+[2026-07-06 11:51:02.689] [OPDB] [info] [DEFYML] Added cell: gc_array_in_gc_6 (Total cells: 7)
+[2026-07-06 11:51:02.689] [OPDB] [info] [DEFYML] Added cell: gc_array_in_gc_7 (Total cells: 8)
+[2026-07-06 11:51:02.689] [OPDB] [info] [DEFYML] Added cell: mod_array_in_mrr_0 (Total cells: 9)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: mod_array_in_mrr_1 (Total cells: 10)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: mod_array_in_mrr_2 (Total cells: 11)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: mod_array_in_mrr_3 (Total cells: 12)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: mod_array_in_mrr_4 (Total cells: 13)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: mod_array_in_mrr_5 (Total cells: 14)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: mod_array_in_mrr_6 (Total cells: 15)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: mod_array_in_mrr_7 (Total cells: 16)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: fanout_yb_0_0 (Total cells: 17)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: fanout_yb_1_0 (Total cells: 18)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: fanout_yb_1_1 (Total cells: 19)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: fanout_yb_2_0 (Total cells: 20)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: fanout_yb_2_1 (Total cells: 21)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: fanout_yb_2_2 (Total cells: 22)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: fanout_yb_2_3 (Total cells: 23)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: mrr_array_0_mrr_0 (Total cells: 24)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: mrr_array_0_mrr_1 (Total cells: 25)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: mrr_array_0_mrr_2 (Total cells: 26)
+[2026-07-06 11:51:02.690] [OPDB] [info] [DEFYML] Added cell: mrr_array_0_mrr_3 (Total cells: 27)
+[2026-07-06 11:51:02.691] [OPDB] [info] [DEFYML] Added cell: mrr_array_0_mrr_4 (Total cells: 28)
+[2026-07-06 11:51:02.691] [OPDB] [info] [DEFYML] Added cell: mrr_array_0_mrr_5 (Total cells: 29)
+[2026-07-06 11:51:02.691] [OPDB] [info] [DEFYML] Added cell: mrr_array_0_mrr_6 (Total cells: 30)
+[2026-07-06 11:51:02.691] [OPDB] [info] [DEFYML] Added cell: mrr_array_0_mrr_7 (Total cells: 31)
+[2026-07-06 11:51:02.691] [OPDB] [info] [DEFYML] Added cell: mrr_array_1_mrr_0 (Total cells: 32)
+[2026-07-06 11:51:02.691] [OPDB] [info] [DEFYML] Added cell: mrr_array_1_mrr_1 (Total cells: 33)
+[2026-07-06 11:51:02.691] [OPDB] [info] [DEFYML] Added cell: mrr_array_1_mrr_2 (Total cells: 34)
+[2026-07-06 11:51:02.691] [OPDB] [info] [DEFYML] Added cell: mrr_array_1_mrr_3 (Total cells: 35)
+[2026-07-06 11:51:02.691] [OPDB] [info] [DEFYML] Added cell: mrr_array_1_mrr_4 (Total cells: 36)
+[2026-07-06 11:51:02.691] [OPDB] [info] [DEFYML] Added cell: mrr_array_1_mrr_5 (Total cells: 37)
+[2026-07-06 11:51:02.691] [OPDB] [info] [DEFYML] Added cell: mrr_array_1_mrr_6 (Total cells: 38)
+[2026-07-06 11:51:02.691] [OPDB] [info] [DEFYML] Added cell: mrr_array_1_mrr_7 (Total cells: 39)
+[2026-07-06 11:51:02.691] [OPDB] [info] [DEFYML] Added cell: mrr_array_2_mrr_0 (Total cells: 40)
+[2026-07-06 11:51:02.691] [OPDB] [info] [DEFYML] Added cell: mrr_array_2_mrr_1 (Total cells: 41)
+[2026-07-06 11:51:02.692] [OPDB] [info] [DEFYML] Added cell: mrr_array_2_mrr_2 (Total cells: 42)
+[2026-07-06 11:51:02.692] [OPDB] [info] [DEFYML] Added cell: mrr_array_2_mrr_3 (Total cells: 43)
+[2026-07-06 11:51:02.692] [OPDB] [info] [DEFYML] Added cell: mrr_array_2_mrr_4 (Total cells: 44)
+[2026-07-06 11:51:02.692] [OPDB] [info] [DEFYML] Added cell: mrr_array_2_mrr_5 (Total cells: 45)
+[2026-07-06 11:51:02.692] [OPDB] [info] [DEFYML] Added cell: mrr_array_2_mrr_6 (Total cells: 46)
+[2026-07-06 11:51:02.692] [OPDB] [info] [DEFYML] Added cell: mrr_array_2_mrr_7 (Total cells: 47)
+[2026-07-06 11:51:02.692] [OPDB] [info] [DEFYML] Added cell: mrr_array_3_mrr_0 (Total cells: 48)
+[2026-07-06 11:51:02.692] [OPDB] [info] [DEFYML] Added cell: mrr_array_3_mrr_1 (Total cells: 49)
+[2026-07-06 11:51:02.692] [OPDB] [info] [DEFYML] Added cell: mrr_array_3_mrr_2 (Total cells: 50)
+[2026-07-06 11:51:02.692] [OPDB] [info] [DEFYML] Added cell: mrr_array_3_mrr_3 (Total cells: 51)
+[2026-07-06 11:51:02.693] [OPDB] [info] [DEFYML] Added cell: mrr_array_3_mrr_4 (Total cells: 52)
+[2026-07-06 11:51:02.693] [OPDB] [info] [DEFYML] Added cell: mrr_array_3_mrr_5 (Total cells: 53)
+[2026-07-06 11:51:02.693] [OPDB] [info] [DEFYML] Added cell: mrr_array_3_mrr_6 (Total cells: 54)
+[2026-07-06 11:51:02.693] [OPDB] [info] [DEFYML] Added cell: mrr_array_3_mrr_7 (Total cells: 55)
+[2026-07-06 11:51:02.693] [OPDB] [info] [DEFYML] Added cell: mrr_array_4_mrr_0 (Total cells: 56)
+[2026-07-06 11:51:02.693] [OPDB] [info] [DEFYML] Added cell: mrr_array_4_mrr_1 (Total cells: 57)
+[2026-07-06 11:51:02.693] [OPDB] [info] [DEFYML] Added cell: mrr_array_4_mrr_2 (Total cells: 58)
+[2026-07-06 11:51:02.693] [OPDB] [info] [DEFYML] Added cell: mrr_array_4_mrr_3 (Total cells: 59)
+[2026-07-06 11:51:02.693] [OPDB] [info] [DEFYML] Added cell: mrr_array_4_mrr_4 (Total cells: 60)
+[2026-07-06 11:51:02.693] [OPDB] [info] [DEFYML] Added cell: mrr_array_4_mrr_5 (Total cells: 61)
+[2026-07-06 11:51:02.693] [OPDB] [info] [DEFYML] Added cell: mrr_array_4_mrr_6 (Total cells: 62)
+[2026-07-06 11:51:02.693] [OPDB] [info] [DEFYML] Added cell: mrr_array_4_mrr_7 (Total cells: 63)
+[2026-07-06 11:51:02.694] [OPDB] [info] [DEFYML] Added cell: mrr_array_5_mrr_0 (Total cells: 64)
+[2026-07-06 11:51:02.694] [OPDB] [info] [DEFYML] Added cell: mrr_array_5_mrr_1 (Total cells: 65)
+[2026-07-06 11:51:02.694] [OPDB] [info] [DEFYML] Added cell: mrr_array_5_mrr_2 (Total cells: 66)
+[2026-07-06 11:51:02.694] [OPDB] [info] [DEFYML] Added cell: mrr_array_5_mrr_3 (Total cells: 67)
+[2026-07-06 11:51:02.694] [OPDB] [info] [DEFYML] Added cell: mrr_array_5_mrr_4 (Total cells: 68)
+[2026-07-06 11:51:02.694] [OPDB] [info] [DEFYML] Added cell: mrr_array_5_mrr_5 (Total cells: 69)
+[2026-07-06 11:51:02.694] [OPDB] [info] [DEFYML] Added cell: mrr_array_5_mrr_6 (Total cells: 70)
+[2026-07-06 11:51:02.694] [OPDB] [info] [DEFYML] Added cell: mrr_array_5_mrr_7 (Total cells: 71)
+[2026-07-06 11:51:02.694] [OPDB] [info] [DEFYML] Added cell: mrr_array_6_mrr_0 (Total cells: 72)
+[2026-07-06 11:51:02.694] [OPDB] [info] [DEFYML] Added cell: mrr_array_6_mrr_1 (Total cells: 73)
+[2026-07-06 11:51:02.694] [OPDB] [info] [DEFYML] Added cell: mrr_array_6_mrr_2 (Total cells: 74)
+[2026-07-06 11:51:02.694] [OPDB] [info] [DEFYML] Added cell: mrr_array_6_mrr_3 (Total cells: 75)
+[2026-07-06 11:51:02.694] [OPDB] [info] [DEFYML] Added cell: mrr_array_6_mrr_4 (Total cells: 76)
+[2026-07-06 11:51:02.695] [OPDB] [info] [DEFYML] Added cell: mrr_array_6_mrr_5 (Total cells: 77)
+[2026-07-06 11:51:02.695] [OPDB] [info] [DEFYML] Added cell: mrr_array_6_mrr_6 (Total cells: 78)
+[2026-07-06 11:51:02.695] [OPDB] [info] [DEFYML] Added cell: mrr_array_6_mrr_7 (Total cells: 79)
+[2026-07-06 11:51:02.695] [OPDB] [info] [DEFYML] Added cell: mrr_array_7_mrr_0 (Total cells: 80)
+[2026-07-06 11:51:02.695] [OPDB] [info] [DEFYML] Added cell: mrr_array_7_mrr_1 (Total cells: 81)
+[2026-07-06 11:51:02.695] [OPDB] [info] [DEFYML] Added cell: mrr_array_7_mrr_2 (Total cells: 82)
+[2026-07-06 11:51:02.695] [OPDB] [info] [DEFYML] Added cell: mrr_array_7_mrr_3 (Total cells: 83)
+[2026-07-06 11:51:02.695] [OPDB] [info] [DEFYML] Added cell: mrr_array_7_mrr_4 (Total cells: 84)
+[2026-07-06 11:51:02.695] [OPDB] [info] [DEFYML] Added cell: mrr_array_7_mrr_5 (Total cells: 85)
+[2026-07-06 11:51:02.695] [OPDB] [info] [DEFYML] Added cell: mrr_array_7_mrr_6 (Total cells: 86)
+[2026-07-06 11:51:02.695] [OPDB] [info] [DEFYML] Added cell: mrr_array_7_mrr_7 (Total cells: 87)
+[2026-07-06 11:51:02.695] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_0 (Total cells: 88)
+[2026-07-06 11:51:02.695] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_1 (Total cells: 89)
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_2 (Total cells: 90)
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_3 (Total cells: 91)
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_4 (Total cells: 92)
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_5 (Total cells: 93)
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_6 (Total cells: 94)
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_7 (Total cells: 95)
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed gc_array_in_gc_0 at position (13.582, 462.873) with rotation 0, mirror true, and status FIXED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed gc_array_in_gc_1 at position (13.582, 562.873) with rotation 0, mirror true, and status FIXED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed gc_array_in_gc_2 at position (13.582, 662.873) with rotation 0, mirror true, and status FIXED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed gc_array_in_gc_3 at position (13.582, 762.873) with rotation 0, mirror true, and status FIXED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed gc_array_in_gc_4 at position (13.582, 862.873) with rotation 0, mirror true, and status FIXED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed gc_array_in_gc_5 at position (13.582, 962.873) with rotation 0, mirror true, and status FIXED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed gc_array_in_gc_6 at position (13.582, 1062.873) with rotation 0, mirror true, and status FIXED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed gc_array_in_gc_7 at position (13.582, 1162.873) with rotation 0, mirror true, and status FIXED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed mod_array_in_mrr_0 at position (96.214, 457.426) with rotation 90, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed mod_array_in_mrr_1 at position (96.214, 557.426) with rotation 90, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed mod_array_in_mrr_2 at position (96.214, 657.426) with rotation 90, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed mod_array_in_mrr_3 at position (96.214, 757.426) with rotation 90, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed mod_array_in_mrr_4 at position (96.214, 857.426) with rotation 90, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed mod_array_in_mrr_5 at position (96.214, 957.426) with rotation 90, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed mod_array_in_mrr_6 at position (96.214, 1057.426) with rotation 90, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed mod_array_in_mrr_7 at position (96.214, 1157.426) with rotation 90, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed fanout_yb_0_0 at position (144.766, 801.25) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed fanout_yb_1_0 at position (174.766, 751.25) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed fanout_yb_1_1 at position (174.766, 851.25) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed fanout_yb_2_0 at position (204.766, 651.25) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed fanout_yb_2_1 at position (204.766, 751.25) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed fanout_yb_2_2 at position (204.766, 851.25) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed fanout_yb_2_3 at position (204.766, 951.25) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.696] [OPDB] [info] [DEFYML] Placed mrr_array_0_mrr_0 at position (255.761, 457.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_0_mrr_1 at position (255.761, 557.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_0_mrr_2 at position (255.761, 657.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_0_mrr_3 at position (255.761, 757.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_0_mrr_4 at position (255.761, 857.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_0_mrr_5 at position (255.761, 957.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_0_mrr_6 at position (255.761, 1057.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_0_mrr_7 at position (255.761, 1157.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_1_mrr_0 at position (300.611, 457.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_1_mrr_1 at position (300.611, 557.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_1_mrr_2 at position (300.611, 657.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_1_mrr_3 at position (300.611, 757.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_1_mrr_4 at position (300.611, 857.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_1_mrr_5 at position (300.611, 957.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_1_mrr_6 at position (300.611, 1057.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_1_mrr_7 at position (300.611, 1157.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_2_mrr_0 at position (345.462, 457.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_2_mrr_1 at position (345.462, 557.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_2_mrr_2 at position (345.462, 657.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_2_mrr_3 at position (345.462, 757.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_2_mrr_4 at position (345.462, 857.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_2_mrr_5 at position (345.462, 957.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_2_mrr_6 at position (345.462, 1057.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_2_mrr_7 at position (345.462, 1157.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_3_mrr_0 at position (390.312, 457.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_3_mrr_1 at position (390.312, 557.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_3_mrr_2 at position (390.312, 657.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_3_mrr_3 at position (390.312, 757.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_3_mrr_4 at position (390.312, 857.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_3_mrr_5 at position (390.312, 957.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_3_mrr_6 at position (390.312, 1057.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_3_mrr_7 at position (390.312, 1157.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_4_mrr_0 at position (435.163, 457.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_4_mrr_1 at position (435.163, 557.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_4_mrr_2 at position (435.163, 657.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_4_mrr_3 at position (435.163, 757.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_4_mrr_4 at position (435.163, 857.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.697] [OPDB] [info] [DEFYML] Placed mrr_array_4_mrr_5 at position (435.163, 957.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_4_mrr_6 at position (435.163, 1057.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_4_mrr_7 at position (435.163, 1157.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_5_mrr_0 at position (480.013, 457.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_5_mrr_1 at position (480.013, 557.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_5_mrr_2 at position (480.013, 657.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_5_mrr_3 at position (480.013, 757.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_5_mrr_4 at position (480.013, 857.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_5_mrr_5 at position (480.013, 957.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_5_mrr_6 at position (480.013, 1057.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_5_mrr_7 at position (480.013, 1157.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_6_mrr_0 at position (524.864, 457.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_6_mrr_1 at position (524.864, 557.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_6_mrr_2 at position (524.864, 657.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_6_mrr_3 at position (524.864, 757.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_6_mrr_4 at position (524.864, 857.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_6_mrr_5 at position (524.864, 957.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_6_mrr_6 at position (524.864, 1057.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_6_mrr_7 at position (524.864, 1157.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_7_mrr_0 at position (569.714, 457.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_7_mrr_1 at position (569.714, 557.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_7_mrr_2 at position (569.714, 657.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_7_mrr_3 at position (569.714, 757.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_7_mrr_4 at position (569.714, 857.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_7_mrr_5 at position (569.714, 957.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_7_mrr_6 at position (569.714, 1057.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed mrr_array_7_mrr_7 at position (569.714, 1157.947) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_0 at position (1586.4180000000001, 462.873) with rotation 0, mirror false, and status FIXED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_1 at position (1586.4180000000001, 562.873) with rotation 0, mirror false, and status FIXED
+[2026-07-06 11:51:02.698] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_2 at position (1586.4180000000001, 662.873) with rotation 0, mirror false, and status FIXED
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_3 at position (1586.4180000000001, 762.873) with rotation 0, mirror false, and status FIXED
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_4 at position (1586.4180000000001, 862.873) with rotation 0, mirror false, and status FIXED
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_5 at position (1586.4180000000001, 962.873) with rotation 0, mirror false, and status FIXED
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_6 at position (1586.4180000000001, 1062.873) with rotation 0, mirror false, and status FIXED
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_7 at position (1586.4180000000001, 1162.873) with rotation 0, mirror false, and status FIXED
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_0: fanout_yb_0_0:o2 to fanout_yb_1_0:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_1: fanout_yb_0_0:o3 to fanout_yb_1_1:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_2: fanout_yb_1_0:o2 to fanout_yb_2_0:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_3: fanout_yb_1_0:o3 to fanout_yb_2_1:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_4: fanout_yb_1_1:o2 to fanout_yb_2_2:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_5: fanout_yb_1_1:o3 to fanout_yb_2_3:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_6: gc_array_in_gc_0:o1 to mod_array_in_mrr_0:o4
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_7: gc_array_in_gc_1:o1 to mod_array_in_mrr_1:o4
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_8: gc_array_in_gc_2:o1 to mod_array_in_mrr_2:o4
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_9: gc_array_in_gc_3:o1 to mod_array_in_mrr_3:o4
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_10: gc_array_in_gc_4:o1 to mod_array_in_mrr_4:o4
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_11: gc_array_in_gc_5:o1 to mod_array_in_mrr_5:o4
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_12: gc_array_in_gc_6:o1 to mod_array_in_mrr_6:o4
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_13: gc_array_in_gc_7:o1 to mod_array_in_mrr_7:o4
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_14: mod_array_in_mrr_0:o2 to mod_array_in_mrr_1:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_15: mod_array_in_mrr_1:o2 to mod_array_in_mrr_2:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_16: mod_array_in_mrr_2:o2 to mod_array_in_mrr_3:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_17: mod_array_in_mrr_3:o2 to mod_array_in_mrr_4:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_18: mod_array_in_mrr_4:o2 to mod_array_in_mrr_5:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_19: mod_array_in_mrr_5:o2 to mod_array_in_mrr_6:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_20: mod_array_in_mrr_6:o2 to mod_array_in_mrr_7:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_21: mod_array_in_mrr_0:o1 to fanout_yb_0_0:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_22: fanout_yb_2_0:o2 to mrr_array_0_mrr_0:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_23: fanout_yb_2_0:o3 to mrr_array_0_mrr_1:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_24: fanout_yb_2_1:o2 to mrr_array_0_mrr_2:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_25: fanout_yb_2_1:o3 to mrr_array_0_mrr_3:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_26: fanout_yb_2_2:o2 to mrr_array_0_mrr_4:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_27: fanout_yb_2_2:o3 to mrr_array_0_mrr_5:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_28: fanout_yb_2_3:o2 to mrr_array_0_mrr_6:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_29: fanout_yb_2_3:o3 to mrr_array_0_mrr_7:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_30: mrr_array_0_mrr_0:o2 to mrr_array_1_mrr_0:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_31: mrr_array_0_mrr_1:o2 to mrr_array_1_mrr_1:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_32: mrr_array_0_mrr_2:o2 to mrr_array_1_mrr_2:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_33: mrr_array_0_mrr_3:o2 to mrr_array_1_mrr_3:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_34: mrr_array_0_mrr_4:o2 to mrr_array_1_mrr_4:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_35: mrr_array_0_mrr_5:o2 to mrr_array_1_mrr_5:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_36: mrr_array_0_mrr_6:o2 to mrr_array_1_mrr_6:o1
+[2026-07-06 11:51:02.699] [OPDB] [info] [DEFYML] Connected net n_37: mrr_array_0_mrr_7:o2 to mrr_array_1_mrr_7:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_38: mrr_array_1_mrr_0:o2 to mrr_array_2_mrr_0:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_39: mrr_array_1_mrr_1:o2 to mrr_array_2_mrr_1:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_40: mrr_array_1_mrr_2:o2 to mrr_array_2_mrr_2:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_41: mrr_array_1_mrr_3:o2 to mrr_array_2_mrr_3:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_42: mrr_array_1_mrr_4:o2 to mrr_array_2_mrr_4:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_43: mrr_array_1_mrr_5:o2 to mrr_array_2_mrr_5:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_44: mrr_array_1_mrr_6:o2 to mrr_array_2_mrr_6:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_45: mrr_array_1_mrr_7:o2 to mrr_array_2_mrr_7:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_46: mrr_array_2_mrr_0:o2 to mrr_array_3_mrr_0:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_47: mrr_array_2_mrr_1:o2 to mrr_array_3_mrr_1:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_48: mrr_array_2_mrr_2:o2 to mrr_array_3_mrr_2:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_49: mrr_array_2_mrr_3:o2 to mrr_array_3_mrr_3:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_50: mrr_array_2_mrr_4:o2 to mrr_array_3_mrr_4:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_51: mrr_array_2_mrr_5:o2 to mrr_array_3_mrr_5:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_52: mrr_array_2_mrr_6:o2 to mrr_array_3_mrr_6:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_53: mrr_array_2_mrr_7:o2 to mrr_array_3_mrr_7:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_54: mrr_array_3_mrr_0:o2 to mrr_array_4_mrr_0:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_55: mrr_array_3_mrr_1:o2 to mrr_array_4_mrr_1:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_56: mrr_array_3_mrr_2:o2 to mrr_array_4_mrr_2:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_57: mrr_array_3_mrr_3:o2 to mrr_array_4_mrr_3:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_58: mrr_array_3_mrr_4:o2 to mrr_array_4_mrr_4:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_59: mrr_array_3_mrr_5:o2 to mrr_array_4_mrr_5:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_60: mrr_array_3_mrr_6:o2 to mrr_array_4_mrr_6:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_61: mrr_array_3_mrr_7:o2 to mrr_array_4_mrr_7:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_62: mrr_array_4_mrr_0:o2 to mrr_array_5_mrr_0:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_63: mrr_array_4_mrr_1:o2 to mrr_array_5_mrr_1:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_64: mrr_array_4_mrr_2:o2 to mrr_array_5_mrr_2:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_65: mrr_array_4_mrr_3:o2 to mrr_array_5_mrr_3:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_66: mrr_array_4_mrr_4:o2 to mrr_array_5_mrr_4:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_67: mrr_array_4_mrr_5:o2 to mrr_array_5_mrr_5:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_68: mrr_array_4_mrr_6:o2 to mrr_array_5_mrr_6:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_69: mrr_array_4_mrr_7:o2 to mrr_array_5_mrr_7:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_70: mrr_array_5_mrr_0:o2 to mrr_array_6_mrr_0:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_71: mrr_array_5_mrr_1:o2 to mrr_array_6_mrr_1:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_72: mrr_array_5_mrr_2:o2 to mrr_array_6_mrr_2:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_73: mrr_array_5_mrr_3:o2 to mrr_array_6_mrr_3:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_74: mrr_array_5_mrr_4:o2 to mrr_array_6_mrr_4:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_75: mrr_array_5_mrr_5:o2 to mrr_array_6_mrr_5:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_76: mrr_array_5_mrr_6:o2 to mrr_array_6_mrr_6:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_77: mrr_array_5_mrr_7:o2 to mrr_array_6_mrr_7:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_78: mrr_array_6_mrr_0:o2 to mrr_array_7_mrr_0:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_79: mrr_array_6_mrr_1:o2 to mrr_array_7_mrr_1:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_80: mrr_array_6_mrr_2:o2 to mrr_array_7_mrr_2:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_81: mrr_array_6_mrr_3:o2 to mrr_array_7_mrr_3:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_82: mrr_array_6_mrr_4:o2 to mrr_array_7_mrr_4:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_83: mrr_array_6_mrr_5:o2 to mrr_array_7_mrr_5:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_84: mrr_array_6_mrr_6:o2 to mrr_array_7_mrr_6:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_85: mrr_array_6_mrr_7:o2 to mrr_array_7_mrr_7:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_86: mrr_array_7_mrr_0:o2 to gc_array_out_gc_0:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_87: mrr_array_7_mrr_1:o2 to gc_array_out_gc_1:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_88: mrr_array_7_mrr_2:o2 to gc_array_out_gc_2:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_89: mrr_array_7_mrr_3:o2 to gc_array_out_gc_3:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_90: mrr_array_7_mrr_4:o2 to gc_array_out_gc_4:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_91: mrr_array_7_mrr_5:o2 to gc_array_out_gc_5:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_92: mrr_array_7_mrr_6:o2 to gc_array_out_gc_6:o1
+[2026-07-06 11:51:02.700] [OPDB] [info] [DEFYML] Connected net n_93: mrr_array_7_mrr_7:o2 to gc_array_out_gc_7:o1
+timing_lidar_convert_s=4.439286
+timing_cpp_load_design_s=0.060976
+timing_cpp_runtime_init_s=0.020769
+timing_cpp_mfot_plan_s=0.046323
+mfot_enabled=1
+mfot_nets=94
+mfot_corridor_cells=0
+mfot_free_energy=-29056.357069
+[2026-07-06 11:51:03.961] [OPDB] [info] [DEFYML] Writing design name: mrr_weight_bank_8x8
+[2026-07-06 11:51:03.961] [OPDB] [info] [DEFYML] Writing bounding box points:
+[2026-07-06 11:51:03.961] [OPDB] [info]   [0, 0]
+[2026-07-06 11:51:03.961] [OPDB] [info]   [1600, 1600]
+[2026-07-06 11:51:03.971] [OPDB] [info] [DEFYML] Writing instances num: 101 cells, 106 segments
+[2026-07-06 11:51:03.971] [OPDB] [info] [DEFYML] Writing placements num: 101 cells
+[2026-07-06 11:51:03.974] [OPDB] [info] [DEFYML] Writing connections num: 106
+[2026-07-06 11:51:03.975] [OPDB] [info] [DEFYML] DefYml data written to file: D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\cpp\routed_def.yml
+timing_cpp_route_core_s=1.210653
+timing_cpp_write_reports_s=0.025678
+timing_cpp_writeback_s=0.003504
+timing_cpp_write_def_s=0.014290
+timing_cpp_db_drc_s=0.013939
+route_success=true
+routed_nets=94
+waveguide_segments=106
+skipped_nets=0
+postprocess_invalid_accesses=0
+postprocess_rejected_nets=0
+flow_summary=D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\cpp\lidar_grid_route_flow_summary.txt
+route_result=D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\cpp\lidar_route_result.yml
+routed_def=D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\cpp\routed_def.yml
+db_drc_summary=D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\cpp\db_drc_summary.txt
+db_drc_clean=false
+timing_cpp_native_flow_s=1.350785
+cmd=D:\conda\python.exe "D:/xprogram/PIC-DB-main/PIC-DB-main/tools/pr_lidar_native/scripts\render_route_result_gds.py" "D:\xprogram\pic_agentic\Agentic-PIC-PD\third-party\LiDAR\src" "D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\cpp\lidar_route_result.yml" "D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp.gds" --base-lidar-yml "D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\converted\converted_lidar.yml" --skip-invalid-access --skip-abnormal-nets --invalid-access-report "D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\cpp\render_invalid_access.txt"
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_in_gc_0 0.0
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_in_gc_1 0.0
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_in_gc_2 0.0
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_in_gc_3 0.0
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_in_gc_4 0.0
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_in_gc_5 0.0
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_in_gc_6 0.0
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_in_gc_7 0.0
+==============
+m_ring_double_pn_1 mod_array_in_mrr_0 0.0
+==============
+m_ring_double_pn_1 mod_array_in_mrr_1 0.0
+==============
+m_ring_double_pn_1 mod_array_in_mrr_2 0.0
+==============
+m_ring_double_pn_1 mod_array_in_mrr_3 0.0
+==============
+m_ring_double_pn_1 mod_array_in_mrr_4 0.0
+==============
+m_ring_double_pn_1 mod_array_in_mrr_5 0.0
+==============
+m_ring_double_pn_1 mod_array_in_mrr_6 0.0
+==============
+m_ring_double_pn_1 mod_array_in_mrr_7 0.0
+==============
+m_mmi1x2_2 fanout_yb_0_0 0.0
+==============
+m_mmi1x2_2 fanout_yb_1_0 0.0
+==============
+m_mmi1x2_2 fanout_yb_1_1 0.0
+==============
+m_mmi1x2_2 fanout_yb_2_0 0.0
+==============
+m_mmi1x2_2 fanout_yb_2_1 0.0
+==============
+m_mmi1x2_2 fanout_yb_2_2 0.0
+==============
+m_mmi1x2_2 fanout_yb_2_3 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_0_mrr_0 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_0_mrr_1 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_0_mrr_2 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_0_mrr_3 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_0_mrr_4 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_0_mrr_5 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_0_mrr_6 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_0_mrr_7 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_1_mrr_0 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_1_mrr_1 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_1_mrr_2 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_1_mrr_3 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_1_mrr_4 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_1_mrr_5 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_1_mrr_6 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_1_mrr_7 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_2_mrr_0 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_2_mrr_1 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_2_mrr_2 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_2_mrr_3 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_2_mrr_4 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_2_mrr_5 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_2_mrr_6 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_2_mrr_7 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_3_mrr_0 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_3_mrr_1 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_3_mrr_2 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_3_mrr_3 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_3_mrr_4 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_3_mrr_5 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_3_mrr_6 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_3_mrr_7 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_4_mrr_0 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_4_mrr_1 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_4_mrr_2 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_4_mrr_3 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_4_mrr_4 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_4_mrr_5 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_4_mrr_6 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_4_mrr_7 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_5_mrr_0 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_5_mrr_1 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_5_mrr_2 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_5_mrr_3 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_5_mrr_4 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_5_mrr_5 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_5_mrr_6 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_5_mrr_7 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_6_mrr_0 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_6_mrr_1 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_6_mrr_2 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_6_mrr_3 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_6_mrr_4 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_6_mrr_5 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_6_mrr_6 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_6_mrr_7 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_7_mrr_0 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_7_mrr_1 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_7_mrr_2 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_7_mrr_3 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_7_mrr_4 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_7_mrr_5 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_7_mrr_6 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_7_mrr_7 0.0
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_out_gc_0 0.0
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_out_gc_1 0.0
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_out_gc_2 0.0
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_out_gc_3 0.0
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_out_gc_4 0.0
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_out_gc_5 0.0
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_out_gc_6 0.0
+==============
+m_grating_coupler_elliptical_lumerical_0 gc_array_out_gc_7 0.0
+2026-07-06 11:51:14.025 | WARNING  | kfactory.kcell:show:8797 - Could not connect to klive server
+routes=105
+access_waveguides=206
+invalid_access_waveguides=0
+skipped_abnormal_nets=0
+crossings=6
+length=13939.585534
+legacy_layer44_via_arrays=0
+gds=D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp.gds
+timing_lidar_render_s=10.887468
+input_lidar_yml=D:\xprogram\PIC-DB-main\PIC-DB-main\lidar_c_benchmarks\picroute\mrr_weight_bank_8x8\mrr_weight_bank_8x8.yml
+lidar_src=D:\xprogram\pic_agentic\Agentic-PIC-PD\third-party\LiDAR\src
+output_gds=D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp.gds
+flow_dir=D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow
+converted_lef=D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\converted\converted_lef.yml
+converted_def=D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\converted\converted_def.yml
+converted_lidar=D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\converted\converted_lidar.yml
+render_invalid_access_report=D:\xprogram\lidar_c_inovation_2\results\mfot_only_control_fullcase_20260706_115037\mrr_weight_bank_8x8_cpp_picdb_flow\cpp\render_invalid_access.txt
+timing_lidar_full_flow_s=16.692146

@@ -38,16 +38,6 @@ void printUsage()
       << " [--deterministic-order]"
       << " [--no-preserve-net-names]"
       << " [--no-snap-near-integer]"
-      << " [--disable-mfot-routing]"
-      << " [--mfot-iterations=<int>]"
-      << " [--mfot-grid-stride=<int>]"
-      << " [--mfot-max-samples-per-net=<int>]"
-      << " [--mfot-corridor-radius=<int>]"
-      << " [--mfot-epsilon=<float>]"
-      << " [--mfot-lambda-congestion=<float>]"
-      << " [--mfot-outside-penalty=<float>]"
-      << " [--mfot-search-weight=<float>]"
-      << " [--mfot-hard-corridor]"
       << " [--allow-abnormal]\n";
 }
 
@@ -58,16 +48,6 @@ struct NativeFlowOptions
   bool                            failOnDbDrc = true;
   bool                            failOnAbnormal = true;
   bool                            requireRoutedNets = true;
-  bool                            enableMfOtRouting = true;
-  int                             mfotIterations = 3;
-  int                             mfotGridStride = 8;
-  int                             mfotMaxSamplesPerNet = 1024;
-  int                             mfotCorridorRadius = 5;
-  double                          mfotEpsilon = 90.0;
-  double                          mfotLambdaCongestion = 160.0;
-  double                          mfotOutsidePenalty = 0.0;
-  double                          mfotSearchWeight = 1.23;
-  bool                            mfotHardCorridor = false;
 };
 
 struct NativeFlowResult
@@ -115,34 +95,6 @@ bool applyNativeFlowOption(const std::string& arg,
     options.viewOptions.preserveOriginalNetNames = false;
   } else if (arg == "--no-snap-near-integer") {
     options.viewOptions.snapNearIntegerCoordinates = false;
-  } else if (arg == "--disable-mfot-routing") {
-    options.enableMfOtRouting = false;
-  } else if (arg.rfind("--mfot-iterations=", 0) == 0) {
-    options.mfotIterations =
-        std::stoi(arg.substr(std::string("--mfot-iterations=").size()));
-  } else if (arg.rfind("--mfot-grid-stride=", 0) == 0) {
-    options.mfotGridStride =
-        std::stoi(arg.substr(std::string("--mfot-grid-stride=").size()));
-  } else if (arg.rfind("--mfot-max-samples-per-net=", 0) == 0) {
-    options.mfotMaxSamplesPerNet =
-        std::stoi(arg.substr(std::string("--mfot-max-samples-per-net=").size()));
-  } else if (arg.rfind("--mfot-corridor-radius=", 0) == 0) {
-    options.mfotCorridorRadius =
-        std::stoi(arg.substr(std::string("--mfot-corridor-radius=").size()));
-  } else if (arg.rfind("--mfot-epsilon=", 0) == 0) {
-    options.mfotEpsilon =
-        std::stod(arg.substr(std::string("--mfot-epsilon=").size()));
-  } else if (arg.rfind("--mfot-lambda-congestion=", 0) == 0) {
-    options.mfotLambdaCongestion =
-        std::stod(arg.substr(std::string("--mfot-lambda-congestion=").size()));
-  } else if (arg.rfind("--mfot-outside-penalty=", 0) == 0) {
-    options.mfotOutsidePenalty =
-        std::stod(arg.substr(std::string("--mfot-outside-penalty=").size()));
-  } else if (arg.rfind("--mfot-search-weight=", 0) == 0) {
-    options.mfotSearchWeight =
-        std::stod(arg.substr(std::string("--mfot-search-weight=").size()));
-  } else if (arg == "--mfot-hard-corridor") {
-    options.mfotHardCorridor = true;
   } else if (arg == "--allow-abnormal") {
     allowAbnormal = true;
   } else {
@@ -360,17 +312,7 @@ NativeFlowResult runNativeFlow(const std::filesystem::path& lefPath,
   printTiming("timing_cpp_load_design_s", SteadyClock::now() - loadStart);
 
   const auto drcConfig   = makeDrcConfig(design->getRoutingRules());
-  auto routeConfig = makeRouteConfig(design->getRoutingRules());
-  routeConfig.enableMfOtRouting = options.enableMfOtRouting;
-  routeConfig.mfotIterations = options.mfotIterations;
-  routeConfig.mfotGridStride = options.mfotGridStride;
-  routeConfig.mfotMaxSamplesPerNet = options.mfotMaxSamplesPerNet;
-  routeConfig.mfotCorridorRadius = options.mfotCorridorRadius;
-  routeConfig.mfotEpsilon = options.mfotEpsilon;
-  routeConfig.mfotLambdaCongestion = options.mfotLambdaCongestion;
-  routeConfig.mfotOutsidePenalty = options.mfotOutsidePenalty;
-  routeConfig.mfotSearchWeight = options.mfotSearchWeight;
-  routeConfig.mfotHardCorridor = options.mfotHardCorridor;
+  const auto routeConfig = makeRouteConfig(design->getRoutingRules());
 
   result.flowSummaryPath = outDir / "lidar_grid_route_flow_summary.txt";
   result.routeResultPath = outDir / "lidar_route_result.yml";
@@ -612,16 +554,6 @@ std::vector<std::string> translatePicBenchFlowArgs(
     } else if (arg == "--deterministic-order"
                || arg == "--no-preserve-net-names"
                || arg == "--no-snap-near-integer"
-               || arg == "--disable-mfot-routing"
-               || arg.rfind("--mfot-iterations=", 0) == 0
-               || arg.rfind("--mfot-grid-stride=", 0) == 0
-               || arg.rfind("--mfot-max-samples-per-net=", 0) == 0
-               || arg.rfind("--mfot-corridor-radius=", 0) == 0
-               || arg.rfind("--mfot-epsilon=", 0) == 0
-               || arg.rfind("--mfot-lambda-congestion=", 0) == 0
-               || arg.rfind("--mfot-outside-penalty=", 0) == 0
-               || arg.rfind("--mfot-search-weight=", 0) == 0
-               || arg == "--mfot-hard-corridor"
                || arg == "--allow-abnormal") {
       // These are native-router debug options. The PICBench bridge calls the
       // native router in full-flow mode, where they are not needed.

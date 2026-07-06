@@ -1,0 +1,1850 @@
+name: mrr_weight_bank_4x4
+bbox:
+- - 0
+  - 0
+- - 800
+  - 800
+instances:
+  gc_array_in_gc_0:
+    component: m_grating_coupler_elliptical_lumerical_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+      macro_type: m_grating_coupler_elliptical_lumerical_0
+      placement:
+      - FIXED
+      - - 0
+        - 250.0
+      - FN
+      - - 30
+        - 30
+        - 30
+        - 30
+  gc_array_in_gc_1:
+    component: m_grating_coupler_elliptical_lumerical_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+      macro_type: m_grating_coupler_elliptical_lumerical_0
+      placement:
+      - FIXED
+      - - 0
+        - 350.0
+      - FN
+      - - 30
+        - 30
+        - 30
+        - 30
+  gc_array_in_gc_2:
+    component: m_grating_coupler_elliptical_lumerical_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+      macro_type: m_grating_coupler_elliptical_lumerical_0
+      placement:
+      - FIXED
+      - - 0
+        - 450.0
+      - FN
+      - - 30
+        - 30
+        - 30
+        - 30
+  gc_array_in_gc_3:
+    component: m_grating_coupler_elliptical_lumerical_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+      macro_type: m_grating_coupler_elliptical_lumerical_0
+      placement:
+      - FIXED
+      - - 0
+        - 550.0
+      - FN
+      - - 30
+        - 30
+        - 30
+        - 30
+  mod_array_in_mrr_0:
+    component: m_ring_double_pn_1
+    generator: ring_double_pn
+    settings:
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_double_pn_1
+      placement:
+      - UNPLACED
+      - - 87.164
+        - 250.0
+      - W
+      - - 30
+        - 30
+        - 30
+        - 30
+  mod_array_in_mrr_1:
+    component: m_ring_double_pn_1
+    generator: ring_double_pn
+    settings:
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_double_pn_1
+      placement:
+      - UNPLACED
+      - - 87.164
+        - 350.0
+      - W
+      - - 30
+        - 30
+        - 30
+        - 30
+  mod_array_in_mrr_2:
+    component: m_ring_double_pn_1
+    generator: ring_double_pn
+    settings:
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_double_pn_1
+      placement:
+      - UNPLACED
+      - - 87.164
+        - 450.0
+      - W
+      - - 30
+        - 30
+        - 30
+        - 30
+  mod_array_in_mrr_3:
+    component: m_ring_double_pn_1
+    generator: ring_double_pn
+    settings:
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_double_pn_1
+      placement:
+      - UNPLACED
+      - - 87.164
+        - 550.0
+      - W
+      - - 30
+        - 30
+        - 30
+        - 30
+  fanout_yb_0_0:
+    component: m_mmi1x2_2
+    generator: mmi1x2
+    settings:
+      width: null
+      width_taper: 1.0
+      length_taper: 10.0
+      length_mmi: 5.5
+      width_mmi: 2.5
+      gap_mmi: 0.25
+      taper:
+        function: taper
+      cross_section: strip
+      macro_type: m_mmi1x2_2
+      placement:
+      - UNPLACED
+      - - 132.01570237522031
+        - 400.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  fanout_yb_1_0:
+    component: m_mmi1x2_2
+    generator: mmi1x2
+    settings:
+      width: null
+      width_taper: 1.0
+      length_taper: 10.0
+      length_mmi: 5.5
+      width_mmi: 2.5
+      gap_mmi: 0.25
+      taper:
+        function: taper
+      cross_section: strip
+      macro_type: m_mmi1x2_2
+      placement:
+      - UNPLACED
+      - - 162.01570237522031
+        - 350.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  fanout_yb_1_1:
+    component: m_mmi1x2_2
+    generator: mmi1x2
+    settings:
+      width: null
+      width_taper: 1.0
+      length_taper: 10.0
+      length_mmi: 5.5
+      width_mmi: 2.5
+      gap_mmi: 0.25
+      taper:
+        function: taper
+      cross_section: strip
+      macro_type: m_mmi1x2_2
+      placement:
+      - UNPLACED
+      - - 162.01570237522031
+        - 450.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_0_mrr_0:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 217.51570237522031
+        - 250.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_0_mrr_1:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 217.51570237522031
+        - 350.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_0_mrr_2:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 217.51570237522031
+        - 450.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_0_mrr_3:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 217.51570237522031
+        - 550.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_1_mrr_0:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 262.36620179219324
+        - 250.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_1_mrr_1:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 262.36620179219324
+        - 350.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_1_mrr_2:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 262.36620179219324
+        - 450.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_1_mrr_3:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 262.36620179219324
+        - 550.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_2_mrr_0:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 307.2167012091661
+        - 250.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_2_mrr_1:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 307.2167012091661
+        - 350.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_2_mrr_2:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 307.2167012091661
+        - 450.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_2_mrr_3:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 307.2167012091661
+        - 550.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_3_mrr_0:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 352.06720062613897
+        - 250.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_3_mrr_1:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 352.06720062613897
+        - 350.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_3_mrr_2:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 352.06720062613897
+        - 450.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  mrr_array_3_mrr_3:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+      heater_vias:
+        function: via_stack
+        settings:
+          size:
+          - 0.5
+          - 0.5
+          layers:
+          - M1
+          - M2
+          vias:
+          - function: via
+            settings:
+              layer: VIAC
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+          - function: via
+            settings:
+              layer: VIA1
+              size:
+              - 0.1
+              - 0.1
+              enclosure: 0.1
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+      - UNPLACED
+      - - 352.06720062613897
+        - 550.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  gc_array_out_gc_0:
+    component: m_grating_coupler_elliptical_lumerical_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+      macro_type: m_grating_coupler_elliptical_lumerical_0
+      placement:
+      - FIXED
+      - - 772.836
+        - 250.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  gc_array_out_gc_1:
+    component: m_grating_coupler_elliptical_lumerical_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+      macro_type: m_grating_coupler_elliptical_lumerical_0
+      placement:
+      - FIXED
+      - - 772.836
+        - 350.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  gc_array_out_gc_2:
+    component: m_grating_coupler_elliptical_lumerical_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+      macro_type: m_grating_coupler_elliptical_lumerical_0
+      placement:
+      - FIXED
+      - - 772.836
+        - 450.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+  gc_array_out_gc_3:
+    component: m_grating_coupler_elliptical_lumerical_0
+    generator: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+      macro_type: m_grating_coupler_elliptical_lumerical_0
+      placement:
+      - FIXED
+      - - 772.836
+        - 550.0
+      - N
+      - - 30
+        - 30
+        - 30
+        - 30
+placements:
+  gc_array_in_gc_0:
+    x: 13.582
+    y: 262.873
+    rotation: 0.0
+    mirror: true
+    status: FIXED
+  gc_array_in_gc_1:
+    x: 13.582
+    y: 362.873
+    rotation: 0.0
+    mirror: true
+    status: FIXED
+  gc_array_in_gc_2:
+    x: 13.582
+    y: 462.873
+    rotation: 0.0
+    mirror: true
+    status: FIXED
+  gc_array_in_gc_3:
+    x: 13.582
+    y: 562.873
+    rotation: 0.0
+    mirror: true
+    status: FIXED
+  mod_array_in_mrr_0:
+    x: 93.214
+    y: 257.426
+    rotation: 90.0
+    mirror: false
+    status: UNPLACED
+  mod_array_in_mrr_1:
+    x: 93.214
+    y: 357.426
+    rotation: 90.0
+    mirror: false
+    status: UNPLACED
+  mod_array_in_mrr_2:
+    x: 93.214
+    y: 457.426
+    rotation: 90.0
+    mirror: false
+    status: UNPLACED
+  mod_array_in_mrr_3:
+    x: 93.214
+    y: 557.426
+    rotation: 90.0
+    mirror: false
+    status: UNPLACED
+  fanout_yb_0_0:
+    x: 144.766
+    y: 401.25
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  fanout_yb_1_0:
+    x: 174.766
+    y: 351.25
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  fanout_yb_1_1:
+    x: 174.766
+    y: 451.25
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_0_mrr_0:
+    x: 222.7655
+    y: 256.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_0_mrr_1:
+    x: 222.7655
+    y: 356.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_0_mrr_2:
+    x: 222.7655
+    y: 456.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_0_mrr_3:
+    x: 222.7655
+    y: 556.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_1_mrr_0:
+    x: 267.6155
+    y: 256.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_1_mrr_1:
+    x: 267.6155
+    y: 356.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_1_mrr_2:
+    x: 267.6155
+    y: 456.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_1_mrr_3:
+    x: 267.6155
+    y: 556.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_2_mrr_0:
+    x: 312.4665
+    y: 256.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_2_mrr_1:
+    x: 312.4665
+    y: 356.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_2_mrr_2:
+    x: 312.4665
+    y: 456.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_2_mrr_3:
+    x: 312.4665
+    y: 556.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_3_mrr_0:
+    x: 357.3165
+    y: 256.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_3_mrr_1:
+    x: 357.3165
+    y: 356.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_3_mrr_2:
+    x: 357.3165
+    y: 456.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  mrr_array_3_mrr_3:
+    x: 357.3165
+    y: 556.338
+    rotation: 0.0
+    mirror: false
+    status: UNPLACED
+  gc_array_out_gc_0:
+    x: 786.418
+    y: 262.873
+    rotation: 0.0
+    mirror: false
+    status: FIXED
+  gc_array_out_gc_1:
+    x: 786.418
+    y: 362.873
+    rotation: 0.0
+    mirror: false
+    status: FIXED
+  gc_array_out_gc_2:
+    x: 786.418
+    y: 462.873
+    rotation: 0.0
+    mirror: false
+    status: FIXED
+  gc_array_out_gc_3:
+    x: 786.418
+    y: 562.873
+    rotation: 0.0
+    mirror: false
+    status: FIXED
+connections:
+  n_0:
+    source: fanout_yb_0_0,o2
+    target: fanout_yb_1_0,o1
+  n_1:
+    source: fanout_yb_0_0,o3
+    target: fanout_yb_1_1,o1
+  n_2:
+    source: gc_array_in_gc_0,o1
+    target: mod_array_in_mrr_0,o4
+  n_3:
+    source: gc_array_in_gc_1,o1
+    target: mod_array_in_mrr_1,o4
+  n_4:
+    source: gc_array_in_gc_2,o1
+    target: mod_array_in_mrr_2,o4
+  n_5:
+    source: gc_array_in_gc_3,o1
+    target: mod_array_in_mrr_3,o4
+  n_6:
+    source: mod_array_in_mrr_0,o2
+    target: mod_array_in_mrr_1,o1
+  n_7:
+    source: mod_array_in_mrr_1,o2
+    target: mod_array_in_mrr_2,o1
+  n_8:
+    source: mod_array_in_mrr_2,o2
+    target: mod_array_in_mrr_3,o1
+  n_9:
+    source: mod_array_in_mrr_0,o1
+    target: fanout_yb_0_0,o1
+  n_10:
+    source: fanout_yb_1_0,o2
+    target: mrr_array_0_mrr_0,o1
+  n_11:
+    source: fanout_yb_1_0,o3
+    target: mrr_array_0_mrr_1,o1
+  n_12:
+    source: fanout_yb_1_1,o2
+    target: mrr_array_0_mrr_2,o1
+  n_13:
+    source: fanout_yb_1_1,o3
+    target: mrr_array_0_mrr_3,o1
+  n_14:
+    source: mrr_array_0_mrr_0,o2
+    target: mrr_array_1_mrr_0,o1
+  n_15:
+    source: mrr_array_0_mrr_1,o2
+    target: mrr_array_1_mrr_1,o1
+  n_16:
+    source: mrr_array_0_mrr_2,o2
+    target: mrr_array_1_mrr_2,o1
+  n_17:
+    source: mrr_array_0_mrr_3,o2
+    target: mrr_array_1_mrr_3,o1
+  n_18:
+    source: mrr_array_1_mrr_0,o2
+    target: mrr_array_2_mrr_0,o1
+  n_19:
+    source: mrr_array_1_mrr_1,o2
+    target: mrr_array_2_mrr_1,o1
+  n_20:
+    source: mrr_array_1_mrr_2,o2
+    target: mrr_array_2_mrr_2,o1
+  n_21:
+    source: mrr_array_1_mrr_3,o2
+    target: mrr_array_2_mrr_3,o1
+  n_22:
+    source: mrr_array_2_mrr_0,o2
+    target: mrr_array_3_mrr_0,o1
+  n_23:
+    source: mrr_array_2_mrr_1,o2
+    target: mrr_array_3_mrr_1,o1
+  n_24:
+    source: mrr_array_2_mrr_2,o2
+    target: mrr_array_3_mrr_2,o1
+  n_25:
+    source: mrr_array_2_mrr_3,o2
+    target: mrr_array_3_mrr_3,o1
+  n_26:
+    source: mrr_array_3_mrr_0,o2
+    target: gc_array_out_gc_0,o1
+  n_27:
+    source: mrr_array_3_mrr_1,o2
+    target: gc_array_out_gc_1,o1
+  n_28:
+    source: mrr_array_3_mrr_2,o2
+    target: gc_array_out_gc_2,o1
+  n_29:
+    source: mrr_array_3_mrr_3,o2
+    target: gc_array_out_gc_3,o1

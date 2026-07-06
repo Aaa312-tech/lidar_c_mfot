@@ -1,0 +1,28 @@
+clean=0
+markers=8
+violations=8
+component_geometry_markers=0
+pin_access_markers=0
+route_geometry_markers=8
+invalid_component=0
+component_overlap=0
+missing_route=0
+disconnected_route=0
+invalid_waveguide=0
+out_of_die=0
+pin_access_missing=0
+pin_access_orientation=0
+pin_access_width=0
+blockage_overlap=0
+waveguide_continuity=0
+waveguide_overlap=2
+waveguide_spacing=0
+waveguide_crossing=6
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_2/n_2_wg_0,n_24/n_24_wg_0	nets=n_2,n_24	object1=n_2/n_2_wg_0	object2=n_24/n_24_wg_0	x=208.258	y=751.875	value=0	distance=0	shape=point	bbox=208.258,751.875,208.258,751.875	message=waveguide crossing: n_2/n_2_wg_0 vs n_24/n_24_wg_0
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_2/n_2_wg_0,n_24/n_24_wg_0	nets=n_2,n_24	object1=n_2/n_2_wg_0	object2=n_24/n_24_wg_0	x=232	y=751.875	value=0	distance=0	shape=point	bbox=232,751.875,232,751.875	message=waveguide crossing: n_2/n_2_wg_0 vs n_24/n_24_wg_0
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_2/n_2_wg_0,n_24/n_24_wg_0	nets=n_2,n_24	object1=n_2/n_2_wg_0	object2=n_24/n_24_wg_0	x=231	y=751.875	value=0	distance=0	shape=point	bbox=231,751.875,231,751.875	message=waveguide crossing: n_2/n_2_wg_0 vs n_24/n_24_wg_0
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_5/n_5_wg_0,n_27/n_27_wg_0	nets=n_5,n_27	object1=n_5/n_5_wg_0	object2=n_27/n_27_wg_0	x=208.258	y=850.625	value=0	distance=0	shape=point	bbox=208.258,850.625,208.258,850.625	message=waveguide crossing: n_5/n_5_wg_0 vs n_27/n_27_wg_0
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_5/n_5_wg_0,n_27/n_27_wg_0	nets=n_5,n_27	object1=n_5/n_5_wg_0	object2=n_27/n_27_wg_0	x=232	y=850.625	value=0	distance=0	shape=point	bbox=232,850.625,232,850.625	message=waveguide crossing: n_5/n_5_wg_0 vs n_27/n_27_wg_0
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_5/n_5_wg_0,n_27/n_27_wg_0	nets=n_5,n_27	object1=n_5/n_5_wg_0	object2=n_27/n_27_wg_0	x=232	y=850.625	value=0	distance=0	shape=point	bbox=232,850.625,232,850.625	message=waveguide crossing: n_5/n_5_wg_0 vs n_27/n_27_wg_0
+marker	class=route_geometry	type=waveguide_overlap	rule=waveguide_overlap	layer=route_geometry	objects=n_22/n_22_wg_0,n_24__part_1/n_24_wg_1	nets=n_22,n_24__part_1	object1=n_22/n_22_wg_0	object2=n_24__part_1/n_24_wg_1	x=244	y=649.438	value=0	distance=0	shape=point	bbox=244,649.438,244,649.438	message=waveguide polygon overlap: n_22/n_22_wg_0 vs n_24__part_1/n_24_wg_1
+marker	class=route_geometry	type=waveguide_overlap	rule=waveguide_overlap	layer=route_geometry	objects=n_22/n_22_wg_0,n_24__part_1/n_24_wg_1	nets=n_22,n_24__part_1	object1=n_22/n_22_wg_0	object2=n_24__part_1/n_24_wg_1	x=244	y=649.438	value=0	distance=0	shape=point	bbox=244,649.438,244,649.438	message=waveguide polygon overlap: n_22/n_22_wg_0 vs n_24__part_1/n_24_wg_1

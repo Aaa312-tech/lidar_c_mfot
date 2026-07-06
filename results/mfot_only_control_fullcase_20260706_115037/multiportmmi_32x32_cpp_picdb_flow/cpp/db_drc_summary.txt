@@ -1,0 +1,21 @@
+clean=0
+markers=1
+violations=1
+component_geometry_markers=0
+pin_access_markers=0
+route_geometry_markers=1
+invalid_component=0
+component_overlap=0
+missing_route=0
+disconnected_route=0
+invalid_waveguide=0
+out_of_die=0
+pin_access_missing=0
+pin_access_orientation=0
+pin_access_width=0
+blockage_overlap=0
+waveguide_continuity=0
+waveguide_overlap=0
+waveguide_spacing=0
+waveguide_crossing=1
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_33__part_1/n_33_wg_1,n_35__part_1/n_35_wg_1	nets=n_33__part_1,n_35__part_1	object1=n_33__part_1/n_33_wg_1	object2=n_35__part_1/n_35_wg_1	x=1353	y=2050	value=0	distance=0	shape=point	bbox=1353,2050,1353,2050	message=waveguide crossing: n_33__part_1/n_33_wg_1 vs n_35__part_1/n_35_wg_1

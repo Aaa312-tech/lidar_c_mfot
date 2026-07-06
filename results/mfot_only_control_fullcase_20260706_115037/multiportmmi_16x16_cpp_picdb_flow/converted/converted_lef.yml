@@ -1,0 +1,1098 @@
+header:
+  description: multiportmmi_16x16_converted
+xsections:
+  strip:
+    width: 0.5
+  metal1:
+    width: 10.0
+blocks:
+  m_grating_coupler_ellipti_4c46b398_0:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 27.164
+      - 0.0
+    - - 27.164
+      - 25.746000000000002
+    - - 0.0
+      - 25.746000000000002
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 12.873000000000001
+        - 180.0
+    settings:
+      property: null
+      iloss: 2.0
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
+  m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 25.5
+      - 0.0
+    - - 25.5
+      - 2.5
+    - - 0.0
+      - 2.5
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 1.25
+        - 180.0
+      o2:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 25.5
+        - 1.875
+        - 0.0
+      o3:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 25.5
+        - 0.625
+        - 0.0
+    settings:
+      property: null
+      iloss: 0.3
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
+  m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 291.0
+      - 0.0
+    - - 291.0
+      - 56.0
+    - - 0.0
+      - 56.0
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 27.875
+        - 180.0
+      o2:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 291.0
+        - 27.875
+        - 0.0
+    settings:
+      property: null
+      iloss: 1.2
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
+  m_straight_heater_metal_u_9c931429_3:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 231.8
+      - 0.0
+    - - 231.8
+      - 11.0
+    - - 0.0
+      - 11.0
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 15.9
+        - 5.5
+        - 180.0
+      o2:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 215.9
+        - 5.5
+        - 0.0
+    settings:
+      property: null
+      iloss: 0.05
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
+  m_mmi_I10_O10_WNone_WT1_L_e2477a99_4:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 200.0
+      - 0.0
+    - - 200.0
+      - 50.0
+    - - 0.0
+      - 50.0
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 2.5
+        - 180.0
+      o2:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 7.5
+        - 180.0
+      o3:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 12.5
+        - 180.0
+      o4:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 17.5
+        - 180.0
+      o5:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 22.5
+        - 180.0
+      o6:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 27.5
+        - 180.0
+      o7:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 32.5
+        - 180.0
+      o8:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 37.5
+        - 180.0
+      o9:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 42.5
+        - 180.0
+      o10:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 47.5
+        - 180.0
+      o20:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 200.0
+        - 2.5
+        - 0.0
+      o19:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 200.0
+        - 7.5
+        - 0.0
+      o18:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 200.0
+        - 12.5
+        - 0.0
+      o17:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 200.0
+        - 17.5
+        - 0.0
+      o16:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 200.0
+        - 22.5
+        - 0.0
+      o15:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 200.0
+        - 27.5
+        - 0.0
+      o14:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 200.0
+        - 32.5
+        - 0.0
+      o13:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 200.0
+        - 37.5
+        - 0.0
+      o12:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 200.0
+        - 42.5
+        - 0.0
+      o11:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 200.0
+        - 47.5
+        - 0.0
+    settings:
+      property: null
+      iloss: 0.1
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
+  m_mmi_I2_O2_WNone_WT1_LT1_d965ea1e_5:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 56.0
+      - 0.0
+    - - 56.0
+      - 10.0
+    - - 0.0
+      - 10.0
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 2.5
+        - 180.0
+      o2:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 7.5
+        - 180.0
+      o4:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 56.0
+        - 2.5
+        - 0.0
+      o3:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 56.0
+        - 7.5
+        - 0.0
+    settings:
+      property: null
+      iloss: 0.1
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
+  m_straight_L200_N2_CSstrip_WNone_6:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 200.0
+      - 0.0
+    - - 200.0
+      - 0.5
+    - - 0.0
+      - 0.5
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 0.25
+        - 180.0
+      o2:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 200.0
+        - 0.25
+        - 0.0
+    settings:
+      property: null
+      iloss: 0.03
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
+  m_mmi_I8_O8_WNone_WT1_LT1_8e242222_7:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 164.0
+      - 0.0
+    - - 164.0
+      - 40.0
+    - - 0.0
+      - 40.0
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 2.5
+        - 180.0
+      o2:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 7.5
+        - 180.0
+      o3:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 12.5
+        - 180.0
+      o4:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 17.5
+        - 180.0
+      o5:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 22.5
+        - 180.0
+      o6:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 27.5
+        - 180.0
+      o7:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 32.5
+        - 180.0
+      o8:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 37.5
+        - 180.0
+      o16:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 164.0
+        - 2.5
+        - 0.0
+      o15:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 164.0
+        - 7.5
+        - 0.0
+      o14:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 164.0
+        - 12.5
+        - 0.0
+      o13:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 164.0
+        - 17.5
+        - 0.0
+      o12:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 164.0
+        - 22.5
+        - 0.0
+      o11:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 164.0
+        - 27.5
+        - 0.0
+      o10:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 164.0
+        - 32.5
+        - 0.0
+      o9:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 164.0
+        - 37.5
+        - 0.0
+    settings:
+      property: null
+      iloss: 0.1
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
+  m_mmi_I14_O14_WNone_WT1_L_218c8a66_8:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 272.0
+      - 0.0
+    - - 272.0
+      - 70.0
+    - - 0.0
+      - 70.0
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 2.5
+        - 180.0
+      o2:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 7.5
+        - 180.0
+      o3:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 12.5
+        - 180.0
+      o4:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 17.5
+        - 180.0
+      o5:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 22.5
+        - 180.0
+      o6:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 27.5
+        - 180.0
+      o7:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 32.5
+        - 180.0
+      o8:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 37.5
+        - 180.0
+      o9:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 42.5
+        - 180.0
+      o10:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 47.5
+        - 180.0
+      o11:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 52.5
+        - 180.0
+      o12:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 57.5
+        - 180.0
+      o13:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 62.5
+        - 180.0
+      o14:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 67.5
+        - 180.0
+      o28:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 272.0
+        - 2.5
+        - 0.0
+      o27:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 272.0
+        - 7.5
+        - 0.0
+      o26:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 272.0
+        - 12.5
+        - 0.0
+      o25:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 272.0
+        - 17.5
+        - 0.0
+      o24:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 272.0
+        - 22.5
+        - 0.0
+      o23:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 272.0
+        - 27.5
+        - 0.0
+      o22:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 272.0
+        - 32.5
+        - 0.0
+      o21:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 272.0
+        - 37.5
+        - 0.0
+      o20:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 272.0
+        - 42.5
+        - 0.0
+      o19:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 272.0
+        - 47.5
+        - 0.0
+      o18:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 272.0
+        - 52.5
+        - 0.0
+      o17:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 272.0
+        - 57.5
+        - 0.0
+      o16:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 272.0
+        - 62.5
+        - 0.0
+      o15:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 272.0
+        - 67.5
+        - 0.0
+    settings:
+      property: null
+      iloss: 0.1
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
+  m_mmi_I16_O16_WNone_WT1_L_defbb103_9:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 308.0
+      - 0.0
+    - - 308.0
+      - 80.0
+    - - 0.0
+      - 80.0
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 2.5
+        - 180.0
+      o2:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 7.5
+        - 180.0
+      o3:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 12.5
+        - 180.0
+      o4:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 17.5
+        - 180.0
+      o5:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 22.5
+        - 180.0
+      o6:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 27.5
+        - 180.0
+      o7:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 32.5
+        - 180.0
+      o8:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 37.5
+        - 180.0
+      o9:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 42.5
+        - 180.0
+      o10:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 47.5
+        - 180.0
+      o11:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 52.5
+        - 180.0
+      o12:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 57.5
+        - 180.0
+      o13:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 62.5
+        - 180.0
+      o14:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 67.5
+        - 180.0
+      o15:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 72.5
+        - 180.0
+      o16:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 77.5
+        - 180.0
+      o32:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 2.5
+        - 0.0
+      o31:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 7.5
+        - 0.0
+      o30:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 12.5
+        - 0.0
+      o29:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 17.5
+        - 0.0
+      o28:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 22.5
+        - 0.0
+      o27:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 27.5
+        - 0.0
+      o26:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 32.5
+        - 0.0
+      o25:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 37.5
+        - 0.0
+      o24:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 42.5
+        - 0.0
+      o23:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 47.5
+        - 0.0
+      o22:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 52.5
+        - 0.0
+      o21:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 57.5
+        - 0.0
+      o20:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 62.5
+        - 0.0
+      o19:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 67.5
+        - 0.0
+      o18:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 72.5
+        - 0.0
+      o17:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 308.0
+        - 77.5
+        - 0.0
+    settings:
+      property: null
+      iloss: 0.1
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
