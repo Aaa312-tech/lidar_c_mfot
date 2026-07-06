@@ -1,0 +1,172 @@
+header:
+  description: clements_16x16_converted
+xsections:
+  strip:
+    width: 0.5
+  metal1:
+    width: 10.0
+blocks:
+  m_grating_coupler_elliptical_lumerical_gdsfactorypcompone_e9be38bc_0:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 27.164
+      - 0.0
+    - - 27.164
+      - 25.746000000000002
+    - - 0.0
+      - 25.746000000000002
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 12.873000000000001
+        - 180.0
+    settings:
+      property: null
+      iloss: 2.0
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
+  m_mmi1x2_gdsfactorypcomponentspmmispmmi1x2_WNone_WT1_LT10_1f097353_1:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 25.5
+      - 0.0
+    - - 25.5
+      - 2.5
+    - - 0.0
+      - 2.5
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 1.25
+        - 180.0
+      o2:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 25.5
+        - 1.875
+        - 0.0
+      o3:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 25.5
+        - 0.625
+        - 0.0
+    settings:
+      property: null
+      iloss: 0.3
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
+  m_mzi_gdsfactorypcomponentspmzispmzi_DL10_LY2_LX0p1_Bbend_afb45bea_2:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 91.10000000000001
+      - 0.0
+    - - 91.10000000000001
+      - 50.75
+    - - 0.0
+      - 50.75
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 27.875
+        - 180.0
+      o2:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 91.10000000000001
+        - 27.875
+        - 0.0
+    settings:
+      property: null
+      iloss: 1.2
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core
+  m_mzi_gdsfactorypcomponentspmzispmzi_DL10_LY2_LX200_Bbend_54f5ce64_3:
+    bbox:
+    - - 0.0
+      - 0.0
+    - - 291.0
+      - 0.0
+    - - 291.0
+      - 56.0
+    - - 0.0
+      - 56.0
+    doc: LiDAR native macro converted for PIC-DB smoke tests.
+    parameters: {}
+    pins:
+      o1:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 27.25
+        - 180.0
+      o2:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 0.0
+        - 28.5
+        - 180.0
+      o4:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 291.0
+        - 27.25
+        - 0.0
+      o3:
+        doc: 'null'
+        width: 0.5
+        xsection: strip
+        xya:
+        - 291.0
+        - 28.5
+        - 0.0
+    settings:
+      property: null
+      iloss: 1.2
+      type: CORE
+      origin:
+      - 0.0
+      - 0.0
+      site: core

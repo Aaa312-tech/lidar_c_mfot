@@ -1,0 +1,31 @@
+clean=0
+markers=11
+violations=11
+component_geometry_markers=0
+pin_access_markers=0
+route_geometry_markers=11
+invalid_component=0
+component_overlap=0
+missing_route=0
+disconnected_route=0
+invalid_waveguide=0
+out_of_die=0
+pin_access_missing=0
+pin_access_orientation=0
+pin_access_width=0
+blockage_overlap=0
+waveguide_continuity=0
+waveguide_overlap=2
+waveguide_spacing=0
+waveguide_crossing=9
+marker	class=route_geometry	type=waveguide_overlap	rule=waveguide_overlap	layer=route_geometry	objects=n_2/n_2_wg_0,n_8/n_8_wg_0	nets=n_2,n_8	object1=n_2/n_2_wg_0	object2=n_8/n_8_wg_0	x=271	y=1556.38	value=0	distance=0	shape=point	bbox=271,1556.38,271,1556.38	message=waveguide polygon overlap: n_2/n_2_wg_0 vs n_8/n_8_wg_0
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_2__part_1/n_2_wg_1,n_6/n_6_wg_0	nets=n_2__part_1,n_6	object1=n_2__part_1/n_2_wg_1	object2=n_6/n_6_wg_0	x=265	y=1461	value=0	distance=0	shape=point	bbox=265,1461,265,1461	message=waveguide crossing: n_2__part_1/n_2_wg_1 vs n_6/n_6_wg_0
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_2__part_1/n_2_wg_1,n_8__part_1/n_8_wg_1	nets=n_2__part_1,n_8__part_1	object1=n_2__part_1/n_2_wg_1	object2=n_8__part_1/n_8_wg_1	x=214.016	y=1461	value=0	distance=0	shape=point	bbox=214.016,1461,214.016,1461	message=waveguide crossing: n_2__part_1/n_2_wg_1 vs n_8__part_1/n_8_wg_1
+marker	class=route_geometry	type=waveguide_overlap	rule=waveguide_overlap	layer=route_geometry	objects=n_5/n_5_wg_0,n_55/n_55_wg_0	nets=n_5,n_55	object1=n_5/n_5_wg_0	object2=n_55/n_55_wg_0	x=269.5	y=1693.81	value=0	distance=0	shape=point	bbox=269.5,1693.81,269.5,1693.81	message=waveguide polygon overlap: n_5/n_5_wg_0 vs n_55/n_55_wg_0
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_5/n_5_wg_0,n_55/n_55_wg_0	nets=n_5,n_55	object1=n_5/n_5_wg_0	object2=n_55/n_55_wg_0	x=269	y=1741	value=0	distance=0	shape=point	bbox=269,1741,269,1741	message=waveguide crossing: n_5/n_5_wg_0 vs n_55/n_55_wg_0
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_5__part_1/n_5_wg_1,n_11__part_1/n_11_wg_1	nets=n_5__part_1,n_11__part_1	object1=n_5__part_1/n_5_wg_1	object2=n_11__part_1/n_11_wg_1	x=214.016	y=1741	value=0	distance=0	shape=point	bbox=214.016,1741,214.016,1741	message=waveguide crossing: n_5__part_1/n_5_wg_1 vs n_11__part_1/n_11_wg_1
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_8__part_2/n_8_wg_2,n_52__part_2/n_52_wg_2	nets=n_8__part_2,n_52__part_2	object1=n_8__part_2/n_8_wg_2	object2=n_52__part_2/n_52_wg_2	x=263.875	y=1533.88	value=0	distance=0	shape=point	bbox=263.875,1533.88,263.875,1533.88	message=waveguide crossing: n_8__part_2/n_8_wg_2 vs n_52__part_2/n_52_wg_2
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_11/n_11_wg_0,n_55/n_55_wg_0	nets=n_11,n_55	object1=n_11/n_11_wg_0	object2=n_55/n_55_wg_0	x=239.258	y=1650.62	value=0	distance=0	shape=point	bbox=239.258,1650.62,239.258,1650.62	message=waveguide crossing: n_11/n_11_wg_0 vs n_55/n_55_wg_0
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_11/n_11_wg_0,n_55/n_55_wg_0	nets=n_11,n_55	object1=n_11/n_11_wg_0	object2=n_55/n_55_wg_0	x=264	y=1650.62	value=0	distance=0	shape=point	bbox=264,1650.62,264,1650.62	message=waveguide crossing: n_11/n_11_wg_0 vs n_55/n_55_wg_0
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_11/n_11_wg_0,n_55/n_55_wg_0	nets=n_11,n_55	object1=n_11/n_11_wg_0	object2=n_55/n_55_wg_0	x=264	y=1650.62	value=0	distance=0	shape=point	bbox=264,1650.62,264,1650.62	message=waveguide crossing: n_11/n_11_wg_0 vs n_55/n_55_wg_0
+marker	class=route_geometry	type=waveguide_crossing	rule=waveguide_crossing	layer=route_geometry	objects=n_11/n_11_wg_0,n_55/n_55_wg_0	nets=n_11,n_55	object1=n_11/n_11_wg_0	object2=n_55/n_55_wg_0	x=267	y=1650.62	value=0	distance=0	shape=point	bbox=267,1650.62,267,1650.62	message=waveguide crossing: n_11/n_11_wg_0 vs n_55/n_55_wg_0

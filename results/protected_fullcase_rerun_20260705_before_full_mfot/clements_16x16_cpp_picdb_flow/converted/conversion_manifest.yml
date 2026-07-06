@@ -1,0 +1,13 @@
+schema: lidar_native_to_picdb_yml
+design: clements_16x16
+instances: 168
+macros: 4
+nets: 287
+skipped_nets: {}
+macro_sources:
+  m_grating_coupler_elliptical_lumerical_gdsfactorypcompone_e9be38bc_0: gdsfactory
+  m_mmi1x2_gdsfactorypcomponentspmmispmmi1x2_WNone_WT1_LT10_1f097353_1: gdsfactory
+  m_mzi_gdsfactorypcomponentspmzispmzi_DL10_LY2_LX0p1_Bbend_afb45bea_2: gdsfactory
+  m_mzi_gdsfactorypcomponentspmzispmzi_DL10_LY2_LX200_Bbend_54f5ce64_3: gdsfactory
+realize_gdsfactory_lef: true
+layout_ports_instances: 0

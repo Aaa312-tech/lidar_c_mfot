@@ -1,10 +1,12 @@
 #include "lidar_astar.h"
 
 #include <algorithm>
+#include <chrono>
 #include <cstdlib>
 #include <cmath>
 #include <cstdint>
 #include <fstream>
+#include <functional>
 #include <iomanip>
 #include <iostream>
 #include <iterator>
@@ -1521,6 +1523,31 @@ std::optional<SplitLineResult> splitLineString(
     return std::nullopt;
   }
 
+  auto isBendVertex = [&](std::size_t index) {
+    if (index == 0 || index + 1 >= coords.size()) {
+      return false;
+    }
+    const auto& prev = coords[index - 1];
+    const auto& vertex = coords[index];
+    const auto& next = coords[index + 1];
+    const double ax = vertex[0] - prev[0];
+    const double ay = vertex[1] - prev[1];
+    const double bx = next[0] - vertex[0];
+    const double by = next[1] - vertex[1];
+    if (std::hypot(ax, ay) <= eps || std::hypot(bx, by) <= eps) {
+      return false;
+    }
+    return std::abs(cross2d(ax, ay, bx, by)) > eps;
+  };
+
+  if (nextIndex > 0 && samePoint(coords[nextIndex - 1], crossingPoint)
+      && isBendVertex(nextIndex - 1)) {
+    return std::nullopt;
+  }
+  if (samePoint(coords[nextIndex], crossingPoint) && isBendVertex(nextIndex)) {
+    return std::nullopt;
+  }
+
   const double x = coords[nextIndex][0];
   const double y = coords[nextIndex][1];
   const double dx = crossingPoint[0] - x;
@@ -1619,16 +1646,131 @@ std::optional<SplitLineResult> splitLineString(
   return std::nullopt;
 }
 
+int countPolylineIntersections(
+    const std::vector<std::array<double, 2>>& first,
+    const std::vector<std::array<double, 2>>& second)
+{
+  constexpr double eps = 1e-6;
+  if (first.size() < 2 || second.size() < 2) {
+    return 0;
+  }
+  const double firstLength = polylineLength(first);
+  const double secondLength = polylineLength(second);
+  int intersections = 0;
+  for (std::size_t i = 1; i < first.size(); ++i) {
+    for (std::size_t j = 1; j < second.size(); ++j) {
+      const auto intersection = segmentIntersection(first[i - 1],
+                                                    first[i],
+                                                    second[j - 1],
+                                                    second[j]);
+      if (!intersection.has_value()) {
+        continue;
+      }
+      const double firstDistance = projectOnPolyline(first, intersection.value());
+      const double secondDistance =
+          projectOnPolyline(second, intersection.value());
+      if (firstDistance <= eps || firstDistance >= firstLength - eps
+          || secondDistance <= eps || secondDistance >= secondLength - eps) {
+        continue;
+      }
+      ++intersections;
+    }
+  }
+  return intersections;
+}
+
+int countPolylineSetIntersections(
+    const std::vector<std::vector<std::array<double, 2>>>& firstPaths,
+    const std::vector<std::vector<std::array<double, 2>>>& secondPaths)
+{
+  int intersections = 0;
+  for (const auto& firstPath : firstPaths) {
+    for (const auto& secondPath : secondPaths) {
+      intersections += countPolylineIntersections(firstPath, secondPath);
+    }
+  }
+  return intersections;
+}
+
+int scoreSplitCandidate(
+    const std::vector<PostRoutePath>& net1Paths,
+    const std::vector<PostRoutePath>& net2Paths,
+    std::size_t path1Index,
+    std::size_t path2Index,
+    const SplitLineResult& split1,
+    const SplitLineResult& split2)
+{
+  std::vector<std::vector<std::array<double, 2>>> candidate1;
+  candidate1.reserve(net1Paths.size() + 1);
+  for (std::size_t index = 0; index < net1Paths.size(); ++index) {
+    if (index == path1Index) {
+      candidate1.push_back(split1.parts[0]);
+      candidate1.push_back(split1.parts[1]);
+    } else {
+      candidate1.push_back(postRoutePointsWithAccess(net1Paths[index]));
+    }
+  }
+
+  std::vector<std::vector<std::array<double, 2>>> candidate2;
+  candidate2.reserve(net2Paths.size() + 1);
+  for (std::size_t index = 0; index < net2Paths.size(); ++index) {
+    if (index == path2Index) {
+      candidate2.push_back(split2.parts[0]);
+      candidate2.push_back(split2.parts[1]);
+    } else {
+      candidate2.push_back(postRoutePointsWithAccess(net2Paths[index]));
+    }
+  }
+  return countPolylineSetIntersections(candidate1, candidate2);
+}
+
+int countPostRoutePairIntersections(
+    const std::vector<PostRoutePath>& firstPaths,
+    const std::vector<PostRoutePath>& secondPaths)
+{
+  std::vector<std::vector<std::array<double, 2>>> firstPolylines;
+  firstPolylines.reserve(firstPaths.size());
+  for (const auto& path : firstPaths) {
+    firstPolylines.push_back(postRoutePointsWithAccess(path));
+  }
+  std::vector<std::vector<std::array<double, 2>>> secondPolylines;
+  secondPolylines.reserve(secondPaths.size());
+  for (const auto& path : secondPaths) {
+    secondPolylines.push_back(postRoutePointsWithAccess(path));
+  }
+  return countPolylineSetIntersections(firstPolylines, secondPolylines);
+}
+
 std::optional<SplitPathResult> splitPostRoutePaths(
     const std::vector<PostRoutePath>& net1Paths,
-    const std::vector<PostRoutePath>& net2Paths)
+    const std::vector<PostRoutePath>& net2Paths,
+    const std::function<bool(const std::array<double, 2>&, double)>*
+        rejectCrossing = nullptr,
+    bool protectAccessSegments = false,
+    int* bestScoreOut = nullptr)
 {
+  auto isProtectedAccessSegment = [](std::size_t segmentEndIndex,
+                                     std::size_t pointCount) {
+    if (pointCount < 4) {
+      return true;
+    }
+    return segmentEndIndex == 1 || segmentEndIndex + 1 == pointCount;
+  };
+
+  std::optional<SplitPathResult> bestResult;
+  int bestScore = std::numeric_limits<int>::max();
+
   for (std::size_t index1 = 0; index1 < net1Paths.size(); ++index1) {
-    const auto& path1 = net1Paths[index1].points;
+    const auto path1 = postRoutePointsWithAccess(net1Paths[index1]);
     for (std::size_t index2 = 0; index2 < net2Paths.size(); ++index2) {
-      const auto& path2 = net2Paths[index2].points;
+      const auto path2 = postRoutePointsWithAccess(net2Paths[index2]);
       for (std::size_t i = 1; i < path1.size(); ++i) {
         for (std::size_t j = 1; j < path2.size(); ++j) {
+          if (protectAccessSegments
+              && (isProtectedAccessSegment(i, path1.size())
+                  || isProtectedAccessSegment(j, path2.size()))) {
+            continue;
+          }
           const auto intersection =
               segmentIntersection(path1[i - 1],
                                   path1[i],
@@ -1645,6 +1787,10 @@ std::optional<SplitPathResult> splitPostRoutePaths(
           if (std::abs(split1->orientation - split2->orientation) > 1e-6) {
             continue;
           }
+          if (rejectCrossing != nullptr
+              && (*rejectCrossing)(intersection.value(), split1->orientation)) {
+            continue;
+          }
           SplitPathResult result;
           result.path1Index = index1;
           result.path2Index = index2;
@@ -1652,12 +1798,27 @@ std::optional<SplitPathResult> splitPostRoutePaths(
           result.split2 = split2.value();
           result.crossingPoint = intersection.value();
           result.crossingOrientation = result.split1.orientation;
-          return result;
+          const int score = scoreSplitCandidate(net1Paths,
+                                                net2Paths,
+                                                index1,
+                                                index2,
+                                                result.split1,
+                                                result.split2);
+          if (!bestResult.has_value() || score < bestScore) {
+            bestScore = score;
+            bestResult = std::move(result);
+            if (bestScore == 0) {
+              return bestResult;
+            }
+          }
         }
       }
     }
   }
-  return std::nullopt;
+  if (bestScoreOut != nullptr) {
+    *bestScoreOut = bestScore;
+  }
+  return bestResult;
 }
 
 double normalizePortOrientation(double value)
@@ -2136,6 +2297,120 @@ bool pathHasPhysicalIntersection(const PostRoutePath& path,
     }
   }
   return false;
+}
+
+int countPhysicalIntersections(const PostRoutePath& path,
+                               const PythonPostProcessRoutes& routes,
+                               const std::string& netName)
+{
+  constexpr double eps = 1e-6;
+  const auto pathPoints = postRoutePointsWithAccess(path);
+  if (pathPoints.size() < 2) {
+    return 0;
+  }
+  const double pathLength = polylineLength(pathPoints);
+  int intersections = 0;
+  for (const auto& entry : routes.paths) {
+    if (entry.first == netName) {
+      continue;
+    }
+    for (const auto& otherPath : entry.second) {
+      const auto otherPoints = postRoutePointsWithAccess(otherPath);
+      if (otherPoints.size() < 2) {
+        continue;
+      }
+      const double otherLength = polylineLength(otherPoints);
+      for (std::size_t i = 1; i < pathPoints.size(); ++i) {
+        for (std::size_t j = 1; j < otherPoints.size(); ++j) {
+          const auto intersection = segmentIntersection(pathPoints[i - 1],
+                                                        pathPoints[i],
+                                                        otherPoints[j - 1],
+                                                        otherPoints[j]);
+          if (!intersection.has_value()) {
+            continue;
+          }
+          const double pathDistance =
+              projectOnPolyline(pathPoints, intersection.value());
+          const double otherDistance =
+              projectOnPolyline(otherPoints, intersection.value());
+          if (pathDistance <= eps || pathDistance >= pathLength - eps
+              || otherDistance <= eps || otherDistance >= otherLength - eps) {
+            continue;
+          }
+          ++intersections;
+        }
+      }
+    }
+  }
+  return intersections;
+}
+
+double pointSegmentDistance(const std::array<double, 2>& point,
+                            const std::array<double, 2>& start,
+                            const std::array<double, 2>& end)
+{
+  const double vx = end[0] - start[0];
+  const double vy = end[1] - start[1];
+  const double length2 = vx * vx + vy * vy;
+  if (length2 <= 1e-18) {
+    return pointDistance(point, start);
+  }
+  const double wx = point[0] - start[0];
+  const double wy = point[1] - start[1];
+  const double t = std::max(0.0, std::min(1.0, (wx * vx + wy * vy) / length2));
+  const std::array<double, 2> projection = {start[0] + t * vx,
+                                            start[1] + t * vy};
+  return pointDistance(point, projection);
+}
+
+double segmentDistance(const std::array<double, 2>& firstStart,
+                       const std::array<double, 2>& firstEnd,
+                       const std::array<double, 2>& secondStart,
+                       const std::array<double, 2>& secondEnd)
+{
+  if (segmentIntersection(firstStart, firstEnd, secondStart, secondEnd).has_value()) {
+    return 0.0;
+  }
+  return std::min({pointSegmentDistance(firstStart, secondStart, secondEnd),
+                   pointSegmentDistance(firstEnd, secondStart, secondEnd),
+                   pointSegmentDistance(secondStart, firstStart, firstEnd),
+                   pointSegmentDistance(secondEnd, firstStart, firstEnd)});
+}
+
+int countPhysicalNearConflicts(const PostRoutePath& path,
+                               const PythonPostProcessRoutes& routes,
+                               const std::string& netName,
+                               double clearance)
+{
+  const auto pathPoints = postRoutePointsWithAccess(path);
+  if (pathPoints.size() < 2) {
+    return 0;
+  }
+
+  int conflicts = 0;
+  for (const auto& entry : routes.paths) {
+    if (entry.first == netName) {
+      continue;
+    }
+    for (const auto& otherPath : entry.second) {
+      const auto otherPoints = postRoutePointsWithAccess(otherPath);
+      if (otherPoints.size() < 2) {
+        continue;
+      }
+      for (std::size_t i = 1; i < pathPoints.size(); ++i) {
+        for (std::size_t j = 1; j < otherPoints.size(); ++j) {
+          if (segmentDistance(pathPoints[i - 1],
+                              pathPoints[i],
+                              otherPoints[j - 1],
+                              otherPoints[j])
+              <= clearance) {
+            ++conflicts;
+          }
+        }
+      }
+    }
+  }
+  return conflicts;
 }
 
 bool pathHasSelfIntersection(const PostRoutePath& path)
@@ -2807,6 +3082,939 @@ bool isCrossingPort(const PathPortDump& port)
   return port.instanceName.rfind("lidar_crossing_", 0) == 0;
 }
 
+double axisAlignedCollinearOverlapLength(
+    const std::array<double, 2>& firstStart,
+    const std::array<double, 2>& firstEnd,
+    const std::array<double, 2>& secondStart,
+    const std::array<double, 2>& secondEnd)
+{
+  constexpr double eps = 1e-6;
+  const bool firstHorizontal = std::abs(firstStart[1] - firstEnd[1]) <= eps;
+  const bool secondHorizontal = std::abs(secondStart[1] - secondEnd[1]) <= eps;
+  if (firstHorizontal && secondHorizontal
+      && std::abs(firstStart[1] - secondStart[1]) <= eps) {
+    return overlapLength(firstStart[0], firstEnd[0], secondStart[0], secondEnd[0]);
+  }
+
+  const bool firstVertical = std::abs(firstStart[0] - firstEnd[0]) <= eps;
+  const bool secondVertical = std::abs(secondStart[0] - secondEnd[0]) <= eps;
+  if (firstVertical && secondVertical
+      && std::abs(firstStart[0] - secondStart[0]) <= eps) {
+    return overlapLength(firstStart[1], firstEnd[1], secondStart[1], secondEnd[1]);
+  }
+  return 0.0;
+}
+
+int countCollinearAccessConflicts(const PostRoutePath& path,
+                                  const PythonPostProcessRoutes& routes,
+                                  const std::string& netName,
+                                  const LidarRouteConfig& config)
+{
+  const auto points = postRoutePointsWithAccess(path);
+  if (points.size() < 2) {
+    return 0;
+  }
+  const double minOverlap = std::max(0.75, config.gridResolution);
+  int conflicts = 0;
+  for (const auto& entry : routes.paths) {
+    if (entry.first == netName) {
+      continue;
+    }
+    for (const auto& otherPath : entry.second) {
+      const auto otherPoints = postRoutePointsWithAccess(otherPath);
+      if (otherPoints.size() < 2) {
+        continue;
+      }
+      for (std::size_t i = 1; i < points.size(); ++i) {
+        for (std::size_t j = 1; j < otherPoints.size(); ++j) {
+          if (axisAlignedCollinearOverlapLength(points[i - 1],
+                                                points[i],
+                                                otherPoints[j - 1],
+                                                otherPoints[j])
+              > minOverlap) {
+            ++conflicts;
+          }
+        }
+      }
+    }
+  }
+  return conflicts;
+}
+
+int routeGeometryConflictScore(const PostRoutePath& path,
+                               const PythonPostProcessRoutes& routes,
+                               const std::string& netName,
+                               const LidarRouteConfig& config)
+{
+  const double clearance = std::max(0.75, 1.25 * config.gridResolution);
+  return 8 * countPhysicalIntersections(path, routes, netName)
+         + 2 * countCollinearAccessConflicts(path, routes, netName, config)
+         + countPhysicalNearConflicts(path, routes, netName, clearance);
+}
+
+bool appendUniquePoint(std::vector<std::array<double, 2>>& points,
+                       const std::array<double, 2>& point)
+{
+  if (!points.empty() && samePoint(points.back(), point)) {
+    return false;
+  }
+  points.push_back(point);
+  return true;
+}
+
+bool repairOneCrossingAccessCollinearOverlap(PostRoutePath& path,
+                                             const PythonPostProcessRoutes& routes,
+                                             const std::string& netName,
+                                             const LidarRouteConfig& config)
+{
+  constexpr double eps = 1e-6;
+  if (isCrossingPort(path.startPort) || !isCrossingPort(path.endPort)) {
+    return false;
+  }
+
+  const int originalConflicts =
+      countCollinearAccessConflicts(path, routes, netName, config);
+  if (originalConflicts == 0) {
+    return false;
+  }
+
+  const auto physical = postRoutePointsWithAccess(path);
+  if (physical.size() < 3) {
+    return false;
+  }
+  const auto start = physical.front();
+  const auto first = physical[1];
+  const auto beforeEnd = physical[physical.size() - 2];
+  const auto end = physical.back();
+  const double firstDx = first[0] - start[0];
+  const double firstDy = first[1] - start[1];
+  const double firstLength = std::hypot(firstDx, firstDy);
+  if (firstLength <= 2.0 * config.gridResolution) {
+    return false;
+  }
+
+  const auto startTangent = tangentOrientation(start, first);
+  if (!startTangent.has_value()
+      || angleDelta(startTangent.value(), path.startPort.orientation) > 1.0) {
+    return false;
+  }
+  const bool horizontal = std::abs(firstDy) <= eps;
+  const bool vertical = std::abs(firstDx) <= eps;
+  if (!horizontal && !vertical) {
+    return false;
+  }
+
+  const double tangentRadians =
+      path.startPort.orientation * std::acos(-1.0) / 180.0;
+  const std::array<double, 2> tangentStep = {std::cos(tangentRadians),
+                                            std::sin(tangentRadians)};
+  const double minExitDistance = std::max(4.0 * config.gridResolution, 8.0);
+  const double exitDistance =
+      snapGdsFactoryGrid(std::min(minExitDistance,
+                                  0.35 * firstLength));
+  const std::array<double, 2> exitPoint = {
+      snapGdsFactoryGrid(start[0] + tangentStep[0] * exitDistance),
+      snapGdsFactoryGrid(start[1] + tangentStep[1] * exitDistance)};
+  const double detourStep = std::max(2.0 * config.gridResolution, 4.0);
+  const std::array<double, 4> signs = {-1.0, 1.0, -2.0, 2.0};
+
+  PostRoutePath bestPath;
+  int bestConflicts = originalConflicts;
+  bool found = false;
+  for (const double signedAttempt : signs) {
+    const double offset = signedAttempt * detourStep;
+    std::vector<std::array<double, 2>> candidatePhysical;
+    candidatePhysical.reserve(6);
+    appendUniquePoint(candidatePhysical, start);
+    appendUniquePoint(candidatePhysical, exitPoint);
+    if (horizontal) {
+      const double detourY = snapGdsFactoryGrid(start[1] + offset);
+      appendUniquePoint(candidatePhysical, {exitPoint[0], detourY});
+      appendUniquePoint(candidatePhysical,
+                        {snapGdsFactoryGrid(beforeEnd[0]), detourY});
+    } else {
+      const double detourX = snapGdsFactoryGrid(start[0] + offset);
+      appendUniquePoint(candidatePhysical, {detourX, exitPoint[1]});
+      appendUniquePoint(candidatePhysical,
+                        {detourX, snapGdsFactoryGrid(beforeEnd[1])});
+    }
+    appendUniquePoint(candidatePhysical, beforeEnd);
+    appendUniquePoint(candidatePhysical, end);
+
+    PostRoutePath candidate = path;
+    candidate.points = trimPostRoutePointsForPorts(candidatePhysical,
+                                                   candidate.startPort,
+                                                   candidate.endPort);
+    if (!validatePostRoutePathAccess(netName, 0, candidate).empty()
+        || pathHasSelfIntersection(candidate)
+        || pathHasPhysicalIntersection(candidate, routes, netName)) {
+      continue;
+    }
+    const int conflicts =
+        countCollinearAccessConflicts(candidate, routes, netName, config);
+    if (conflicts < bestConflicts) {
+      bestConflicts = conflicts;
+      bestPath = std::move(candidate);
+      found = true;
+      if (conflicts == 0) {
+        break;
+      }
+    }
+  }
+
+  if (!found) {
+    return false;
+  }
+  path = std::move(bestPath);
+  return true;
+}
+
+void repairCrossingAccessCollinearOverlaps(PythonPostProcessRoutes& routes,
+                                           const LidarRouteConfig& config)
+{
+  std::vector<std::string> netNames;
+  netNames.reserve(routes.paths.size());
+  for (const auto& entry : routes.paths) {
+    netNames.push_back(entry.first);
+  }
+  std::sort(netNames.begin(), netNames.end());
+
+  constexpr int maxRepairs = 48;
+  for (int repair = 0; repair < maxRepairs; ++repair) {
+    bool changed = false;
+    for (const auto& netName : netNames) {
+      auto entry = routes.paths.find(netName);
+      if (entry == routes.paths.end()) {
+        continue;
+      }
+      for (auto& path : entry->second) {
+        if (repairOneCrossingAccessCollinearOverlap(
+                path, routes, netName, config)) {
+          changed = true;
+          break;
+        }
+      }
+      if (changed) {
+        break;
+      }
+    }
+    if (!changed) {
+      break;
+    }
+  }
+}
+
+bool repairOneRealPortTailAccess(PostRoutePath& path,
+                                 const PythonPostProcessRoutes& routes,
+                                 const std::string& netName,
+                                 const LidarRouteConfig& config)
+{
+  constexpr double eps = 1e-6;
+  if (isCrossingPort(path.endPort) || path.points.size() < 3) {
+    return false;
+  }
+  const int originalScore =
+      routeGeometryConflictScore(path, routes, netName, config);
+  if (originalScore == 0) {
+    return false;
+  }
+
+  const double orientation = normalizePortOrientation(path.endPort.orientation);
+  const bool horizontalPort =
+      std::abs(orientation) <= eps || std::abs(orientation - 180.0) <= eps;
+  const bool verticalPort =
+      std::abs(orientation - 90.0) <= eps
+      || std::abs(orientation - 270.0) <= eps;
+  if (!horizontalPort && !verticalPort) {
+    return false;
+  }
+
+  const auto physical = postRoutePointsWithAccess(path);
+  if (physical.size() < 5) {
+    return false;
+  }
+  const auto end = path.endPort.center;
+  std::size_t anchorIndex = physical.size() - 2;
+  while (anchorIndex > 0) {
+    const auto& point = physical[anchorIndex];
+    const bool onFinalAccessAxis =
+        horizontalPort ? std::abs(point[1] - end[1]) <= eps
+                       : std::abs(point[0] - end[0]) <= eps;
+    if (!onFinalAccessAxis) {
+      break;
+    }
+    --anchorIndex;
+  }
+  if (anchorIndex == 0 || anchorIndex + 1 >= physical.size()) {
+    return false;
+  }
+  const auto anchor = physical[anchorIndex];
+  const double radians = orientation * std::acos(-1.0) / 180.0;
+  const std::array<double, 6> accessDistances = {
+      std::max(2.0 * config.gridResolution, 3.0),
+      std::max(2.5 * config.gridResolution, 4.5),
+      std::max(3.0 * config.gridResolution, 6.0),
+      std::max(4.0 * config.gridResolution, 8.0),
+      std::max(5.0 * config.gridResolution, 10.0),
+      std::max(6.0 * config.gridResolution, 12.0)};
+
+  PostRoutePath bestPath;
+  int bestScore = originalScore;
+  bool found = false;
+  for (const double accessDistance : accessDistances) {
+    const std::array<double, 2> access = {
+        snapGdsFactoryGrid(end[0] + std::cos(radians) * accessDistance),
+        snapGdsFactoryGrid(end[1] + std::sin(radians) * accessDistance)};
+
+    std::vector<std::array<double, 2>> candidatePhysical;
+    candidatePhysical.reserve(physical.size() + 2);
+    for (std::size_t i = 0; i <= anchorIndex; ++i) {
+      appendUniquePoint(candidatePhysical, physical[i]);
+    }
+    if (horizontalPort) {
+      appendUniquePoint(candidatePhysical, {access[0], anchor[1]});
+    } else {
+      appendUniquePoint(candidatePhysical, {anchor[0], access[1]});
+    }
+    appendUniquePoint(candidatePhysical, access);
+    appendUniquePoint(candidatePhysical, end);
+
+    PostRoutePath candidate = path;
+    candidate.points = trimPostRoutePointsForPorts(candidatePhysical,
+                                                   candidate.startPort,
+                                                   candidate.endPort);
+    for (int cleanup = 0; cleanup < 4; ++cleanup) {
+      if (!removeFirstCollinearBacktrack(candidate)
+          && !removeAccessValidatedCollinearBacktrack(candidate)) {
+        break;
+      }
+    }
+    if (!validatePostRoutePathAccess(netName, 0, candidate).empty()
+        || pathHasSelfIntersection(candidate)) {
+      continue;
+    }
+    const int candidateScore =
+        routeGeometryConflictScore(candidate, routes, netName, config);
+    if (candidateScore < bestScore) {
+      bestScore = candidateScore;
+      bestPath = std::move(candidate);
+      found = true;
+      if (candidateScore == 0) {
+        break;
+      }
+    }
+  }
+
+  if (horizontalPort && anchorIndex >= 2) {
+    const auto trunkPrev = physical[anchorIndex - 2];
+    const auto trunk = physical[anchorIndex - 1];
+    const auto lateral = physical[anchorIndex];
+    const bool hasFoldedTail =
+        std::abs(trunkPrev[0] - trunk[0]) <= eps
+        && std::abs(trunk[1] - lateral[1]) <= eps
+        && std::abs(lateral[1] - end[1]) > 2.0 * config.gridResolution;
+    if (hasFoldedTail) {
+      const double laneStep = std::max(4.5, 3.0 * config.gridResolution);
+      const std::array<double, 6> laneOffsets = {
+          laneStep, -laneStep, 1.5 * laneStep, -1.5 * laneStep,
+          2.0 * laneStep, -2.0 * laneStep};
+      for (const double accessDistance : accessDistances) {
+        const std::array<double, 2> access = {
+            snapGdsFactoryGrid(end[0] + std::cos(radians) * accessDistance),
+            snapGdsFactoryGrid(end[1] + std::sin(radians) * accessDistance)};
+        for (const double laneOffset : laneOffsets) {
+          const double bypassY = snapGdsFactoryGrid(end[1] + laneOffset);
+          if (std::abs(bypassY - trunkPrev[1]) <= eps) {
+            continue;
+          }
+
+          std::vector<std::array<double, 2>> candidatePhysical;
+          candidatePhysical.reserve(physical.size() + 2);
+          for (std::size_t i = 0; i + 2 <= anchorIndex; ++i) {
+            appendUniquePoint(candidatePhysical, physical[i]);
+          }
+          appendUniquePoint(candidatePhysical, {trunk[0], bypassY});
+          appendUniquePoint(candidatePhysical, {access[0], bypassY});
+          appendUniquePoint(candidatePhysical, access);
+          appendUniquePoint(candidatePhysical, end);
+
+          PostRoutePath candidate = path;
+          candidate.points = trimPostRoutePointsForPorts(candidatePhysical,
+                                                         candidate.startPort,
+                                                         candidate.endPort);
+          for (int cleanup = 0; cleanup < 4; ++cleanup) {
+            if (!removeFirstCollinearBacktrack(candidate)
+                && !removeAccessValidatedCollinearBacktrack(candidate)) {
+              break;
+            }
+          }
+          if (!validatePostRoutePathAccess(netName, 0, candidate).empty()
+              || pathHasSelfIntersection(candidate)) {
+            continue;
+          }
+          const int candidateScore =
+              routeGeometryConflictScore(candidate, routes, netName, config);
+          if (candidateScore < bestScore) {
+            bestScore = candidateScore;
+            bestPath = std::move(candidate);
+            found = true;
+            if (candidateScore == 0) {
+              break;
+            }
+          }
+        }
+        if (bestScore == 0) {
+          break;
+        }
+      }
+    }
+  }
+  if (!found) {
+    return false;
+  }
+  path = std::move(bestPath);
+  return true;
+}
+
+bool netTouchesMrrEndpoint(const std::vector<PostRoutePath>& paths)
+{
+  for (const auto& path : paths) {
+    if (path.startPort.instanceName.find("mrr") != std::string::npos
+        || path.endPort.instanceName.find("mrr") != std::string::npos) {
+      return true;
+    }
+  }
+  return false;
+}
+
+std::vector<PostRoutePath> makeRealPortHeadAccessCandidates(
+    const PostRoutePath& path,
+    const std::string& netName,
+    const LidarRouteConfig& config)
+{
+  constexpr double eps = 1e-6;
+  std::vector<PostRoutePath> candidates;
+  if (isCrossingPort(path.startPort) || path.points.size() < 3) {
+    return candidates;
+  }
+
+  const double orientation = normalizePortOrientation(path.startPort.orientation);
+  const bool horizontalPort =
+      std::abs(orientation) <= eps || std::abs(orientation - 180.0) <= eps;
+  const bool verticalPort =
+      std::abs(orientation - 90.0) <= eps
+      || std::abs(orientation - 270.0) <= eps;
+  if (!horizontalPort && !verticalPort) {
+    return candidates;
+  }
+
+  const auto physical = postRoutePointsWithAccess(path);
+  if (physical.size() < 5) {
+    return candidates;
+  }
+  const auto start = path.startPort.center;
+  std::size_t prefixEndIndex = 1;
+  while (prefixEndIndex + 1 < physical.size()) {
+    const auto& point = physical[prefixEndIndex + 1];
+    const bool onStartAccessAxis =
+        horizontalPort ? std::abs(point[1] - start[1]) <= eps
+                       : std::abs(point[0] - start[0]) <= eps;
+    if (!onStartAccessAxis) {
+      break;
+    }
+    ++prefixEndIndex;
+  }
+  if (prefixEndIndex == 0 || prefixEndIndex + 1 >= physical.size()) {
+    return candidates;
+  }
+
+  const auto laneAnchor = physical[prefixEndIndex];
+  const double radians = orientation * std::acos(-1.0) / 180.0;
+  const std::array<double, 6> accessDistances = {
+      std::max(2.0 * config.gridResolution, 3.0),
+      std::max(2.5 * config.gridResolution, 4.5),
+      std::max(3.0 * config.gridResolution, 6.0),
+      std::max(4.0 * config.gridResolution, 8.0),
+      std::max(5.0 * config.gridResolution, 10.0),
+      std::max(6.0 * config.gridResolution, 12.0)};
+  const double laneStep = std::max(4.5, 3.0 * config.gridResolution);
+  const std::array<double, 8> laneOffsets = {
+      laneStep, -laneStep, 1.5 * laneStep, -1.5 * laneStep,
+      2.0 * laneStep, -2.0 * laneStep, 3.0 * laneStep, -3.0 * laneStep};
+
+  for (const double accessDistance : accessDistances) {
+    const std::array<double, 2> access = {
+        snapGdsFactoryGrid(start[0] + std::cos(radians) * accessDistance),
+        snapGdsFactoryGrid(start[1] + std::sin(radians) * accessDistance)};
+
+    for (const double laneOffset : laneOffsets) {
+      std::vector<std::array<double, 2>> candidatePhysical;
+      candidatePhysical.reserve(physical.size() + 3);
+      appendUniquePoint(candidatePhysical, start);
+      appendUniquePoint(candidatePhysical, access);
+      if (horizontalPort) {
+        const double bypassY = snapGdsFactoryGrid(start[1] + laneOffset);
+        if (std::abs(bypassY - laneAnchor[1]) <= eps) {
+          continue;
+        }
+        appendUniquePoint(candidatePhysical, {access[0], bypassY});
+        appendUniquePoint(candidatePhysical, {laneAnchor[0], bypassY});
+      } else {
+        const double bypassX = snapGdsFactoryGrid(start[0] + laneOffset);
+        if (std::abs(bypassX - laneAnchor[0]) <= eps) {
+          continue;
+        }
+        appendUniquePoint(candidatePhysical, {bypassX, access[1]});
+        appendUniquePoint(candidatePhysical, {bypassX, laneAnchor[1]});
+      }
+      for (std::size_t i = prefixEndIndex + 1; i < physical.size(); ++i) {
+        appendUniquePoint(candidatePhysical, physical[i]);
+      }
+
+      PostRoutePath candidate = path;
+      candidate.points = trimPostRoutePointsForPorts(candidatePhysical,
+                                                     candidate.startPort,
+                                                     candidate.endPort);
+      for (int cleanup = 0; cleanup < 4; ++cleanup) {
+        if (!removeFirstCollinearBacktrack(candidate)
+            && !removeAccessValidatedCollinearBacktrack(candidate)) {
+          break;
+        }
+      }
+      if (!validatePostRoutePathAccess(netName, 0, candidate).empty()
+          || pathHasSelfIntersection(candidate)) {
+        continue;
+      }
+      candidates.push_back(std::move(candidate));
+    }
+  }
+  return candidates;
+}
+
+bool repairOneRealPortHeadAccess(PostRoutePath& path,
+                                 const PythonPostProcessRoutes& routes,
+                                 const std::string& netName,
+                                 const LidarRouteConfig& config)
+{
+  constexpr double eps = 1e-6;
+  if (isCrossingPort(path.startPort) || path.points.size() < 3) {
+    return false;
+  }
+  const int originalScore =
+      routeGeometryConflictScore(path, routes, netName, config);
+  if (originalScore == 0) {
+    return false;
+  }
+
+  const double orientation = normalizePortOrientation(path.startPort.orientation);
+  const bool horizontalPort =
+      std::abs(orientation) <= eps || std::abs(orientation - 180.0) <= eps;
+  const bool verticalPort =
+      std::abs(orientation - 90.0) <= eps
+      || std::abs(orientation - 270.0) <= eps;
+  if (!horizontalPort && !verticalPort) {
+    return false;
+  }
+
+  const auto physical = postRoutePointsWithAccess(path);
+  if (physical.size() < 5) {
+    return false;
+  }
+  const auto start = path.startPort.center;
+  std::size_t prefixEndIndex = 1;
+  while (prefixEndIndex + 1 < physical.size()) {
+    const auto& point = physical[prefixEndIndex + 1];
+    const bool onStartAccessAxis =
+        horizontalPort ? std::abs(point[1] - start[1]) <= eps
+                       : std::abs(point[0] - start[0]) <= eps;
+    if (!onStartAccessAxis) {
+      break;
+    }
+    ++prefixEndIndex;
+  }
+  if (prefixEndIndex == 0 || prefixEndIndex + 1 >= physical.size()) {
+    return false;
+  }
+
+  const auto laneAnchor = physical[prefixEndIndex];
+  const double radians = orientation * std::acos(-1.0) / 180.0;
+  const std::array<double, 6> accessDistances = {
+      std::max(2.0 * config.gridResolution, 3.0),
+      std::max(2.5 * config.gridResolution, 4.5),
+      std::max(3.0 * config.gridResolution, 6.0),
+      std::max(4.0 * config.gridResolution, 8.0),
+      std::max(5.0 * config.gridResolution, 10.0),
+      std::max(6.0 * config.gridResolution, 12.0)};
+  const double laneStep = std::max(4.5, 3.0 * config.gridResolution);
+  const std::array<double, 8> laneOffsets = {
+      laneStep, -laneStep, 1.5 * laneStep, -1.5 * laneStep,
+      2.0 * laneStep, -2.0 * laneStep, 3.0 * laneStep, -3.0 * laneStep};
+
+  PostRoutePath bestPath;
+  int bestScore = originalScore;
+  bool found = false;
+  for (const double accessDistance : accessDistances) {
+    const std::array<double, 2> access = {
+        snapGdsFactoryGrid(start[0] + std::cos(radians) * accessDistance),
+        snapGdsFactoryGrid(start[1] + std::sin(radians) * accessDistance)};
+
+    for (const double laneOffset : laneOffsets) {
+      std::vector<std::array<double, 2>> candidatePhysical;
+      candidatePhysical.reserve(physical.size() + 3);
+      appendUniquePoint(candidatePhysical, start);
+      appendUniquePoint(candidatePhysical, access);
+      if (horizontalPort) {
+        const double bypassY = snapGdsFactoryGrid(start[1] + laneOffset);
+        if (std::abs(bypassY - laneAnchor[1]) <= eps) {
+          continue;
+        }
+        appendUniquePoint(candidatePhysical, {access[0], bypassY});
+        appendUniquePoint(candidatePhysical, {laneAnchor[0], bypassY});
+      } else {
+        const double bypassX = snapGdsFactoryGrid(start[0] + laneOffset);
+        if (std::abs(bypassX - laneAnchor[0]) <= eps) {
+          continue;
+        }
+        appendUniquePoint(candidatePhysical, {bypassX, access[1]});
+        appendUniquePoint(candidatePhysical, {bypassX, laneAnchor[1]});
+      }
+      for (std::size_t i = prefixEndIndex + 1; i < physical.size(); ++i) {
+        appendUniquePoint(candidatePhysical, physical[i]);
+      }
+
+      PostRoutePath candidate = path;
+      candidate.points = trimPostRoutePointsForPorts(candidatePhysical,
+                                                     candidate.startPort,
+                                                     candidate.endPort);
+      for (int cleanup = 0; cleanup < 4; ++cleanup) {
+        if (!removeFirstCollinearBacktrack(candidate)
+            && !removeAccessValidatedCollinearBacktrack(candidate)) {
+          break;
+        }
+      }
+      if (!validatePostRoutePathAccess(netName, 0, candidate).empty()
+          || pathHasSelfIntersection(candidate)) {
+        continue;
+      }
+      const int candidateScore =
+          routeGeometryConflictScore(candidate, routes, netName, config);
+      if (candidateScore < bestScore) {
+        bestScore = candidateScore;
+        bestPath = std::move(candidate);
+        found = true;
+        if (candidateScore == 0) {
+          break;
+        }
+      }
+    }
+    if (bestScore == 0) {
+      break;
+    }
+  }
+
+  if (!found) {
+    return false;
+  }
+  path = std::move(bestPath);
+  return true;
+}
+
+void repairRealPortHeadAccessConflicts(PythonPostProcessRoutes& routes,
+                                        const LidarRouteConfig& config)
+{
+  bool hasMrrStructure = false;
+  for (const auto& entry : routes.paths) {
+    for (const auto& path : entry.second) {
+      if (path.startPort.instanceName.find("mrr") != std::string::npos
+          || path.endPort.instanceName.find("mrr") != std::string::npos) {
+        hasMrrStructure = true;
+        break;
+      }
+    }
+    if (hasMrrStructure) {
+      break;
+    }
+  }
+  if (!hasMrrStructure) {
+    return;
+  }
+
+  std::vector<std::string> netNames;
+  netNames.reserve(routes.paths.size());
+  for (const auto& entry : routes.paths) {
+    netNames.push_back(entry.first);
+  }
+  std::sort(netNames.begin(), netNames.end());
+
+  auto hasHighBraidFanoutHead = [&](const std::string& netName,
+                                    const std::vector<PostRoutePath>& paths) {
+    auto crossingIt = routes.crossingSets.find(netName);
+    const std::size_t braidDegree =
+        crossingIt == routes.crossingSets.end()
+            ? 0
+            : crossingIt->second.pythonIterationOrder().size();
+    if (braidDegree < 3) {
+      return false;
+    }
+    for (const auto& path : paths) {
+      if (!isCrossingPort(path.startPort)
+          && path.startPort.instanceName.find("fanout") != std::string::npos) {
+        return true;
+      }
+    }
+    return false;
+  };
+
+  constexpr int maxRepairs = 128;
+  for (int repair = 0; repair < maxRepairs; ++repair) {
+    bool changed = false;
+    for (const auto& netName : netNames) {
+      auto entry = routes.paths.find(netName);
+      if (entry == routes.paths.end()) {
+        continue;
+      }
+      if (!netTouchesMrrEndpoint(entry->second)
+          && !hasHighBraidFanoutHead(netName, entry->second)) {
+        continue;
+      }
+      for (auto& path : entry->second) {
+        if (repairOneRealPortHeadAccess(path, routes, netName, config)) {
+          changed = true;
+          break;
+        }
+      }
+      if (changed) {
+        break;
+      }
+    }
+    if (!changed) {
+      break;
+    }
+  }
+}
+
+bool isClusterableMrrHeadPath(const PostRoutePath& path)
+{
+  constexpr double eps = 1e-6;
+  const double orientation = normalizePortOrientation(path.startPort.orientation);
+  return !isCrossingPort(path.startPort)
+         && path.startPort.instanceName.find("fanout") != std::string::npos
+         && (std::abs(orientation) <= eps
+             || std::abs(orientation - 180.0) <= eps)
+         && path.points.size() >= 3;
+}
+
+struct HeadAccessPathRef
+{
+  std::string netName;
+  std::size_t pathIndex = 0;
+};
+
+std::vector<PostRoutePath> topHeadAccessCandidates(
+    const PythonPostProcessRoutes& routes,
+    const HeadAccessPathRef& ref,
+    const LidarRouteConfig& config,
+    std::size_t maxCandidates)
+{
+  const auto entry = routes.paths.find(ref.netName);
+  if (entry == routes.paths.end() || ref.pathIndex >= entry->second.size()) {
+    return {};
+  }
+  std::vector<PostRoutePath> candidates;
+  candidates.push_back(entry->second[ref.pathIndex]);
+  auto generated = makeRealPortHeadAccessCandidates(
+      entry->second[ref.pathIndex], ref.netName, config);
+  candidates.insert(candidates.end(),
+                    std::make_move_iterator(generated.begin()),
+                    std::make_move_iterator(generated.end()));
+
+  std::sort(candidates.begin(),
+            candidates.end(),
+            [&](const PostRoutePath& first, const PostRoutePath& second) {
+              const int firstScore =
+                  routeGeometryConflictScore(first, routes, ref.netName, config);
+              const int secondScore =
+                  routeGeometryConflictScore(second, routes, ref.netName, config);
+              if (firstScore != secondScore) {
+                return firstScore < secondScore;
+              }
+              return polylineLength(postRoutePointsWithAccess(first))
+                     < polylineLength(postRoutePointsWithAccess(second));
+            });
+  if (candidates.size() > maxCandidates) {
+    candidates.resize(maxCandidates);
+  }
+  return candidates;
+}
+
+void repairMrrHeadAccessClusters(PythonPostProcessRoutes& routes,
+                                 const LidarRouteConfig& config)
+{
+  std::vector<HeadAccessPathRef> refs;
+  for (const auto& entry : routes.paths) {
+    if (!netTouchesMrrEndpoint(entry.second)) {
+      continue;
+    }
+    for (std::size_t i = 0; i < entry.second.size(); ++i) {
+      if (isClusterableMrrHeadPath(entry.second[i])) {
+        refs.push_back({entry.first, i});
+      }
+    }
+  }
+
+  std::sort(refs.begin(),
+            refs.end(),
+            [](const HeadAccessPathRef& first, const HeadAccessPathRef& second) {
+              if (first.netName != second.netName) {
+                return first.netName < second.netName;
+              }
+              return first.pathIndex < second.pathIndex;
+            });
+
+  constexpr int maxRepairs = 24;
+  for (int repair = 0; repair < maxRepairs; ++repair) {
+    bool changed = false;
+    for (std::size_t i = 0; i < refs.size(); ++i) {
+      auto firstEntry = routes.paths.find(refs[i].netName);
+      if (firstEntry == routes.paths.end()
+          || refs[i].pathIndex >= firstEntry->second.size()) {
+        continue;
+      }
+      const auto& firstPath = firstEntry->second[refs[i].pathIndex];
+      for (std::size_t j = i + 1; j < refs.size(); ++j) {
+        auto secondEntry = routes.paths.find(refs[j].netName);
+        if (secondEntry == routes.paths.end()
+            || refs[j].pathIndex >= secondEntry->second.size()) {
+          continue;
+        }
+        const auto& secondPath = secondEntry->second[refs[j].pathIndex];
+        if (refs[i].netName == refs[j].netName
+            || firstPath.startPort.instanceName
+                   != secondPath.startPort.instanceName
+            || std::abs(firstPath.startPort.center[0]
+                        - secondPath.startPort.center[0])
+                   > config.gridResolution
+            || std::abs(firstPath.startPort.center[1]
+                        - secondPath.startPort.center[1])
+                   > 1.5 * config.gridResolution) {
+          continue;
+        }
+
+        const int originalScore =
+            routeGeometryConflictScore(firstPath, routes, refs[i].netName, config)
+            + routeGeometryConflictScore(secondPath,
+                                         routes,
+                                         refs[j].netName,
+                                         config);
+        auto firstCandidates =
+            topHeadAccessCandidates(routes, refs[i], config, 7);
+        auto secondCandidates =
+            topHeadAccessCandidates(routes, refs[j], config, 7);
+        if (firstCandidates.empty() || secondCandidates.empty()) {
+          continue;
+        }
+
+        int bestScore = originalScore;
+        std::optional<std::pair<std::size_t, std::size_t>> bestPair;
+        for (std::size_t a = 0; a < firstCandidates.size(); ++a) {
+          for (std::size_t b = 0; b < secondCandidates.size(); ++b) {
+            if (a == 0 && b == 0) {
+              continue;
+            }
+            PythonPostProcessRoutes candidateRoutes = routes;
+            candidateRoutes.paths[refs[i].netName][refs[i].pathIndex] =
+                firstCandidates[a];
+            candidateRoutes.paths[refs[j].netName][refs[j].pathIndex] =
+                secondCandidates[b];
+            const int score =
+                routeGeometryConflictScore(
+                    candidateRoutes.paths[refs[i].netName][refs[i].pathIndex],
+                    candidateRoutes,
+                    refs[i].netName,
+                    config)
+                + routeGeometryConflictScore(
+                    candidateRoutes.paths[refs[j].netName][refs[j].pathIndex],
+                    candidateRoutes,
+                    refs[j].netName,
+                    config);
+            if (score < bestScore) {
+              bestScore = score;
+              bestPair = std::make_pair(a, b);
+            }
+          }
+        }
+
+        if (!bestPair.has_value()) {
+          continue;
+        }
+        routes.paths[refs[i].netName][refs[i].pathIndex] =
+            std::move(firstCandidates[bestPair->first]);
+        routes.paths[refs[j].netName][refs[j].pathIndex] =
+            std::move(secondCandidates[bestPair->second]);
+        changed = true;
+        break;
+      }
+      if (changed) {
+        break;
+      }
+    }
+    if (!changed) {
+      break;
+    }
+  }
+}
+
+void repairRealPortTailAccessConflicts(PythonPostProcessRoutes& routes,
+                                        const LidarRouteConfig& config)
+{
+  bool hasMrrStructure = false;
+  for (const auto& entry : routes.paths) {
+    for (const auto& path : entry.second) {
+      if (path.startPort.instanceName.find("mrr") != std::string::npos
+          || path.endPort.instanceName.find("mrr") != std::string::npos) {
+        hasMrrStructure = true;
+        break;
+      }
+    }
+    if (hasMrrStructure) {
+      break;
+    }
+  }
+  if (!hasMrrStructure) {
+    return;
+  }
+
+  std::vector<std::string> netNames;
+  netNames.reserve(routes.paths.size());
+  for (const auto& entry : routes.paths) {
+    netNames.push_back(entry.first);
+  }
+  std::sort(netNames.begin(), netNames.end());
+
+  constexpr int maxRepairs = 128;
+  for (int repair = 0; repair < maxRepairs; ++repair) {
+    bool changed = false;
+    for (const auto& netName : netNames) {
+      auto entry = routes.paths.find(netName);
+      if (entry == routes.paths.end()) {
+        continue;
+      }
+      for (auto& path : entry->second) {
+        if (repairOneRealPortTailAccess(path, routes, netName, config)) {
+          changed = true;
+          break;
+        }
+      }
+      if (changed) {
+        break;
+      }
+    }
+    if (!changed) {
+      break;
+    }
+  }
+}
+
 bool removeTinyCrossingEndBacktrack(PostRoutePath& path)
 {
   constexpr double eps = 1e-9;
@@ -2928,6 +4136,13 @@ PythonPostProcessRoutes buildPythonPostProcessRoutes(
     result.crossingSets[net.netName] = net.crossingNets;
   }
 
+  std::unordered_map<std::string, int> originalCrossingDegree;
+  originalCrossingDegree.reserve(result.crossingSets.size());
+  for (const auto& entry : result.crossingSets) {
+    originalCrossingDegree[entry.first] =
+        static_cast<int>(entry.second.pythonIterationOrder().size());
+  }
+
   repairFanoutAccessOverlaps(result, config);
   repairAdjacentFanoutMrrSharedTrunks(result, config);
   repairFanoutMrrOrderInversions(result, config);
@@ -2985,6 +4200,25 @@ PythonPostProcessRoutes buildPythonPostProcessRoutes(
         otherPaths.push_back(std::move(otherTail));
       };
 
+  std::function<bool(const std::array<double, 2>&, double)> crossingNearExisting =
+      [&](const std::array<double, 2>& point, double orientation) {
+    constexpr double minCrossingSeparation = 4.0;
+    constexpr double sameOrientationEnvelopeSeparation = 7.0;
+    for (const auto& crossing : result.crossings) {
+      if (pointDistance(crossing.center, point) < minCrossingSeparation) {
+        return true;
+      }
+      if (angleDelta(crossing.orientation, orientation) <= 1.0
+          && std::abs(crossing.center[0] - point[0])
+                 < sameOrientationEnvelopeSeparation
+          && std::abs(crossing.center[1] - point[1])
+                 < sameOrientationEnvelopeSeparation) {
+        return true;
+      }
+    }
+    return false;
+  };
+
   for (const auto& net : db.nets) {
     auto currentPathsIt = result.paths.find(net.netName);
     if (currentPathsIt == result.paths.end()) {
@@ -3024,7 +4258,9 @@ PythonPostProcessRoutes buildPythonPostProcessRoutes(
 
       otherCrossingIt->second.erase(net.netName);
       const auto split =
-          splitPostRoutePaths(currentPathsIt->second, otherPathsIt->second);
+          splitPostRoutePaths(currentPathsIt->second,
+                              otherPathsIt->second,
+                              &crossingNearExisting);
       if (!split.has_value()) {
         continue;
       }
@@ -3056,15 +4292,20 @@ PythonPostProcessRoutes buildPythonPostProcessRoutes(
     }
   }
 
-  auto crossingNearExisting = [&](const std::array<double, 2>& point) {
-    constexpr double minCrossingSeparation = 4.0;
-    for (const auto& crossing : result.crossings) {
-      if (pointDistance(crossing.center, point) < minCrossingSeparation) {
-        return true;
-      }
-    }
-    return false;
+  auto canonicalPair = [](const std::string& first,
+                          const std::string& second) {
+    return first < second ? std::make_pair(first, second)
+                          : std::make_pair(second, first);
   };
+
+  std::map<std::pair<std::string, std::string>, int> crossingPairCounts;
+  for (const auto& entry : result.crossingSets) {
+    for (const auto& other : entry.second.pythonIterationOrder()) {
+      const auto key = canonicalPair(entry.first, other);
+      crossingPairCounts[key] = std::max(crossingPairCounts[key], 1);
+    }
+  }
+  constexpr int maxPairCrossingMultiplicity = 1;
 
   auto insertSupplementalCrossings = [&](int maxSupplementalCrossings) {
     int supplementalCrossings = 0;
@@ -3078,15 +4319,31 @@ PythonPostProcessRoutes buildPythonPostProcessRoutes(
       }
       for (std::size_t j = i + 1; j < db.nets.size()
                               && supplementalCrossings < maxSupplementalCrossings;
-           ++j) {
+         ++j) {
         const auto& secondNet = db.nets[j];
+        const auto pairKey = canonicalPair(firstNet.netName, secondNet.netName);
+        const int firstOriginalDegree = originalCrossingDegree[firstNet.netName];
+        const int secondOriginalDegree = originalCrossingDegree[secondNet.netName];
+        const bool lowDegreeOriginalPair =
+            std::min(firstOriginalDegree, secondOriginalDegree) == 1
+            && std::max(firstOriginalDegree, secondOriginalDegree) <= 2;
+        const int pairMultiplicityLimit =
+            lowDegreeOriginalPair ? 2 : maxPairCrossingMultiplicity;
         auto secondPathsIt = result.paths.find(secondNet.netName);
         if (secondPathsIt == result.paths.end()) {
           continue;
         }
+        if (crossingPairCounts[pairKey] >= pairMultiplicityLimit) {
+          continue;
+        }
+        int splitScore = std::numeric_limits<int>::max();
         const auto split =
-            splitPostRoutePaths(firstPathsIt->second, secondPathsIt->second);
-        if (!split.has_value() || crossingNearExisting(split->crossingPoint)) {
+            splitPostRoutePaths(firstPathsIt->second,
+                                secondPathsIt->second,
+                                &crossingNearExisting,
+                                false,
+                                &splitScore);
+        if (!split.has_value()) {
           continue;
         }
         applyPostRouteSplit(firstNet.netName,
@@ -3094,6 +4351,7 @@ PythonPostProcessRoutes buildPythonPostProcessRoutes(
                             split.value(),
                             firstPathsIt->second,
                             secondPathsIt->second);
+        ++crossingPairCounts[pairKey];
         result.crossingSets[firstNet.netName].insert(secondNet.netName);
         result.crossingSets[secondNet.netName].insert(firstNet.netName);
         ++supplementalCrossings;
@@ -3102,12 +4360,40 @@ PythonPostProcessRoutes buildPythonPostProcessRoutes(
     return supplementalCrossings;
   };
 
-  insertSupplementalCrossings(32);
-  cleanupPostSplitPathGeometry(result);
-  insertSupplementalCrossings(32);
-  cleanupPostSplitPathGeometry(result);
-  repairPostSplitHorizontalConflictDetours(result, config);
-  cleanupPostSplitPathGeometry(result);
+  const int supplementalCrossingBudget =
+      std::max(64, std::min(512, static_cast<int>(db.nets.size()) * 2));
+  int supplementalCrossings = 0;
+  auto closeSupplementalCrossings = [&](int maxPasses) {
+    for (int pass = 0;
+         pass < maxPasses && supplementalCrossings < supplementalCrossingBudget;
+         ++pass) {
+      const int inserted = insertSupplementalCrossings(
+          supplementalCrossingBudget - supplementalCrossings);
+      cleanupPostSplitPathGeometry(result);
+      if (inserted == 0) {
+        break;
+      }
+      supplementalCrossings += inserted;
+    }
+  };
+  auto legalizePostSplitTopology = [&]() {
+    repairFanoutAccessOverlaps(result, config);
+    repairAdjacentFanoutMrrSharedTrunks(result, config);
+    repairFanoutMrrOrderInversions(result, config);
+    repairFanoutMrrSelfIntersections(result, config);
+    repairCrossingAccessCollinearOverlaps(result, config);
+    repairRealPortHeadAccessConflicts(result, config);
+    repairRealPortTailAccessConflicts(result, config);
+    repairPostSplitHorizontalConflictDetours(result, config);
+    cleanupPostSplitPathGeometry(result);
+  };
+
+  closeSupplementalCrossings(6);
+  legalizePostSplitTopology();
+  closeSupplementalCrossings(3);
+  legalizePostSplitTopology();
+  closeSupplementalCrossings(2);
+  legalizePostSplitTopology();
 
   return result;
 }
@@ -3390,7 +4676,8 @@ LidarAstarRouteResult routeSingleNetGrid(LidarRuntimeView& db,
                                          const std::set<std::string>& groups,
                                          const std::vector<int>* historyMap,
                                          int historyWidth,
-                                         int historyHeight)
+                                         int historyHeight,
+                                         const LidarMfOtPlan* mfotPlan)
 {
   LidarAstarRouteResult result;
   result.netName = net.netName;
@@ -3504,6 +4791,10 @@ LidarAstarRouteResult routeSingleNetGrid(LidarRuntimeView& db,
   const auto state = buildAstarInitState(db, drc, net, config, drUnrouted);
   drc.setRoutingBendParameters(
       state.gridRadius, state.bend45Part1, state.bend45Part2, state.predictLength);
+  const bool mfotCellCostsActive =
+      mfotPlan != nullptr && mfotPlan->enabled
+      && (config.mfotHardCorridor || config.mfotOutsidePenalty > 0.0
+          || config.mfotPotentialScale > 0.0);
   if (net.eulerDistance < 10.0
       && oppositeOrientations(state.startNode[2], state.endNode[2])) {
     const double length = shortSbendLength(routeStartPort, routeEndPort);
@@ -3701,6 +4992,24 @@ LidarAstarRouteResult routeSingleNetGrid(LidarRuntimeView& db,
               || neighborPosition[1] >= state.routingBound[1][1]) {
             continue;
           }
+          if (mfotCellCostsActive && config.mfotHardCorridor) {
+            bool inMfOtCorridor = true;
+            static_cast<void>(mfotCellPenalty(*mfotPlan,
+                                              config,
+                                              net.netName,
+                                              neighborPosition[0],
+                                              neighborPosition[1],
+                                              &inMfOtCorridor));
+            const bool nearStart =
+                manhattanDH(neighborPosition, state.startNode)
+                <= state.gridRadius + 2;
+            const bool nearEnd =
+                manhattanDH(neighborPosition, state.endNode)
+                <= state.connectThreshold + state.gridRadius + 2;
+            if (!inMfOtCorridor && !nearStart && !nearEnd) {
+              continue;
+            }
+          }
 
           const LidarDrcNode drcNode{
               currentNode.pos,
@@ -3798,6 +5107,13 @@ LidarAstarRouteResult routeSingleNetGrid(LidarRuntimeView& db,
       } else {
         costG = currentNode.costG + state.stepG.at(nbType);
       }
+      if (mfotCellCostsActive) {
+        costG += mfotCellPenalty(*mfotPlan,
+                                 config,
+                                 net.netName,
+                                 neighbor.pos[0],
+                                 neighbor.pos[1]);
+      }
 
       if (neighbor.violated) {
         auto unionNets = currentNode.violatedNets;
@@ -3839,8 +5155,12 @@ LidarAstarRouteResult routeSingleNetGrid(LidarRuntimeView& db,
       if (neighbor.costG > costG) {
         const std::array<int, 2> neighborPos2 = {neighbor.pos[0], neighbor.pos[1]};
         const std::array<int, 2> endPos2 = {state.endNode[0], state.endNode[1]};
+        const double heuristicWeight =
+            (mfotPlan != nullptr && mfotPlan->enabled)
+                ? mfotSearchWeightForNet(*mfotPlan, config, net.netName)
+                : 1.0;
         double costF = costG
-                       + config.lossPropagation
+                       + heuristicWeight * config.lossPropagation
                              * customH(neighborPos2,
                                        endPos2,
                                        config.lossBending,
@@ -3909,12 +5229,30 @@ LidarGridRouteFlowResult routeAllNetsGrid(LidarRuntimeView& db,
   LidarGridRouteFlowResult flow;
   LidarGridRouter router(db, config);
   router.processNetOrder();
+  const auto mfotStart = std::chrono::steady_clock::now();
+  auto mfotPlan = buildMfOtPlan(db, drc, config);
+  const auto mfotEnd = std::chrono::steady_clock::now();
+  applyMfOtGlobalPriorities(db, mfotPlan, config);
+  flow.mfotEnabled = mfotPlan.enabled;
+  flow.mfotNets = mfotPlan.nets.size();
+  flow.mfotCorridorCells = mfotPlan.totalCorridorCells;
+  flow.mfotFreeEnergy = mfotPlan.totalFreeEnergy;
+  std::cout << std::fixed << std::setprecision(6)
+            << "timing_cpp_mfot_plan_s="
+            << std::chrono::duration<double>(mfotEnd - mfotStart).count()
+            << "\n"
+            << "mfot_enabled=" << (mfotPlan.enabled ? 1 : 0) << "\n"
+            << "mfot_nets=" << mfotPlan.nets.size() << "\n"
+            << "mfot_corridor_cells=" << mfotPlan.totalCorridorCells << "\n"
+            << "mfot_free_energy=" << mfotPlan.totalFreeEnergy << "\n"
+            << std::flush;
 
   const int historyWidth = drc.bitmapWidth();
   const int historyHeight = drc.bitmapHeight();
   std::vector<int> historyMap(static_cast<std::size_t>(historyWidth)
                                   * static_cast<std::size_t>(historyHeight) * 8,
                               0);
+  seedMfOtHistoryMap(mfotPlan, config, historyMap, historyWidth, historyHeight);
 
   auto finalizeHistoryStats = [&]() {
     flow.historyNonzero = 0;
@@ -4020,7 +5358,8 @@ LidarGridRouteFlowResult routeAllNetsGrid(LidarRuntimeView& db,
                               groups,
                               &historyMap,
                               historyWidth,
-                              historyHeight);
+                              historyHeight,
+                              mfotPlan.enabled ? &mfotPlan : nullptr);
   };
 
   auto routeLoss = [&](const LidarNet& net, const LidarAstarRouteResult& result) {
@@ -4161,6 +5500,24 @@ LidarGridRouteFlowResult routeAllNetsGrid(LidarRuntimeView& db,
             }
             db.nets[netIt->second].routingOrder = static_cast<int>(i);
             localIndices.push_back(netIt->second);
+          }
+          if (mfotPlan.enabled && config.mfotPriorityScale > 0.0) {
+            std::stable_sort(
+                localIndices.begin(),
+                localIndices.end(),
+                [&](std::size_t lhs, std::size_t rhs) {
+                  const double leftPriority =
+                      mfotNetPriority(mfotPlan, db.nets[lhs].netName);
+                  const double rightPriority =
+                      mfotNetPriority(mfotPlan, db.nets[rhs].netName);
+                  if (std::abs(leftPriority - rightPriority) > 1e-9) {
+                    return leftPriority > rightPriority;
+                  }
+                  return db.nets[lhs].routingOrder < db.nets[rhs].routingOrder;
+                });
+            for (std::size_t rank = 0; rank < localIndices.size(); ++rank) {
+              db.nets[localIndices[rank]].routingOrder = static_cast<int>(rank);
+            }
           }
 
           const auto localOrder = pythonHeapOrder(db, localIndices);
@@ -4388,6 +5745,10 @@ void writeGridRouteFlowSummary(const LidarGridRouteFlowResult& flow,
      << "\tabnormal=" << joinSet(flow.abnormalNets)
      << "\thistory_nonzero=" << flow.historyNonzero
      << "\thistory_sum=" << flow.historySum
+     << "\tmfot_enabled=" << (flow.mfotEnabled ? 1 : 0)
+     << "\tmfot_nets=" << flow.mfotNets
+     << "\tmfot_corridor_cells=" << flow.mfotCorridorCells
+     << "\tmfot_free_energy=" << flow.mfotFreeEnergy
      << "\n";
   for (const auto& entry : flow.entries) {
     const auto& result = entry.route;
@@ -4441,10 +5802,18 @@ void writeGridRouteResultYml(const LidarRuntimeView& db,
   os << "  bend_radius: " << config.bendRadius << "\n";
   os << "  net_order: " << config.netOrder << "\n";
   os << "  group: " << (config.group ? "true" : "false") << "\n";
+  os << "  mfot_enabled: " << (config.enableMfOtRouting ? "true" : "false") << "\n";
+  os << "  mfot_iterations: " << config.mfotIterations << "\n";
+  os << "  mfot_grid_stride: " << config.mfotGridStride << "\n";
+  os << "  mfot_max_samples_per_net: " << config.mfotMaxSamplesPerNet << "\n";
+  os << "  mfot_corridor_radius: " << config.mfotCorridorRadius << "\n";
   os << "  success: " << (flow.success ? "true" : "false") << "\n";
   os << "  entries: " << flow.entries.size() << "\n";
   os << "  history_nonzero: " << flow.historyNonzero << "\n";
   os << "  history_sum: " << flow.historySum << "\n";
+  os << "  mfot_nets: " << flow.mfotNets << "\n";
+  os << "  mfot_corridor_cells: " << flow.mfotCorridorCells << "\n";
+  os << "  mfot_free_energy: " << flow.mfotFreeEnergy << "\n";
   os << "  abnormal_nets: ";
   writeYamlStringSeq(os, flow.abnormalNets, 4);
 

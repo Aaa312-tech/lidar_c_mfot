@@ -1,0 +1,19 @@
+schema: lidar_native_to_picdb_yml
+design: multiportmmi_16x16
+instances: 162
+macros: 10
+nets: 223
+skipped_nets: {}
+macro_sources:
+  m_grating_coupler_ellipti_4c46b398_0: gdsfactory
+  m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1: gdsfactory
+  m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2: gdsfactory
+  m_straight_heater_metal_u_9c931429_3: gdsfactory
+  m_mmi_I10_O10_WNone_WT1_L_e2477a99_4: gdsfactory
+  m_mmi_I2_O2_WNone_WT1_LT1_d965ea1e_5: gdsfactory
+  m_straight_L200_N2_CSstrip_WNone_6: gdsfactory
+  m_mmi_I8_O8_WNone_WT1_LT1_8e242222_7: gdsfactory
+  m_mmi_I14_O14_WNone_WT1_L_218c8a66_8: gdsfactory
+  m_mmi_I16_O16_WNone_WT1_L_defbb103_9: gdsfactory
+realize_gdsfactory_lef: true
+layout_ports_instances: 0

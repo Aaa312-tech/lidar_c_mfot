@@ -1,0 +1,207 @@
+cmd=D:\conda\python.exe "D:/xprogram/PIC-DB-main/PIC-DB-main/tools/pr_lidar_native/scripts\lidar_yml_to_picdb_yml.py" "D:\xprogram\PIC-DB-main\PIC-DB-main\lidar_c_benchmarks\picroute\toy_example\toy_example.gp.yml" "D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\converted"
+lef=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\converted\converted_lef.yml
+def=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\converted\converted_def.yml
+lidar=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\converted\converted_lidar.yml
+manifest=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\converted\conversion_manifest.yml
+[2026-07-06 01:50:58.236] [OPDB] [info] [YML] Loading YAML file: D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\converted\converted_lef.yml
+[2026-07-06 01:50:58.238] [OPDB] [info] [LEFYML] Library name: toy_example_converted
+[2026-07-06 01:50:58.239] [OPDB] [info] [LEFYML] Added cross-section: strip with width: 0.5
+[2026-07-06 01:50:58.239] [OPDB] [info] [LEFYML] Added cross-section: metal1 with width: 10
+[2026-07-06 01:50:58.239] [OPDB] [info] [LEFYML] Processing block: m_mmi1x2_2
+[2026-07-06 01:50:58.239] [OPDB] [info] [LEFYML] Block 'm_mmi1x2_2' type: cell
+[2026-07-06 01:50:58.239] [OPDB] [info] [LEFYML] Block 'm_mmi1x2_2' bbox:
+[2026-07-06 01:50:58.239] [OPDB] [info] [LEFYML] bbox [0.000000,0.000000]
+[2026-07-06 01:50:58.239] [OPDB] [info] [LEFYML] bbox [25.500000,0.000000]
+[2026-07-06 01:50:58.239] [OPDB] [info] [LEFYML] bbox [25.500000,2.500000]
+[2026-07-06 01:50:58.239] [OPDB] [info] [LEFYML] bbox [0.000000,2.500000]
+[2026-07-06 01:50:58.239] [OPDB] [info] [LEFYML] Block 'm_mmi1x2_2' doc: LiDAR native macro converted for PIC-DB smoke tests.
+[2026-07-06 01:50:58.239] [OPDB] [info] [LEFYML] Processing pin: o1
+[2026-07-06 01:50:58.239] [OPDB] [info] [LEFYML] Pin 'o1' doc: null
+[2026-07-06 01:50:58.239] [OPDB] [info] [LEFYML] Pin 'o1' width: 0.500000
+[2026-07-06 01:50:58.239] [OPDB] [info] [LEFYML] Pin 'o1' xsection: strip
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Pin 'o1' position: (0.000000, 1.250000), rotation: 180.000000
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Added pin: o1 to instance: m_mmi1x2_2
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Processing pin: o2
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Pin 'o2' doc: null
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Pin 'o2' width: 0.500000
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Pin 'o2' xsection: strip
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Pin 'o2' position: (25.500000, 1.875000), rotation: 0.000000
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Added pin: o2 to instance: m_mmi1x2_2
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Processing pin: o3
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Pin 'o3' doc: null
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Pin 'o3' width: 0.500000
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Pin 'o3' xsection: strip
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Pin 'o3' position: (25.500000, 0.625000), rotation: 0.000000
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Added pin: o3 to instance: m_mmi1x2_2
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Added block as instance: m_mmi1x2_2
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Processing block: m_ring_single_pn_43ee7534_3
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Block 'm_ring_single_pn_43ee7534_3' type: cell
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Block 'm_ring_single_pn_43ee7534_3' bbox:
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] bbox [0.000000,0.000000]
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] bbox [14.852000,0.000000]
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] bbox [14.852000,16.472000]
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] bbox [0.000000,16.472000]
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Block 'm_ring_single_pn_43ee7534_3' doc: LiDAR native macro converted for PIC-DB smoke tests.
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Processing pin: o1
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Pin 'o1' doc: null
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Pin 'o1' width: 0.500000
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Pin 'o1' xsection: strip
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Pin 'o1' position: (3.202000, 3.250000), rotation: 180.000000
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Added pin: o1 to instance: m_ring_single_pn_43ee7534_3
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Processing pin: o2
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Pin 'o2' doc: null
+[2026-07-06 01:50:58.240] [OPDB] [info] [LEFYML] Pin 'o2' width: 0.500000
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o2' xsection: strip
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o2' position: (11.394000, 3.250000), rotation: 0.000000
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Added pin: o2 to instance: m_ring_single_pn_43ee7534_3
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Added block as instance: m_ring_single_pn_43ee7534_3
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Processing block: m_ring_double_pn_1
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Block 'm_ring_double_pn_1' type: cell
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Block 'm_ring_double_pn_1' bbox:
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] bbox [0.000000,0.000000]
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] bbox [10.000000,0.000000]
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] bbox [10.000000,60.000000]
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] bbox [0.000000,60.000000]
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Block 'm_ring_double_pn_1' doc: LiDAR native macro converted for PIC-DB smoke tests.
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Processing pin: o1
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o1' doc: null
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o1' width: 0.500000
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o1' xsection: strip
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o1' position: (3.739465, 2.425000), rotation: 180.000000
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Added pin: o1 to instance: m_ring_double_pn_1
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Processing pin: o4
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o4' doc: null
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o4' width: 0.500000
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o4' xsection: strip
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o4' position: (3.739465, 14.025000), rotation: 180.000000
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Added pin: o4 to instance: m_ring_double_pn_1
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Processing pin: o3
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o3' doc: null
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o3' width: 0.500000
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o3' xsection: strip
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o3' position: (11.112238, 14.025000), rotation: 0.000000
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Added pin: o3 to instance: m_ring_double_pn_1
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Processing pin: o2
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o2' doc: null
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o2' width: 0.500000
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o2' xsection: strip
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Pin 'o2' position: (11.112238, 2.425000), rotation: 0.000000
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Added pin: o2 to instance: m_ring_double_pn_1
+[2026-07-06 01:50:58.241] [OPDB] [info] [LEFYML] Added block as instance: m_ring_double_pn_1
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Processing block: m_ring_double_pn_2
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Block 'm_ring_double_pn_2' type: cell
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Block 'm_ring_double_pn_2' bbox:
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] bbox [0.000000,0.000000]
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] bbox [10.000000,0.000000]
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] bbox [10.000000,10.000000]
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] bbox [0.000000,10.000000]
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Block 'm_ring_double_pn_2' doc: LiDAR native macro converted for PIC-DB smoke tests.
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Processing pin: o1
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o1' doc: null
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o1' width: 0.500000
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o1' xsection: strip
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o1' position: (3.739465, 2.425000), rotation: 180.000000
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Added pin: o1 to instance: m_ring_double_pn_2
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Processing pin: o4
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o4' doc: null
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o4' width: 0.500000
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o4' xsection: strip
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o4' position: (3.739465, 14.025000), rotation: 180.000000
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Added pin: o4 to instance: m_ring_double_pn_2
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Processing pin: o3
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o3' doc: null
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o3' width: 0.500000
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o3' xsection: strip
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o3' position: (11.112238, 14.025000), rotation: 0.000000
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Added pin: o3 to instance: m_ring_double_pn_2
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Processing pin: o2
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o2' doc: null
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o2' width: 0.500000
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o2' xsection: strip
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Pin 'o2' position: (11.112238, 2.425000), rotation: 0.000000
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Added pin: o2 to instance: m_ring_double_pn_2
+[2026-07-06 01:50:58.242] [OPDB] [info] [LEFYML] Added block as instance: m_ring_double_pn_2
+[2026-07-06 01:50:58.242] [OPDB] [info] [YML] Loading YAML file: D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\converted\converted_def.yml
+[2026-07-06 01:50:58.245] [OPDB] [info] [DEFYML] Design name: toy_example
+[2026-07-06 01:50:58.245] [OPDB] [info] [DEFYML] Bounding box:
+[2026-07-06 01:50:58.245] [OPDB] [info] [DEFYML]  [0, 0]
+[2026-07-06 01:50:58.245] [OPDB] [info] [DEFYML]  [200, 200]
+[2026-07-06 01:50:58.245] [OPDB] [info] [DEFYML] Added cell: fanout_yb_0_0 (Total cells: 1)
+[2026-07-06 01:50:58.245] [OPDB] [info] [DEFYML] Added cell: fanout_yb_0_1 (Total cells: 2)
+[2026-07-06 01:50:58.245] [OPDB] [info] [DEFYML] Added cell: fanout_yb_0_2 (Total cells: 3)
+[2026-07-06 01:50:58.246] [OPDB] [info] [DEFYML] Added cell: mrr_array_0_mrr_0 (Total cells: 4)
+[2026-07-06 01:50:58.246] [OPDB] [info] [DEFYML] Added cell: obstacle1 (Total cells: 5)
+[2026-07-06 01:50:58.246] [OPDB] [info] [DEFYML] Added cell: obstacle2 (Total cells: 6)
+[2026-07-06 01:50:58.246] [OPDB] [info] [DEFYML] Placed fanout_yb_0_0 at position (132.75, 81.25) with rotation 0, mirror false, and status PLACED
+[2026-07-06 01:50:58.246] [OPDB] [info] [DEFYML] Placed fanout_yb_0_1 at position (71.25, 64.75) with rotation 270, mirror false, and status PLACED
+[2026-07-06 01:50:58.246] [OPDB] [info] [DEFYML] Placed fanout_yb_0_2 at position (32.75, 21.25) with rotation 180, mirror false, and status PLACED
+[2026-07-06 01:50:58.246] [OPDB] [info] [DEFYML] Placed mrr_array_0_mrr_0 at position (7.426, 68.236) with rotation 0, mirror false, and status PLACED
+[2026-07-06 01:50:58.246] [OPDB] [info] [DEFYML] Placed obstacle1 at position (55, 60) with rotation 0, mirror false, and status PLACED
+[2026-07-06 01:50:58.246] [OPDB] [info] [DEFYML] Placed obstacle2 at position (55, 40) with rotation 0, mirror false, and status PLACED
+[2026-07-06 01:50:58.246] [OPDB] [info] [DEFYML] Connected net n_0: mrr_array_0_mrr_0:o2 to fanout_yb_0_0:o1
+[2026-07-06 01:50:58.246] [OPDB] [info] [DEFYML] Connected net n_1: fanout_yb_0_1:o2 to fanout_yb_0_2:o1
+timing_lidar_convert_s=3.290355
+timing_cpp_load_design_s=0.009643
+timing_cpp_runtime_init_s=0.000639
+timing_cpp_mfot_plan_s=0.000538
+mfot_enabled=1
+mfot_nets=2
+mfot_corridor_cells=0
+mfot_free_energy=-646.398879
+[2026-07-06 01:50:58.295] [OPDB] [info] [DEFYML] Writing design name: toy_example
+[2026-07-06 01:50:58.295] [OPDB] [info] [DEFYML] Writing bounding box points:
+[2026-07-06 01:50:58.295] [OPDB] [info]   [0, 0]
+[2026-07-06 01:50:58.295] [OPDB] [info]   [200, 200]
+[2026-07-06 01:50:58.295] [OPDB] [info] [DEFYML] Writing instances num: 6 cells, 2 segments
+[2026-07-06 01:50:58.295] [OPDB] [info] [DEFYML] Writing placements num: 6 cells
+[2026-07-06 01:50:58.295] [OPDB] [info] [DEFYML] Writing connections num: 2
+[2026-07-06 01:50:58.295] [OPDB] [info] [DEFYML] DefYml data written to file: D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\cpp\routed_def.yml
+timing_cpp_route_core_s=0.046364
+timing_cpp_write_reports_s=0.001546
+timing_cpp_writeback_s=0.000084
+timing_cpp_write_def_s=0.001185
+timing_cpp_db_drc_s=0.009271
+route_success=true
+routed_nets=2
+waveguide_segments=2
+skipped_nets=0
+postprocess_invalid_accesses=0
+postprocess_rejected_nets=0
+flow_summary=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\cpp\lidar_grid_route_flow_summary.txt
+route_result=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\cpp\lidar_route_result.yml
+routed_def=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\cpp\routed_def.yml
+db_drc_summary=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\cpp\db_drc_summary.txt
+db_drc_clean=false
+timing_cpp_native_flow_s=0.069652
+cmd=D:\conda\python.exe "D:/xprogram/PIC-DB-main/PIC-DB-main/tools/pr_lidar_native/scripts\render_route_result_gds.py" "D:\xprogram\pic_agentic\Agentic-PIC-PD\third-party\LiDAR\src" "D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\cpp\lidar_route_result.yml" "D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp.gds" --base-lidar-yml "D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\converted\converted_lidar.yml" --skip-invalid-access --skip-abnormal-nets --invalid-access-report "D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\cpp\render_invalid_access.txt"
+==============
+m_mmi1x2_2 fanout_yb_0_0 0.0
+==============
+m_mmi1x2_2 fanout_yb_0_1 0.0
+==============
+m_mmi1x2_2 fanout_yb_0_2 0.0
+==============
+m_ring_single_pn_43ee7534_3 mrr_array_0_mrr_0 0.0
+==============
+m_ring_double_pn_1 obstacle1 0.0
+==============
+m_ring_double_pn_2 obstacle2 0.0
+2026-07-06 01:51:02.514 | WARNING  | kfactory.kcell:show:8797 - Could not connect to klive server
+routes=2
+access_waveguides=4
+invalid_access_waveguides=0
+skipped_abnormal_nets=0
+crossings=0
+length=184.562000
+legacy_layer44_via_arrays=0
+gds=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp.gds
+timing_lidar_render_s=4.689907
+input_lidar_yml=D:\xprogram\PIC-DB-main\PIC-DB-main\lidar_c_benchmarks\picroute\toy_example\toy_example.gp.yml
+lidar_src=D:\xprogram\pic_agentic\Agentic-PIC-PD\third-party\LiDAR\src
+output_gds=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp.gds
+flow_dir=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow
+converted_lef=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\converted\converted_lef.yml
+converted_def=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\converted\converted_def.yml
+converted_lidar=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\converted\converted_lidar.yml
+render_invalid_access_report=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\toy_example_gp_cpp_picdb_flow\cpp\render_invalid_access.txt
+timing_lidar_full_flow_s=8.053896

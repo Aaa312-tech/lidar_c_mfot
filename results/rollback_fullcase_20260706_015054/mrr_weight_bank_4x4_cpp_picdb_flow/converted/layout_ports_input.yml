@@ -1,0 +1,998 @@
+pdk: ''
+instances:
+  gc_array_in_gc_0:
+    component: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+  gc_array_in_gc_1:
+    component: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+  gc_array_in_gc_2:
+    component: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+  gc_array_in_gc_3:
+    component: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+  mod_array_in_mrr_0:
+    component: ring_double_pn
+    settings:
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mod_array_in_mrr_1:
+    component: ring_double_pn
+    settings:
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mod_array_in_mrr_2:
+    component: ring_double_pn
+    settings:
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mod_array_in_mrr_3:
+    component: ring_double_pn
+    settings:
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  fanout_yb_0_0:
+    component: mmi1x2
+    settings:
+      width_taper: 1.0
+      length_taper: 10.0
+      length_mmi: 5.5
+      width_mmi: 2.5
+      gap_mmi: 0.25
+      taper:
+        function: taper
+      cross_section: strip
+  fanout_yb_1_0:
+    component: mmi1x2
+    settings:
+      width_taper: 1.0
+      length_taper: 10.0
+      length_mmi: 5.5
+      width_mmi: 2.5
+      gap_mmi: 0.25
+      taper:
+        function: taper
+      cross_section: strip
+  fanout_yb_1_1:
+    component: mmi1x2
+    settings:
+      width_taper: 1.0
+      length_taper: 10.0
+      length_mmi: 5.5
+      width_mmi: 2.5
+      gap_mmi: 0.25
+      taper:
+        function: taper
+      cross_section: strip
+  mrr_array_0_mrr_0:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mrr_array_0_mrr_1:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mrr_array_0_mrr_2:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mrr_array_0_mrr_3:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mrr_array_1_mrr_0:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mrr_array_1_mrr_1:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mrr_array_1_mrr_2:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mrr_array_1_mrr_3:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mrr_array_2_mrr_0:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mrr_array_2_mrr_1:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mrr_array_2_mrr_2:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mrr_array_2_mrr_3:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mrr_array_3_mrr_0:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mrr_array_3_mrr_1:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mrr_array_3_mrr_2:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  mrr_array_3_mrr_3:
+    component: ring_single_pn
+    settings:
+      gap: 0.3
+      radius: 5.0
+      doping_angle: 85
+      cross_section: strip
+      doped_heater: true
+      doped_heater_angle_buffer: 10
+      doped_heater_layer: NPP
+      doped_heater_width: 0.5
+      doped_heater_waveguide_offset: 2.175
+  gc_array_out_gc_0:
+    component: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+  gc_array_out_gc_1:
+    component: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+  gc_array_out_gc_2:
+    component: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+  gc_array_out_gc_3:
+    component: grating_coupler_elliptical_lumerical
+    settings:
+      parameters:
+      - -2.429836
+      - 0.1
+      - 0.48007
+      - 0.1
+      - 0.607398
+      - 0.1
+      - 0.449884
+      - 0.1
+      - 0.427412
+      - 0.1
+      - 0.47579
+      - 0.1
+      - 0.502665
+      - 0.100029
+      - 0.510037
+      - 0.1
+      - 0.4944
+      - 0.10796
+      - 0.474006
+      - 0.149727
+      - 0.432728
+      - 0.183953
+      - 0.387202
+      - 0.236018
+      - 0.360322
+      - 0.242618
+      - 0.357704
+      - 0.260664
+      - 0.35261
+      - 0.246682
+      - 0.371749
+      - 0.229208
+      - 0.377696
+      - 0.224653
+      - 0.376544
+      - 0.220418
+      - 0.380476
+      - 0.219236
+      - 0.379887
+      - 0.217004
+      - 0.382917
+      - 0.218278
+      - 0.364132
+      - 0.237291
+      - 0.367683
+      - 0.248651
+      - 0.344151
+      - 0.273357
+      - 0.330623
+      - 0.273504
+      layer_slab: SLAB150
+      taper_angle: 55
+      taper_length: 12.6
+      fiber_angle: 5
+      bias_gap: 0
+placements:
+  gc_array_in_gc_0:
+    x: 0.0
+    y: 250.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: true
+  gc_array_in_gc_1:
+    x: 0.0
+    y: 350.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: true
+  gc_array_in_gc_2:
+    x: 0.0
+    y: 450.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: true
+  gc_array_in_gc_3:
+    x: 0.0
+    y: 550.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: true
+  mod_array_in_mrr_0:
+    x: 87.164
+    y: 250.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 90
+    mirror: false
+  mod_array_in_mrr_1:
+    x: 87.164
+    y: 350.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 90
+    mirror: false
+  mod_array_in_mrr_2:
+    x: 87.164
+    y: 450.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 90
+    mirror: false
+  mod_array_in_mrr_3:
+    x: 87.164
+    y: 550.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 90
+    mirror: false
+  fanout_yb_0_0:
+    x: 132.01570237522031
+    y: 400.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  fanout_yb_1_0:
+    x: 162.01570237522031
+    y: 350.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  fanout_yb_1_1:
+    x: 162.01570237522031
+    y: 450.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_0_mrr_0:
+    x: 217.51570237522031
+    y: 250.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_0_mrr_1:
+    x: 217.51570237522031
+    y: 350.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_0_mrr_2:
+    x: 217.51570237522031
+    y: 450.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_0_mrr_3:
+    x: 217.51570237522031
+    y: 550.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_1_mrr_0:
+    x: 262.36620179219324
+    y: 250.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_1_mrr_1:
+    x: 262.36620179219324
+    y: 350.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_1_mrr_2:
+    x: 262.36620179219324
+    y: 450.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_1_mrr_3:
+    x: 262.36620179219324
+    y: 550.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_2_mrr_0:
+    x: 307.2167012091661
+    y: 250.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_2_mrr_1:
+    x: 307.2167012091661
+    y: 350.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_2_mrr_2:
+    x: 307.2167012091661
+    y: 450.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_2_mrr_3:
+    x: 307.2167012091661
+    y: 550.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_3_mrr_0:
+    x: 352.06720062613897
+    y: 250.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_3_mrr_1:
+    x: 352.06720062613897
+    y: 350.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_3_mrr_2:
+    x: 352.06720062613897
+    y: 450.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  mrr_array_3_mrr_3:
+    x: 352.06720062613897
+    y: 550.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  gc_array_out_gc_0:
+    x: 772.836
+    y: 250.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  gc_array_out_gc_1:
+    x: 772.836
+    y: 350.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  gc_array_out_gc_2:
+    x: 772.836
+    y: 450.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  gc_array_out_gc_3:
+    x: 772.836
+    y: 550.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+connections: {}
+routes: {}
+info: {}
+ports: {}
+nets: []
+warnings: {}

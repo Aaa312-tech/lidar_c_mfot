@@ -9,6 +9,7 @@
 #include <vector>
 
 #include "lidar_drc.h"
+#include "lidar_mfot.h"
 #include "lidar_router.h"
 
 namespace picpr::lidar
@@ -80,6 +81,10 @@ struct LidarGridRouteFlowResult
   std::set<std::string>           abnormalNets;
   std::size_t                     historyNonzero = 0;
   long long                       historySum = 0;
+  bool                            mfotEnabled = false;
+  std::size_t                     mfotNets = 0;
+  std::size_t                     mfotCorridorCells = 0;
+  double                          mfotFreeEnergy = 0.0;
 };
 
 struct LidarRouteWritebackResult
@@ -107,7 +112,8 @@ LidarAstarRouteResult routeSingleNetGrid(LidarRuntimeView& db,
                                          const std::set<std::string>& groups = {},
                                          const std::vector<int>* historyMap = nullptr,
                                          int historyWidth = 0,
-                                         int historyHeight = 0);
+                                         int historyHeight = 0,
+                                         const LidarMfOtPlan* mfotPlan = nullptr);
 
 LidarGridRouteFlowResult routeAllNetsGrid(LidarRuntimeView& db,
                                           LidarDrcManager& drc,

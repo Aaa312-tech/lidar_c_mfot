@@ -1,0 +1,233 @@
+name: toy_example
+bbox:
+  -
+    - 0
+    - 0
+  -
+    - 200
+    - 200
+instances:
+  fanout_yb_0_0:
+    component: m_mmi1x2_2
+    generator: mmi1x2
+    settings:
+      macro_type: m_mmi1x2_2
+      placement:
+        - PLACED
+        -
+          - 120
+          - 80
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  fanout_yb_0_1:
+    component: m_mmi1x2_2
+    generator: mmi1x2
+    settings:
+      macro_type: m_mmi1x2_2
+      placement:
+        - PLACED
+        -
+          - 70
+          - 52
+        - E
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  fanout_yb_0_2:
+    component: m_mmi1x2_2
+    generator: mmi1x2
+    settings:
+      macro_type: m_mmi1x2_2
+      placement:
+        - PLACED
+        -
+          - 20
+          - 20
+        - S
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  mrr_array_0_mrr_0:
+    component: m_ring_single_pn_43ee7534_3
+    generator: ring_single_pn
+    settings:
+      macro_type: m_ring_single_pn_43ee7534_3
+      placement:
+        - PLACED
+        -
+          - 0
+          - 60
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  obstacle1:
+    component: m_ring_double_pn_1
+    generator: rectangle
+    settings:
+      size:
+        - 10
+        - 60
+      layer: WG
+      macro_type: m_ring_double_pn_1
+      placement:
+        - PLACED
+        -
+          - 50
+          - 30
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  obstacle2:
+    component: m_ring_double_pn_2
+    generator: rectangle
+    settings:
+      size:
+        - 10
+        - 10
+      layer: WG
+      macro_type: m_ring_double_pn_2
+      placement:
+        - PLACED
+        -
+          - 50
+          - 35
+        - N
+        -
+          - 10
+          - 10
+          - 10
+          - 10
+  n_0_wg_0:
+    component: waveguide
+  n_1_wg_0:
+    component: waveguide
+placements:
+  fanout_yb_0_0:
+    x: 132.75
+    y: 81.25
+    rotation: 0
+    mirror: false
+    status: PLACED
+  fanout_yb_0_1:
+    x: 71.25
+    y: 64.75
+    rotation: 270
+    mirror: false
+    status: PLACED
+  fanout_yb_0_2:
+    x: 32.75
+    y: 21.25
+    rotation: 180
+    mirror: false
+    status: PLACED
+  mrr_array_0_mrr_0:
+    x: 7.426
+    y: 68.236
+    rotation: 0
+    mirror: false
+    status: PLACED
+  obstacle1:
+    x: 55
+    y: 60
+    rotation: 0
+    mirror: false
+    status: PLACED
+  obstacle2:
+    x: 55
+    y: 40
+    rotation: 0
+    mirror: false
+    status: PLACED
+connections:
+  n_0:
+    source: fanout_yb_0_0,o1
+    target: mrr_array_0_mrr_0,o2
+    segments:
+      n_0_wg_0:
+        source:
+          - 120
+          - 81.25
+          - 180
+        target:
+          - 11.394
+          - 63.25
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 120
+            - 81.25
+          -
+            - 117
+            - 81.25
+          -
+            - 73
+            - 81.25
+          -
+            - 61
+            - 93
+          -
+            - 47
+            - 93
+          -
+            - 27
+            - 73
+          -
+            - 27
+            - 63.25
+          -
+            - 21
+            - 63.25
+          -
+            - 11.394
+            - 63.25
+  n_1:
+    source: fanout_yb_0_1,o2
+    target: fanout_yb_0_2,o1
+    segments:
+      n_1_wg_0:
+        source:
+          - 71.875
+          - 52
+          - 270
+        target:
+          - 45.5
+          - 21.25
+          - 0
+        swap: false
+        type: waveguide
+        xsection: WG
+        width: 0.5
+        points:
+          -
+            - 71.875
+            - 52
+          -
+            - 71.875
+            - 49
+          -
+            - 71.875
+            - 21.25
+          -
+            - 63
+            - 21.25
+          -
+            - 45.5
+            - 21.25

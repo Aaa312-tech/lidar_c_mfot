@@ -1,0 +1,761 @@
+cmd=D:\conda\python.exe "D:/xprogram/PIC-DB-main/PIC-DB-main/tools/pr_lidar_native/scripts\lidar_yml_to_picdb_yml.py" "D:\xprogram\PIC-DB-main\PIC-DB-main\lidar_c_benchmarks\picroute\multiportmmi_8x8\multiportmmi_8x8.yml" "D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\converted"
+lef=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\converted\converted_lef.yml
+def=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\converted\converted_def.yml
+lidar=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\converted\converted_lidar.yml
+manifest=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\converted\conversion_manifest.yml
+[2026-07-06 01:53:43.765] [OPDB] [info] [YML] Loading YAML file: D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\converted\converted_lef.yml
+[2026-07-06 01:53:43.782] [OPDB] [info] [LEFYML] Library name: multiportmmi_8x8_converted
+[2026-07-06 01:53:43.782] [OPDB] [info] [LEFYML] Added cross-section: strip with width: 0.5
+[2026-07-06 01:53:43.782] [OPDB] [info] [LEFYML] Added cross-section: metal1 with width: 10
+[2026-07-06 01:53:43.782] [OPDB] [info] [LEFYML] Processing block: m_grating_coupler_ellipti_4c46b398_0
+[2026-07-06 01:53:43.782] [OPDB] [info] [LEFYML] Block 'm_grating_coupler_ellipti_4c46b398_0' type: cell
+[2026-07-06 01:53:43.782] [OPDB] [info] [LEFYML] Block 'm_grating_coupler_ellipti_4c46b398_0' bbox:
+[2026-07-06 01:53:43.783] [OPDB] [info] [LEFYML] bbox [0.000000,0.000000]
+[2026-07-06 01:53:43.783] [OPDB] [info] [LEFYML] bbox [27.164000,0.000000]
+[2026-07-06 01:53:43.783] [OPDB] [info] [LEFYML] bbox [27.164000,25.746000]
+[2026-07-06 01:53:43.783] [OPDB] [info] [LEFYML] bbox [0.000000,25.746000]
+[2026-07-06 01:53:43.783] [OPDB] [info] [LEFYML] Block 'm_grating_coupler_ellipti_4c46b398_0' doc: LiDAR native macro converted for PIC-DB smoke tests.
+[2026-07-06 01:53:43.783] [OPDB] [info] [LEFYML] Processing pin: o1
+[2026-07-06 01:53:43.783] [OPDB] [info] [LEFYML] Pin 'o1' doc: null
+[2026-07-06 01:53:43.783] [OPDB] [info] [LEFYML] Pin 'o1' width: 0.500000
+[2026-07-06 01:53:43.783] [OPDB] [info] [LEFYML] Pin 'o1' xsection: strip
+[2026-07-06 01:53:43.783] [OPDB] [info] [LEFYML] Pin 'o1' position: (0.000000, 12.873000), rotation: 180.000000
+[2026-07-06 01:53:43.783] [OPDB] [info] [LEFYML] Added pin: o1 to instance: m_grating_coupler_ellipti_4c46b398_0
+[2026-07-06 01:53:43.783] [OPDB] [info] [LEFYML] Added block as instance: m_grating_coupler_ellipti_4c46b398_0
+[2026-07-06 01:53:43.783] [OPDB] [info] [LEFYML] Processing block: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+[2026-07-06 01:53:43.783] [OPDB] [info] [LEFYML] Block 'm_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1' type: cell
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Block 'm_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1' bbox:
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] bbox [0.000000,0.000000]
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] bbox [25.500000,0.000000]
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] bbox [25.500000,2.500000]
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] bbox [0.000000,2.500000]
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Block 'm_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1' doc: LiDAR native macro converted for PIC-DB smoke tests.
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Processing pin: o1
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Pin 'o1' doc: null
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Pin 'o1' width: 0.500000
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Pin 'o1' xsection: strip
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Pin 'o1' position: (0.000000, 1.250000), rotation: 180.000000
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Added pin: o1 to instance: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Processing pin: o2
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Pin 'o2' doc: null
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Pin 'o2' width: 0.500000
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Pin 'o2' xsection: strip
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Pin 'o2' position: (25.500000, 1.875000), rotation: 0.000000
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Added pin: o2 to instance: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Processing pin: o3
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Pin 'o3' doc: null
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Pin 'o3' width: 0.500000
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Pin 'o3' xsection: strip
+[2026-07-06 01:53:43.784] [OPDB] [info] [LEFYML] Pin 'o3' position: (25.500000, 0.625000), rotation: 0.000000
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] Added pin: o3 to instance: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] Added block as instance: m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] Processing block: m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] Block 'm_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2' type: cell
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] Block 'm_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2' bbox:
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] bbox [0.000000,0.000000]
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] bbox [291.000000,0.000000]
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] bbox [291.000000,56.000000]
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] bbox [0.000000,56.000000]
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] Block 'm_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2' doc: LiDAR native macro converted for PIC-DB smoke tests.
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] Processing pin: o1
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] Pin 'o1' doc: null
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] Pin 'o1' width: 0.500000
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] Pin 'o1' xsection: strip
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] Pin 'o1' position: (0.000000, 27.875000), rotation: 180.000000
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] Added pin: o1 to instance: m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] Processing pin: o2
+[2026-07-06 01:53:43.785] [OPDB] [info] [LEFYML] Pin 'o2' doc: null
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] Pin 'o2' width: 0.500000
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] Pin 'o2' xsection: strip
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] Pin 'o2' position: (291.000000, 27.875000), rotation: 0.000000
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] Added pin: o2 to instance: m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] Added block as instance: m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] Processing block: m_straight_heater_metal_u_9c931429_3
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] Block 'm_straight_heater_metal_u_9c931429_3' type: cell
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] Block 'm_straight_heater_metal_u_9c931429_3' bbox:
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] bbox [0.000000,0.000000]
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] bbox [231.800000,0.000000]
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] bbox [231.800000,11.000000]
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] bbox [0.000000,11.000000]
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] Block 'm_straight_heater_metal_u_9c931429_3' doc: LiDAR native macro converted for PIC-DB smoke tests.
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] Processing pin: o1
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] Pin 'o1' doc: null
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] Pin 'o1' width: 0.500000
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] Pin 'o1' xsection: strip
+[2026-07-06 01:53:43.786] [OPDB] [info] [LEFYML] Pin 'o1' position: (15.900000, 5.500000), rotation: 180.000000
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Added pin: o1 to instance: m_straight_heater_metal_u_9c931429_3
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Processing pin: o2
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Pin 'o2' doc: null
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Pin 'o2' width: 0.500000
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Pin 'o2' xsection: strip
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Pin 'o2' position: (215.900000, 5.500000), rotation: 0.000000
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Added pin: o2 to instance: m_straight_heater_metal_u_9c931429_3
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Added block as instance: m_straight_heater_metal_u_9c931429_3
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Processing block: m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Block 'm_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4' type: cell
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Block 'm_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4' bbox:
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] bbox [0.000000,0.000000]
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] bbox [128.000000,0.000000]
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] bbox [128.000000,30.000000]
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] bbox [0.000000,30.000000]
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Block 'm_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4' doc: LiDAR native macro converted for PIC-DB smoke tests.
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Processing pin: o1
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Pin 'o1' doc: null
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Pin 'o1' width: 0.500000
+[2026-07-06 01:53:43.787] [OPDB] [info] [LEFYML] Pin 'o1' xsection: strip
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o1' position: (0.000000, 2.500000), rotation: 180.000000
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Added pin: o1 to instance: m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Processing pin: o2
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o2' doc: null
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o2' width: 0.500000
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o2' xsection: strip
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o2' position: (0.000000, 7.500000), rotation: 180.000000
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Added pin: o2 to instance: m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Processing pin: o3
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o3' doc: null
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o3' width: 0.500000
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o3' xsection: strip
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o3' position: (0.000000, 12.500000), rotation: 180.000000
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Added pin: o3 to instance: m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Processing pin: o4
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o4' doc: null
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o4' width: 0.500000
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o4' xsection: strip
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o4' position: (0.000000, 17.500000), rotation: 180.000000
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Added pin: o4 to instance: m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Processing pin: o5
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o5' doc: null
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o5' width: 0.500000
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o5' xsection: strip
+[2026-07-06 01:53:43.788] [OPDB] [info] [LEFYML] Pin 'o5' position: (0.000000, 22.500000), rotation: 180.000000
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Added pin: o5 to instance: m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Processing pin: o6
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o6' doc: null
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o6' width: 0.500000
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o6' xsection: strip
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o6' position: (0.000000, 27.500000), rotation: 180.000000
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Added pin: o6 to instance: m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Processing pin: o12
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o12' doc: null
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o12' width: 0.500000
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o12' xsection: strip
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o12' position: (128.000000, 2.500000), rotation: 0.000000
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Added pin: o12 to instance: m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Processing pin: o11
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o11' doc: null
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o11' width: 0.500000
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o11' xsection: strip
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o11' position: (128.000000, 7.500000), rotation: 0.000000
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Added pin: o11 to instance: m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Processing pin: o10
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o10' doc: null
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o10' width: 0.500000
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o10' xsection: strip
+[2026-07-06 01:53:43.789] [OPDB] [info] [LEFYML] Pin 'o10' position: (128.000000, 12.500000), rotation: 0.000000
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Added pin: o10 to instance: m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Processing pin: o9
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Pin 'o9' doc: null
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Pin 'o9' width: 0.500000
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Pin 'o9' xsection: strip
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Pin 'o9' position: (128.000000, 17.500000), rotation: 0.000000
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Added pin: o9 to instance: m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Processing pin: o8
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Pin 'o8' doc: null
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Pin 'o8' width: 0.500000
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Pin 'o8' xsection: strip
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Pin 'o8' position: (128.000000, 22.500000), rotation: 0.000000
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Added pin: o8 to instance: m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Processing pin: o7
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Pin 'o7' doc: null
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Pin 'o7' width: 0.500000
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Pin 'o7' xsection: strip
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Pin 'o7' position: (128.000000, 27.500000), rotation: 0.000000
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Added pin: o7 to instance: m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Added block as instance: m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Processing block: m_mmi_I2_O2_WNone_WT1_LT1_d965ea1e_5
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Block 'm_mmi_I2_O2_WNone_WT1_LT1_d965ea1e_5' type: cell
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] Block 'm_mmi_I2_O2_WNone_WT1_LT1_d965ea1e_5' bbox:
+[2026-07-06 01:53:43.790] [OPDB] [info] [LEFYML] bbox [0.000000,0.000000]
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] bbox [56.000000,0.000000]
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] bbox [56.000000,10.000000]
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] bbox [0.000000,10.000000]
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Block 'm_mmi_I2_O2_WNone_WT1_LT1_d965ea1e_5' doc: LiDAR native macro converted for PIC-DB smoke tests.
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Processing pin: o1
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Pin 'o1' doc: null
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Pin 'o1' width: 0.500000
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Pin 'o1' xsection: strip
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Pin 'o1' position: (0.000000, 2.500000), rotation: 180.000000
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Added pin: o1 to instance: m_mmi_I2_O2_WNone_WT1_LT1_d965ea1e_5
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Processing pin: o2
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Pin 'o2' doc: null
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Pin 'o2' width: 0.500000
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Pin 'o2' xsection: strip
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Pin 'o2' position: (0.000000, 7.500000), rotation: 180.000000
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Added pin: o2 to instance: m_mmi_I2_O2_WNone_WT1_LT1_d965ea1e_5
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Processing pin: o4
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Pin 'o4' doc: null
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Pin 'o4' width: 0.500000
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Pin 'o4' xsection: strip
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Pin 'o4' position: (56.000000, 2.500000), rotation: 0.000000
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Added pin: o4 to instance: m_mmi_I2_O2_WNone_WT1_LT1_d965ea1e_5
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Processing pin: o3
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Pin 'o3' doc: null
+[2026-07-06 01:53:43.791] [OPDB] [info] [LEFYML] Pin 'o3' width: 0.500000
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Pin 'o3' xsection: strip
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Pin 'o3' position: (56.000000, 7.500000), rotation: 0.000000
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Added pin: o3 to instance: m_mmi_I2_O2_WNone_WT1_LT1_d965ea1e_5
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Added block as instance: m_mmi_I2_O2_WNone_WT1_LT1_d965ea1e_5
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Processing block: m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Block 'm_mmi_I4_O4_WNone_WT1_LT1_a5379678_6' type: cell
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Block 'm_mmi_I4_O4_WNone_WT1_LT1_a5379678_6' bbox:
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] bbox [0.000000,0.000000]
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] bbox [92.000000,0.000000]
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] bbox [92.000000,20.000000]
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] bbox [0.000000,20.000000]
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Block 'm_mmi_I4_O4_WNone_WT1_LT1_a5379678_6' doc: LiDAR native macro converted for PIC-DB smoke tests.
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Processing pin: o1
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Pin 'o1' doc: null
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Pin 'o1' width: 0.500000
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Pin 'o1' xsection: strip
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Pin 'o1' position: (0.000000, 2.500000), rotation: 180.000000
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Added pin: o1 to instance: m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Processing pin: o2
+[2026-07-06 01:53:43.792] [OPDB] [info] [LEFYML] Pin 'o2' doc: null
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o2' width: 0.500000
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o2' xsection: strip
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o2' position: (0.000000, 7.500000), rotation: 180.000000
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Added pin: o2 to instance: m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Processing pin: o3
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o3' doc: null
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o3' width: 0.500000
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o3' xsection: strip
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o3' position: (0.000000, 12.500000), rotation: 180.000000
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Added pin: o3 to instance: m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Processing pin: o4
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o4' doc: null
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o4' width: 0.500000
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o4' xsection: strip
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o4' position: (0.000000, 17.500000), rotation: 180.000000
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Added pin: o4 to instance: m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Processing pin: o8
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o8' doc: null
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o8' width: 0.500000
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o8' xsection: strip
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o8' position: (92.000000, 2.500000), rotation: 0.000000
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Added pin: o8 to instance: m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Processing pin: o7
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o7' doc: null
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o7' width: 0.500000
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o7' xsection: strip
+[2026-07-06 01:53:43.793] [OPDB] [info] [LEFYML] Pin 'o7' position: (92.000000, 7.500000), rotation: 0.000000
+[2026-07-06 01:53:43.794] [OPDB] [info] [LEFYML] Added pin: o7 to instance: m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6
+[2026-07-06 01:53:43.794] [OPDB] [info] [LEFYML] Processing pin: o6
+[2026-07-06 01:53:43.794] [OPDB] [info] [LEFYML] Pin 'o6' doc: null
+[2026-07-06 01:53:43.794] [OPDB] [info] [LEFYML] Pin 'o6' width: 0.500000
+[2026-07-06 01:53:43.794] [OPDB] [info] [LEFYML] Pin 'o6' xsection: strip
+[2026-07-06 01:53:43.794] [OPDB] [info] [LEFYML] Pin 'o6' position: (92.000000, 12.500000), rotation: 0.000000
+[2026-07-06 01:53:43.794] [OPDB] [info] [LEFYML] Added pin: o6 to instance: m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6
+[2026-07-06 01:53:43.794] [OPDB] [info] [LEFYML] Processing pin: o5
+[2026-07-06 01:53:43.794] [OPDB] [info] [LEFYML] Pin 'o5' doc: null
+[2026-07-06 01:53:43.794] [OPDB] [info] [LEFYML] Pin 'o5' width: 0.500000
+[2026-07-06 01:53:43.794] [OPDB] [info] [LEFYML] Pin 'o5' xsection: strip
+[2026-07-06 01:53:43.794] [OPDB] [info] [LEFYML] Pin 'o5' position: (92.000000, 17.500000), rotation: 0.000000
+[2026-07-06 01:53:43.794] [OPDB] [info] [LEFYML] Added pin: o5 to instance: m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6
+[2026-07-06 01:53:43.794] [OPDB] [info] [LEFYML] Added block as instance: m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6
+[2026-07-06 01:53:43.794] [OPDB] [info] [YML] Loading YAML file: D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\converted\converted_def.yml
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Design name: multiportmmi_8x8
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Bounding box:
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML]  [0, 0]
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML]  [4520, 1600]
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: gc1 (Total cells: 1)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: fanout_yb_0_0 (Total cells: 2)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: fanout_yb_1_0 (Total cells: 3)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: fanout_yb_1_1 (Total cells: 4)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: fanout_yb_2_0 (Total cells: 5)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: fanout_yb_2_1 (Total cells: 6)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: fanout_yb_2_2 (Total cells: 7)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: fanout_yb_2_3 (Total cells: 8)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mol_array_0_mzi_0 (Total cells: 9)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mol_array_0_mzi_1 (Total cells: 10)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mol_array_0_mzi_2 (Total cells: 11)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mol_array_0_mzi_3 (Total cells: 12)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mol_array_0_mzi_4 (Total cells: 13)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mol_array_0_mzi_5 (Total cells: 14)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mol_array_0_mzi_6 (Total cells: 15)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mol_array_0_mzi_7 (Total cells: 16)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_0_heater_0 (Total cells: 17)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_0_heater_1 (Total cells: 18)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_0_heater_2 (Total cells: 19)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_0_heater_3 (Total cells: 20)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_0_heater_4 (Total cells: 21)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_0_heater_5 (Total cells: 22)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_0_heater_6 (Total cells: 23)
+[2026-07-06 01:53:43.825] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_0_heater_7 (Total cells: 24)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_multiport_0_0 (Total cells: 25)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_multiport_0_1 (Total cells: 26)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_1_heater_0 (Total cells: 27)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_1_heater_1 (Total cells: 28)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_1_heater_2 (Total cells: 29)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_1_heater_3 (Total cells: 30)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_1_heater_4 (Total cells: 31)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_1_heater_5 (Total cells: 32)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_1_heater_6 (Total cells: 33)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_1_heater_7 (Total cells: 34)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_multiport_1_0 (Total cells: 35)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_multiport_1_1 (Total cells: 36)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_2_heater_0 (Total cells: 37)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_2_heater_1 (Total cells: 38)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_2_heater_2 (Total cells: 39)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_2_heater_3 (Total cells: 40)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_2_heater_4 (Total cells: 41)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_2_heater_5 (Total cells: 42)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_2_heater_6 (Total cells: 43)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_ps_array_2_heater_7 (Total cells: 44)
+[2026-07-06 01:53:43.826] [OPDB] [info] [DEFYML] Added cell: mmi0_multiport_2_0 (Total cells: 45)
+[2026-07-06 01:53:43.827] [OPDB] [info] [DEFYML] Added cell: mmi0_multiport_2_1 (Total cells: 46)
+[2026-07-06 01:53:43.827] [OPDB] [info] [DEFYML] Added cell: mol_array_1_mzi_0 (Total cells: 47)
+[2026-07-06 01:53:43.827] [OPDB] [info] [DEFYML] Added cell: mol_array_1_mzi_1 (Total cells: 48)
+[2026-07-06 01:53:43.827] [OPDB] [info] [DEFYML] Added cell: mol_array_1_mzi_2 (Total cells: 49)
+[2026-07-06 01:53:43.827] [OPDB] [info] [DEFYML] Added cell: mol_array_1_mzi_3 (Total cells: 50)
+[2026-07-06 01:53:43.827] [OPDB] [info] [DEFYML] Added cell: mol_array_1_mzi_4 (Total cells: 51)
+[2026-07-06 01:53:43.827] [OPDB] [info] [DEFYML] Added cell: mol_array_1_mzi_5 (Total cells: 52)
+[2026-07-06 01:53:43.827] [OPDB] [info] [DEFYML] Added cell: mol_array_1_mzi_6 (Total cells: 53)
+[2026-07-06 01:53:43.827] [OPDB] [info] [DEFYML] Added cell: mol_array_1_mzi_7 (Total cells: 54)
+[2026-07-06 01:53:43.827] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_0_heater_0 (Total cells: 55)
+[2026-07-06 01:53:43.827] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_0_heater_1 (Total cells: 56)
+[2026-07-06 01:53:43.827] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_0_heater_2 (Total cells: 57)
+[2026-07-06 01:53:43.828] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_0_heater_3 (Total cells: 58)
+[2026-07-06 01:53:43.828] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_0_heater_4 (Total cells: 59)
+[2026-07-06 01:53:43.828] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_0_heater_5 (Total cells: 60)
+[2026-07-06 01:53:43.828] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_0_heater_6 (Total cells: 61)
+[2026-07-06 01:53:43.828] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_0_heater_7 (Total cells: 62)
+[2026-07-06 01:53:43.828] [OPDB] [info] [DEFYML] Added cell: mmi1_multiport_0_0 (Total cells: 63)
+[2026-07-06 01:53:43.828] [OPDB] [info] [DEFYML] Added cell: mmi1_multiport_0_1 (Total cells: 64)
+[2026-07-06 01:53:43.828] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_1_heater_0 (Total cells: 65)
+[2026-07-06 01:53:43.828] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_1_heater_1 (Total cells: 66)
+[2026-07-06 01:53:43.828] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_1_heater_2 (Total cells: 67)
+[2026-07-06 01:53:43.828] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_1_heater_3 (Total cells: 68)
+[2026-07-06 01:53:43.828] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_1_heater_4 (Total cells: 69)
+[2026-07-06 01:53:43.828] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_1_heater_5 (Total cells: 70)
+[2026-07-06 01:53:43.829] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_1_heater_6 (Total cells: 71)
+[2026-07-06 01:53:43.829] [OPDB] [info] [DEFYML] Added cell: mmi1_ps_array_1_heater_7 (Total cells: 72)
+[2026-07-06 01:53:43.829] [OPDB] [info] [DEFYML] Added cell: mmi1_multiport_1_0 (Total cells: 73)
+[2026-07-06 01:53:43.829] [OPDB] [info] [DEFYML] Added cell: mmi1_multiport_1_1 (Total cells: 74)
+[2026-07-06 01:53:43.829] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_0 (Total cells: 75)
+[2026-07-06 01:53:43.829] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_1 (Total cells: 76)
+[2026-07-06 01:53:43.829] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_2 (Total cells: 77)
+[2026-07-06 01:53:43.829] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_3 (Total cells: 78)
+[2026-07-06 01:53:43.830] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_4 (Total cells: 79)
+[2026-07-06 01:53:43.830] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_5 (Total cells: 80)
+[2026-07-06 01:53:43.830] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_6 (Total cells: 81)
+[2026-07-06 01:53:43.830] [OPDB] [info] [DEFYML] Added cell: gc_array_out_gc_7 (Total cells: 82)
+[2026-07-06 01:53:43.830] [OPDB] [info] [DEFYML] Placed gc1 at position (13.582, 800) with rotation 0, mirror true, and status FIXED
+[2026-07-06 01:53:43.830] [OPDB] [info] [DEFYML] Placed fanout_yb_0_0 at position (92.75, 800) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.830] [OPDB] [info] [DEFYML] Placed fanout_yb_1_0 at position (192.75, 750) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.830] [OPDB] [info] [DEFYML] Placed fanout_yb_1_1 at position (192.75, 850) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed fanout_yb_2_0 at position (368.25, 650) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed fanout_yb_2_1 at position (368.25, 750) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed fanout_yb_2_2 at position (368.25, 850) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed fanout_yb_2_3 at position (368.25, 950) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed mol_array_0_mzi_0 at position (646.5, 450.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed mol_array_0_mzi_1 at position (646.5, 550.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed mol_array_0_mzi_2 at position (646.5, 650.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed mol_array_0_mzi_3 at position (646.5, 750.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed mol_array_0_mzi_4 at position (646.5, 850.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed mol_array_0_mzi_5 at position (646.5, 950.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed mol_array_0_mzi_6 at position (646.5, 1050.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed mol_array_0_mzi_7 at position (646.5, 1150.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_0_heater_0 at position (1027.9, 450) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_0_heater_1 at position (1027.9, 550) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_0_heater_2 at position (1027.9, 650) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_0_heater_3 at position (1027.9, 750) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.831] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_0_heater_4 at position (1027.9, 850) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.832] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_0_heater_5 at position (1027.9, 950) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.832] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_0_heater_6 at position (1027.9, 1050) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.832] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_0_heater_7 at position (1027.9, 1150) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.832] [OPDB] [info] [DEFYML] Placed mmi0_multiport_0_0 at position (1327.8, 700) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.832] [OPDB] [info] [DEFYML] Placed mmi0_multiport_0_1 at position (1291.8, 1100) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.832] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_1_heater_0 at position (1617.7, 450) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.832] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_1_heater_1 at position (1617.7, 550) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.832] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_1_heater_2 at position (1617.7, 650) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.832] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_1_heater_3 at position (1617.7, 750) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.832] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_1_heater_4 at position (1617.7, 850) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.832] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_1_heater_5 at position (1617.7, 950) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.832] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_1_heater_6 at position (1617.7, 1050) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.832] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_1_heater_7 at position (1617.7, 1150) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.832] [OPDB] [info] [DEFYML] Placed mmi0_multiport_1_0 at position (1899.6, 600) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.832] [OPDB] [info] [DEFYML] Placed mmi0_multiport_1_1 at position (1899.6, 1000) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.833] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_2_heater_0 at position (2171.5, 450) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.833] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_2_heater_1 at position (2171.5, 550) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.833] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_2_heater_2 at position (2171.5, 650) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.833] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_2_heater_3 at position (2171.5, 750) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.833] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_2_heater_4 at position (2171.5, 850) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.833] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_2_heater_5 at position (2171.5, 950) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.833] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_2_heater_6 at position (2171.5, 1050) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.833] [OPDB] [info] [DEFYML] Placed mmi0_ps_array_2_heater_7 at position (2171.5, 1150) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.833] [OPDB] [info] [DEFYML] Placed mmi0_multiport_2_0 at position (2453.4, 600) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.833] [OPDB] [info] [DEFYML] Placed mmi0_multiport_2_1 at position (2453.4, 1000) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.833] [OPDB] [info] [DEFYML] Placed mol_array_1_mzi_0 at position (2754.9, 450.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.833] [OPDB] [info] [DEFYML] Placed mol_array_1_mzi_1 at position (2754.9, 550.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.833] [OPDB] [info] [DEFYML] Placed mol_array_1_mzi_2 at position (2754.9, 650.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mol_array_1_mzi_3 at position (2754.9, 750.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mol_array_1_mzi_4 at position (2754.9, 850.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mol_array_1_mzi_5 at position (2754.9, 950.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mol_array_1_mzi_6 at position (2754.9, 1050.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mol_array_1_mzi_7 at position (2754.9, 1150.125) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_0_heater_0 at position (3136.3, 450) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_0_heater_1 at position (3136.3, 550) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_0_heater_2 at position (3136.3, 650) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_0_heater_3 at position (3136.3, 750) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_0_heater_4 at position (3136.3, 850) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_0_heater_5 at position (3136.3, 950) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_0_heater_6 at position (3136.3, 1050) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_0_heater_7 at position (3136.3, 1150) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mmi1_multiport_0_0 at position (3436.2, 700) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mmi1_multiport_0_1 at position (3400.2, 1100) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_1_heater_0 at position (3726.1, 450) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_1_heater_1 at position (3726.1, 550) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.834] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_1_heater_2 at position (3726.1, 650) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_1_heater_3 at position (3726.1, 750) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_1_heater_4 at position (3726.1, 850) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_1_heater_5 at position (3726.1, 950) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_1_heater_6 at position (3726.1, 1050) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Placed mmi1_ps_array_1_heater_7 at position (3726.1, 1150) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Placed mmi1_multiport_1_0 at position (4008, 600) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Placed mmi1_multiport_1_1 at position (4008, 1000) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_0 at position (4357.582, 450) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_1 at position (4357.582, 550) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_2 at position (4357.582, 650) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_3 at position (4357.582, 750) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_4 at position (4357.582, 850) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_5 at position (4357.582, 950) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_6 at position (4357.582, 1050) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Placed gc_array_out_gc_7 at position (4357.582, 1150) with rotation 0, mirror false, and status UNPLACED
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Connected net n_0: fanout_yb_0_0:o3 to fanout_yb_1_0:o1
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Connected net n_1: fanout_yb_0_0:o2 to fanout_yb_1_1:o1
+[2026-07-06 01:53:43.835] [OPDB] [info] [DEFYML] Connected net n_2: fanout_yb_1_0:o3 to fanout_yb_2_0:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_3: fanout_yb_1_0:o2 to fanout_yb_2_1:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_4: fanout_yb_1_1:o3 to fanout_yb_2_2:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_5: fanout_yb_1_1:o2 to fanout_yb_2_3:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_6: gc1:o1 to fanout_yb_0_0:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_7: fanout_yb_2_0:o3 to mol_array_0_mzi_0:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_8: fanout_yb_2_0:o2 to mol_array_0_mzi_1:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_9: fanout_yb_2_1:o3 to mol_array_0_mzi_2:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_10: fanout_yb_2_1:o2 to mol_array_0_mzi_3:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_11: fanout_yb_2_2:o3 to mol_array_0_mzi_4:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_12: fanout_yb_2_2:o2 to mol_array_0_mzi_5:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_13: fanout_yb_2_3:o3 to mol_array_0_mzi_6:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_14: fanout_yb_2_3:o2 to mol_array_0_mzi_7:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_15: mol_array_0_mzi_0:o2 to mmi0_ps_array_0_heater_0:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_16: mol_array_0_mzi_1:o2 to mmi0_ps_array_0_heater_1:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_17: mol_array_0_mzi_2:o2 to mmi0_ps_array_0_heater_2:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_18: mol_array_0_mzi_3:o2 to mmi0_ps_array_0_heater_3:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_19: mol_array_0_mzi_4:o2 to mmi0_ps_array_0_heater_4:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_20: mol_array_0_mzi_5:o2 to mmi0_ps_array_0_heater_5:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_21: mol_array_0_mzi_6:o2 to mmi0_ps_array_0_heater_6:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_22: mol_array_0_mzi_7:o2 to mmi0_ps_array_0_heater_7:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_23: mmi0_ps_array_0_heater_0:o2 to mmi0_multiport_0_0:o1
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_24: mmi0_ps_array_0_heater_1:o2 to mmi0_multiport_0_0:o2
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_25: mmi0_ps_array_0_heater_2:o2 to mmi0_multiport_0_0:o3
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_26: mmi0_ps_array_0_heater_3:o2 to mmi0_multiport_0_0:o4
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_27: mmi0_ps_array_0_heater_4:o2 to mmi0_multiport_0_0:o5
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_28: mmi0_ps_array_0_heater_5:o2 to mmi0_multiport_0_0:o6
+[2026-07-06 01:53:43.836] [OPDB] [info] [DEFYML] Connected net n_29: mmi0_ps_array_0_heater_6:o2 to mmi0_multiport_0_1:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_30: mmi0_ps_array_0_heater_7:o2 to mmi0_multiport_0_1:o2
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_31: mmi0_multiport_0_0:o12 to mmi0_ps_array_1_heater_4:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_32: mmi0_multiport_0_0:o11 to mmi0_ps_array_1_heater_1:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_33: mmi0_multiport_0_0:o10 to mmi0_ps_array_1_heater_2:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_34: mmi0_multiport_0_0:o9 to mmi0_ps_array_1_heater_3:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_35: mmi0_multiport_0_0:o8 to mmi0_ps_array_1_heater_0:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_36: mmi0_multiport_0_0:o7 to mmi0_ps_array_1_heater_5:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_37: mmi0_multiport_0_1:o4 to mmi0_ps_array_1_heater_6:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_38: mmi0_multiport_0_1:o3 to mmi0_ps_array_1_heater_7:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_39: mmi0_ps_array_1_heater_0:o2 to mmi0_multiport_1_0:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_40: mmi0_ps_array_1_heater_1:o2 to mmi0_multiport_1_0:o2
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_41: mmi0_ps_array_1_heater_2:o2 to mmi0_multiport_1_0:o3
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_42: mmi0_ps_array_1_heater_3:o2 to mmi0_multiport_1_0:o4
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_43: mmi0_ps_array_1_heater_4:o2 to mmi0_multiport_1_1:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_44: mmi0_ps_array_1_heater_5:o2 to mmi0_multiport_1_1:o2
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_45: mmi0_ps_array_1_heater_6:o2 to mmi0_multiport_1_1:o3
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_46: mmi0_ps_array_1_heater_7:o2 to mmi0_multiport_1_1:o4
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_47: mmi0_multiport_1_0:o8 to mmi0_ps_array_2_heater_0:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_48: mmi0_multiport_1_0:o7 to mmi0_ps_array_2_heater_1:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_49: mmi0_multiport_1_0:o6 to mmi0_ps_array_2_heater_2:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_50: mmi0_multiport_1_0:o5 to mmi0_ps_array_2_heater_7:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_51: mmi0_multiport_1_1:o8 to mmi0_ps_array_2_heater_4:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_52: mmi0_multiport_1_1:o7 to mmi0_ps_array_2_heater_5:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_53: mmi0_multiport_1_1:o6 to mmi0_ps_array_2_heater_6:o1
+[2026-07-06 01:53:43.837] [OPDB] [info] [DEFYML] Connected net n_54: mmi0_multiport_1_1:o5 to mmi0_ps_array_2_heater_3:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_55: mmi0_ps_array_2_heater_0:o2 to mmi0_multiport_2_0:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_56: mmi0_ps_array_2_heater_1:o2 to mmi0_multiport_2_0:o2
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_57: mmi0_ps_array_2_heater_2:o2 to mmi0_multiport_2_0:o3
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_58: mmi0_ps_array_2_heater_3:o2 to mmi0_multiport_2_0:o4
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_59: mmi0_ps_array_2_heater_4:o2 to mmi0_multiport_2_1:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_60: mmi0_ps_array_2_heater_5:o2 to mmi0_multiport_2_1:o2
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_61: mmi0_ps_array_2_heater_6:o2 to mmi0_multiport_2_1:o3
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_62: mmi0_ps_array_2_heater_7:o2 to mmi0_multiport_2_1:o4
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_63: mmi0_multiport_2_0:o8 to mol_array_1_mzi_0:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_64: mmi0_multiport_2_0:o7 to mol_array_1_mzi_1:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_65: mmi0_multiport_2_0:o6 to mol_array_1_mzi_5:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_66: mmi0_multiport_2_0:o5 to mol_array_1_mzi_6:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_67: mmi0_multiport_2_1:o8 to mol_array_1_mzi_2:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_68: mmi0_multiport_2_1:o7 to mol_array_1_mzi_3:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_69: mmi0_multiport_2_1:o6 to mol_array_1_mzi_4:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_70: mmi0_multiport_2_1:o5 to mol_array_1_mzi_7:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_71: mol_array_1_mzi_0:o2 to mmi1_ps_array_0_heater_0:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_72: mol_array_1_mzi_1:o2 to mmi1_ps_array_0_heater_1:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_73: mol_array_1_mzi_2:o2 to mmi1_ps_array_0_heater_2:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_74: mol_array_1_mzi_3:o2 to mmi1_ps_array_0_heater_3:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_75: mol_array_1_mzi_4:o2 to mmi1_ps_array_0_heater_4:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_76: mol_array_1_mzi_5:o2 to mmi1_ps_array_0_heater_5:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_77: mol_array_1_mzi_6:o2 to mmi1_ps_array_0_heater_6:o1
+[2026-07-06 01:53:43.838] [OPDB] [info] [DEFYML] Connected net n_78: mol_array_1_mzi_7:o2 to mmi1_ps_array_0_heater_7:o1
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_79: mmi1_ps_array_0_heater_0:o2 to mmi1_multiport_0_0:o1
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_80: mmi1_ps_array_0_heater_1:o2 to mmi1_multiport_0_0:o2
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_81: mmi1_ps_array_0_heater_2:o2 to mmi1_multiport_0_0:o3
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_82: mmi1_ps_array_0_heater_3:o2 to mmi1_multiport_0_0:o4
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_83: mmi1_ps_array_0_heater_4:o2 to mmi1_multiport_0_0:o5
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_84: mmi1_ps_array_0_heater_5:o2 to mmi1_multiport_0_0:o6
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_85: mmi1_ps_array_0_heater_6:o2 to mmi1_multiport_0_1:o1
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_86: mmi1_ps_array_0_heater_7:o2 to mmi1_multiport_0_1:o2
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_87: mmi1_multiport_0_0:o12 to mmi1_ps_array_1_heater_0:o1
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_88: mmi1_multiport_0_0:o11 to mmi1_ps_array_1_heater_2:o1
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_89: mmi1_multiport_0_0:o10 to mmi1_ps_array_1_heater_1:o1
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_90: mmi1_multiport_0_0:o9 to mmi1_ps_array_1_heater_6:o1
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_91: mmi1_multiport_0_0:o8 to mmi1_ps_array_1_heater_4:o1
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_92: mmi1_multiport_0_0:o7 to mmi1_ps_array_1_heater_5:o1
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_93: mmi1_multiport_0_1:o4 to mmi1_ps_array_1_heater_3:o1
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_94: mmi1_multiport_0_1:o3 to mmi1_ps_array_1_heater_7:o1
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_95: mmi1_ps_array_1_heater_0:o2 to mmi1_multiport_1_0:o1
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_96: mmi1_ps_array_1_heater_1:o2 to mmi1_multiport_1_0:o2
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_97: mmi1_ps_array_1_heater_2:o2 to mmi1_multiport_1_0:o3
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_98: mmi1_ps_array_1_heater_3:o2 to mmi1_multiport_1_0:o4
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_99: mmi1_ps_array_1_heater_4:o2 to mmi1_multiport_1_1:o1
+[2026-07-06 01:53:43.839] [OPDB] [info] [DEFYML] Connected net n_100: mmi1_ps_array_1_heater_5:o2 to mmi1_multiport_1_1:o2
+[2026-07-06 01:53:43.840] [OPDB] [info] [DEFYML] Connected net n_101: mmi1_ps_array_1_heater_6:o2 to mmi1_multiport_1_1:o3
+[2026-07-06 01:53:43.840] [OPDB] [info] [DEFYML] Connected net n_102: mmi1_ps_array_1_heater_7:o2 to mmi1_multiport_1_1:o4
+[2026-07-06 01:53:43.840] [OPDB] [info] [DEFYML] Connected net n_103: mmi1_multiport_1_0:o8 to gc_array_out_gc_0:o1
+[2026-07-06 01:53:43.840] [OPDB] [info] [DEFYML] Connected net n_104: mmi1_multiport_1_0:o7 to gc_array_out_gc_1:o1
+[2026-07-06 01:53:43.840] [OPDB] [info] [DEFYML] Connected net n_105: mmi1_multiport_1_0:o6 to gc_array_out_gc_4:o1
+[2026-07-06 01:53:43.840] [OPDB] [info] [DEFYML] Connected net n_106: mmi1_multiport_1_0:o5 to gc_array_out_gc_6:o1
+[2026-07-06 01:53:43.840] [OPDB] [info] [DEFYML] Connected net n_107: mmi1_multiport_1_1:o8 to gc_array_out_gc_2:o1
+[2026-07-06 01:53:43.840] [OPDB] [info] [DEFYML] Connected net n_108: mmi1_multiport_1_1:o7 to gc_array_out_gc_5:o1
+[2026-07-06 01:53:43.840] [OPDB] [info] [DEFYML] Connected net n_109: mmi1_multiport_1_1:o6 to gc_array_out_gc_7:o1
+[2026-07-06 01:53:43.840] [OPDB] [info] [DEFYML] Connected net n_110: mmi1_multiport_1_1:o5 to gc_array_out_gc_3:o1
+timing_lidar_convert_s=4.481618
+timing_cpp_load_design_s=0.074978
+timing_cpp_runtime_init_s=0.097209
+timing_cpp_mfot_plan_s=0.059677
+mfot_enabled=1
+mfot_nets=111
+mfot_corridor_cells=0
+mfot_free_energy=-45827.007617
+[2026-07-06 01:53:56.112] [OPDB] [info] [DEFYML] Writing design name: multiportmmi_8x8
+[2026-07-06 01:53:56.113] [OPDB] [info] [DEFYML] Writing bounding box points:
+[2026-07-06 01:53:56.113] [OPDB] [info]   [0, 0]
+[2026-07-06 01:53:56.113] [OPDB] [info]   [4520, 1600]
+[2026-07-06 01:53:56.119] [OPDB] [info] [DEFYML] Writing instances num: 115 cells, 177 segments
+[2026-07-06 01:53:56.120] [OPDB] [info] [DEFYML] Writing placements num: 115 cells
+[2026-07-06 01:53:56.124] [OPDB] [info] [DEFYML] Writing connections num: 177
+[2026-07-06 01:53:56.126] [OPDB] [info] [DEFYML] DefYml data written to file: D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\cpp\routed_def.yml
+timing_cpp_route_core_s=12.005671
+timing_cpp_write_reports_s=0.127611
+timing_cpp_writeback_s=0.041794
+timing_cpp_write_def_s=0.013490
+timing_cpp_db_drc_s=0.007364
+route_success=true
+routed_nets=111
+waveguide_segments=177
+skipped_nets=0
+postprocess_invalid_accesses=0
+postprocess_rejected_nets=0
+flow_summary=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\cpp\lidar_grid_route_flow_summary.txt
+route_result=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\cpp\lidar_route_result.yml
+routed_def=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\cpp\routed_def.yml
+db_drc_summary=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\cpp\db_drc_summary.txt
+db_drc_clean=true
+timing_cpp_native_flow_s=12.369775
+cmd=D:\conda\python.exe "D:/xprogram/PIC-DB-main/PIC-DB-main/tools/pr_lidar_native/scripts\render_route_result_gds.py" "D:\xprogram\pic_agentic\Agentic-PIC-PD\third-party\LiDAR\src" "D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\cpp\lidar_route_result.yml" "D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp.gds" --base-lidar-yml "D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\converted\converted_lidar.yml" --skip-invalid-access --skip-abnormal-nets --invalid-access-report "D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\cpp\render_invalid_access.txt"
+==============
+m_grating_coupler_ellipti_4c46b398_0 gc1 0.0
+==============
+m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1 fanout_yb_0_0 0.0
+==============
+m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1 fanout_yb_1_0 0.0
+==============
+m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1 fanout_yb_1_1 0.0
+==============
+m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1 fanout_yb_2_0 0.0
+==============
+m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1 fanout_yb_2_1 0.0
+==============
+m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1 fanout_yb_2_2 0.0
+==============
+m_mmi1x2_WNone_WT1_LT10_L_4e0f7121_1 fanout_yb_2_3 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_0_mzi_0 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_0_mzi_1 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_0_mzi_2 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_0_mzi_3 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_0_mzi_4 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_0_mzi_5 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_0_mzi_6 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_0_mzi_7 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_0_heater_0 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_0_heater_1 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_0_heater_2 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_0_heater_3 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_0_heater_4 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_0_heater_5 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_0_heater_6 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_0_heater_7 0.0
+==============
+m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4 mmi0_multiport_0_0 0.0
+==============
+m_mmi_I2_O2_WNone_WT1_LT1_d965ea1e_5 mmi0_multiport_0_1 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_1_heater_0 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_1_heater_1 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_1_heater_2 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_1_heater_3 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_1_heater_4 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_1_heater_5 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_1_heater_6 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_1_heater_7 0.0
+==============
+m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6 mmi0_multiport_1_0 0.0
+==============
+m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6 mmi0_multiport_1_1 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_2_heater_0 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_2_heater_1 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_2_heater_2 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_2_heater_3 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_2_heater_4 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_2_heater_5 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_2_heater_6 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi0_ps_array_2_heater_7 0.0
+==============
+m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6 mmi0_multiport_2_0 0.0
+==============
+m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6 mmi0_multiport_2_1 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_1_mzi_0 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_1_mzi_1 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_1_mzi_2 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_1_mzi_3 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_1_mzi_4 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_1_mzi_5 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_1_mzi_6 0.0
+==============
+m_mzi_DL10_LY2_LX200_Bben_6e9f3e3b_2 mol_array_1_mzi_7 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_0_heater_0 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_0_heater_1 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_0_heater_2 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_0_heater_3 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_0_heater_4 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_0_heater_5 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_0_heater_6 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_0_heater_7 0.0
+==============
+m_mmi_I6_O6_WNone_WT1_LT1_cc93867a_4 mmi1_multiport_0_0 0.0
+==============
+m_mmi_I2_O2_WNone_WT1_LT1_d965ea1e_5 mmi1_multiport_0_1 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_1_heater_0 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_1_heater_1 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_1_heater_2 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_1_heater_3 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_1_heater_4 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_1_heater_5 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_1_heater_6 0.0
+==============
+m_straight_heater_metal_u_9c931429_3 mmi1_ps_array_1_heater_7 0.0
+==============
+m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6 mmi1_multiport_1_0 0.0
+==============
+m_mmi_I4_O4_WNone_WT1_LT1_a5379678_6 mmi1_multiport_1_1 0.0
+==============
+m_grating_coupler_ellipti_4c46b398_0 gc_array_out_gc_0 0.0
+==============
+m_grating_coupler_ellipti_4c46b398_0 gc_array_out_gc_1 0.0
+==============
+m_grating_coupler_ellipti_4c46b398_0 gc_array_out_gc_2 0.0
+==============
+m_grating_coupler_ellipti_4c46b398_0 gc_array_out_gc_3 0.0
+==============
+m_grating_coupler_ellipti_4c46b398_0 gc_array_out_gc_4 0.0
+==============
+m_grating_coupler_ellipti_4c46b398_0 gc_array_out_gc_5 0.0
+==============
+m_grating_coupler_ellipti_4c46b398_0 gc_array_out_gc_6 0.0
+==============
+m_grating_coupler_ellipti_4c46b398_0 gc_array_out_gc_7 0.0
+2026-07-06 01:54:10.126 | WARNING  | kfactory.kcell:show:8797 - Could not connect to klive server
+routes=177
+access_waveguides=354
+invalid_access_waveguides=0
+skipped_abnormal_nets=0
+crossings=33
+length=23869.466657
+legacy_layer44_via_arrays=112
+gds=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp.gds
+timing_lidar_render_s=15.234315
+input_lidar_yml=D:\xprogram\PIC-DB-main\PIC-DB-main\lidar_c_benchmarks\picroute\multiportmmi_8x8\multiportmmi_8x8.yml
+lidar_src=D:\xprogram\pic_agentic\Agentic-PIC-PD\third-party\LiDAR\src
+output_gds=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp.gds
+flow_dir=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow
+converted_lef=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\converted\converted_lef.yml
+converted_def=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\converted\converted_def.yml
+converted_lidar=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\converted\converted_lidar.yml
+render_invalid_access_report=D:\xprogram\lidar_c_inovation_2\results\rollback_fullcase_20260706_015054\multiportmmi_8x8_cpp_picdb_flow\cpp\render_invalid_access.txt
+timing_lidar_full_flow_s=32.127191

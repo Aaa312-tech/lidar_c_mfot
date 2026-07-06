@@ -4,6 +4,7 @@ target_sources(picpr_route_lidar PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}/src/lidar_bitmap.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/src/lidar_python_set.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/src/lidar_astar.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/lidar_mfot.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/src/picdb_lidar_view.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/src/lidar_drc.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/src/lidar_router.cpp

@@ -1,0 +1,83 @@
+pdk: ''
+instances:
+  fanout_yb_0_0:
+    component: mmi1x2
+    settings: {}
+  fanout_yb_0_1:
+    component: mmi1x2
+    settings: {}
+  fanout_yb_0_2:
+    component: mmi1x2
+    settings: {}
+  mrr_array_0_mrr_0:
+    component: ring_single_pn
+    settings: {}
+  obstacle1:
+    component: rectangle
+    settings:
+      size:
+      - 10
+      - 60
+      layer: WG
+  obstacle2:
+    component: rectangle
+    settings:
+      size:
+      - 10
+      - 10
+      layer: WG
+placements:
+  fanout_yb_0_0:
+    x: 120.0
+    y: 80.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  fanout_yb_0_1:
+    x: 70.0
+    y: 52.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 270
+    mirror: false
+  mrr_array_0_mrr_0:
+    x: 0.0
+    y: 60.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  obstacle1:
+    x: 50.0
+    y: 30.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  obstacle2:
+    x: 50.0
+    y: 35.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 0
+    mirror: false
+  fanout_yb_0_2:
+    x: 20.0
+    y: 20.0
+    dx: 0
+    dy: 0
+    port: sw
+    rotation: 180
+    mirror: false
+connections: {}
+routes: {}
+info: {}
+ports: {}
+nets: []
+warnings: {}

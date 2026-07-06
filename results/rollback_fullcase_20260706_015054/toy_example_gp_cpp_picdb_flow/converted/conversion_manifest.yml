@@ -1,0 +1,13 @@
+schema: lidar_native_to_picdb_yml
+design: toy_example
+instances: 6
+macros: 4
+nets: 2
+skipped_nets: {}
+macro_sources:
+  m_mmi1x2_2: gdsfactory
+  m_ring_single_pn_43ee7534_3: gdsfactory
+  m_ring_double_pn_1: gdsfactory
+  m_ring_double_pn_2: gdsfactory
+realize_gdsfactory_lef: true
+layout_ports_instances: 0

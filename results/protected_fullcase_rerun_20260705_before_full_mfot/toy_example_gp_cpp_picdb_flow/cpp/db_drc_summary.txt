@@ -1,0 +1,21 @@
+clean=0
+markers=1
+violations=1
+component_geometry_markers=1
+pin_access_markers=0
+route_geometry_markers=0
+invalid_component=0
+component_overlap=1
+missing_route=0
+disconnected_route=0
+invalid_waveguide=0
+out_of_die=0
+pin_access_missing=0
+pin_access_orientation=0
+pin_access_width=0
+blockage_overlap=0
+waveguide_continuity=0
+waveguide_overlap=0
+waveguide_spacing=0
+waveguide_crossing=0
+marker	class=component_geometry	type=component_overlap	rule=component_overlap	layer=component_geometry	objects=obstacle1,obstacle2	nets=	object1=obstacle1	object2=obstacle2	x=55	y=40	value=100	distance=100	shape=box	bbox=50,35,60,45	message=component envelope overlap: obstacle1 vs obstacle2
