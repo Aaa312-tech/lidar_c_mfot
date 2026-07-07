@@ -1,8 +1,14 @@
-# C++ LiDAR Router Package
+# C++ LiDAR Router Package - MFOT-only Control Version
 
 This repository package contains the C++ LiDAR router implementation, native
 full-flow tool, validation scripts, benchmark inputs, archived results, and
 engineering notes produced during the Python-to-C++ LiDAR migration.
+
+This `lidar_c_inovation_2` snapshot is currently synchronized as an
+MFOT-only control version: common router behavior is aligned with `lidar_c`,
+while only the minimal MFOT planning and A* heuristic-weighting hooks are kept.
+The extra crossing/postprocess repair and fanout-specific fallback changes from
+earlier experimental snapshots are intentionally not included.
 
 The package is intended to be moved into a full PIC-DB source tree. It is not a
 standalone replacement for PIC-DB because the native binary still links against
@@ -15,11 +21,34 @@ grid/bitmap construction, port access, crossing-aware A* routing, rip-up and
 reroute, route post-processing, PIC-DB writeback, DB-level DRC, and
 gdsfactory/kfactory GDS rendering.
 
+On top of the synchronized `lidar_c` baseline, the MFOT module builds a global
+transport/free-energy plan and uses it to adjust each net's A* heuristic weight.
+With the current defaults, MFOT corridor penalties, seeded history, hard
+corridors, and global priority reordering are disabled; the active MFOT effect
+is plan construction plus per-net search-weight modulation.
+
 Archived reference results are included under:
 
 ```text
 results/reference_run/
 ```
+
+The latest MFOT-only control regression is included under:
+
+```text
+results/mfot_only_control_fullcase_20260706_115037/
+```
+
+Summary against the archived original `lidar_c` reference run:
+
+| metric | archived lidar_c reference | current MFOT-only run |
+|---|---:|---:|
+| clean cases | 6/9 | 5/9 |
+| total markers | 119 | 100 |
+| total crossings | 263 | 264 |
+| total routes | 2108 | 2112 |
+| total C++ route core time | 969.108s | 188.947s |
+| total wall time | 1941.114s | 535.443s |
 
 The three standard-case geometry comparisons are:
 
@@ -50,7 +79,7 @@ They are validation inputs only and are never used to generate routed output.
 ## Directory Layout
 
 ```text
-lidar_c/
+lidar_c_inovation_2/
   README.md
   requirements-gds-render.txt
   requirements-python-lidar-original.txt
@@ -71,6 +100,7 @@ lidar_c/
   results/
     reference_run/
     reference_gds_compare/
+    mfot_only_control_fullcase_20260706_115037/
   standard_gds/
     README.md
   tools/
@@ -113,7 +143,7 @@ gdsfactory/kfactory bridge.
 Use a full PIC-DB checkout as the host project:
 
 ```powershell
-$LidarCRoot = "<path-to-lidar_c>"
+$LidarCRoot = "<path-to-lidar_c_inovation_2>"
 $PicdbRoot = "<path-to-full-PIC-DB>"
 ```
 

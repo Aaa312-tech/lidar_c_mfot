@@ -1,6 +1,6 @@
 # File Manifest
 
-This manifest lists the important files in `lidar_c`.
+This manifest lists the important files in `lidar_c_inovation_2`.
 
 ## Dependency locks
 
@@ -18,11 +18,13 @@ This manifest lists the important files in `lidar_c`.
 | `code/src/algorithm/routing/lidar/include/lidar_astar.h` | A* router interface and route data structures. |
 | `code/src/algorithm/routing/lidar/include/lidar_bitmap.h` | Bitmap occupancy model. |
 | `code/src/algorithm/routing/lidar/include/lidar_drc.h` | Runtime DRC manager interface. |
+| `code/src/algorithm/routing/lidar/include/lidar_mfot.h` | MFOT global plan data structures and API. |
 | `code/src/algorithm/routing/lidar/include/lidar_router.h` | Top-level route API. |
 | `code/src/algorithm/routing/lidar/include/picdb_lidar_view.h` | PIC-DB to LiDAR runtime view adapter. |
 | `code/src/algorithm/routing/lidar/src/lidar_astar.cpp` | A*, crossing-aware routing, rip-up/reroute, post-process, writeback. |
 | `code/src/algorithm/routing/lidar/src/lidar_bitmap.cpp` | Bitmap allocation and blockage initialization. |
 | `code/src/algorithm/routing/lidar/src/lidar_drc.cpp` | DRC checks, port spreading, bitmap updates. |
+| `code/src/algorithm/routing/lidar/src/lidar_mfot.cpp` | MFOT transport/free-energy planning, priority, and search-weight helpers. |
 | `code/src/algorithm/routing/lidar/src/lidar_python_set.cpp` | Deterministic Python-like set behavior. |
 | `code/src/algorithm/routing/lidar/src/lidar_router.cpp` | Flow summaries and top-level routing orchestration. |
 | `code/src/algorithm/routing/lidar/src/picdb_lidar_view.cpp` | Builds runtime view from PIC-DB design. |
@@ -86,6 +88,8 @@ These are input benchmarks, not standard routed GDS files.
 | `results/reference_run/*.gds` | Archived C++ GDS outputs for 9 benchmark cases. |
 | `results/reference_run/reference_run.csv` | Archived regression summary. |
 | `results/reference_run/reference_run.json` | Archived regression summary in JSON. |
+| `results/mfot_only_control_fullcase_20260706_115037/` | Latest MFOT-only control regression outputs and process artifacts. |
+| `results/mfot_only_control_fullcase_20260706_115037/mfot_only_control_fullcase_20260706_115037.csv` | Latest MFOT-only 9-case regression summary. |
 | `results/reference_gds_compare/gds_pair_summary.csv` | Standard/Python/C++ GDS pair comparisons. |
 | `results/reference_gds_compare/gds_layer_xor.csv` | Layer-by-layer XOR. |
 | `results/reference_gds_compare/gds_xor_hotspots.csv` | XOR hotspot report. |

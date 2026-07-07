@@ -2,6 +2,8 @@
 
 本文总结 C++ LiDAR router 相对原 Python LiDAR router 的算法改变、工程创新点和验证方法。这里的“创新”指工程和算法实现上的改造，不宣称为新的学术理论。
 
+当前 `lidar_c_inovation_2` 版本是 MFOT-only 对照版本：公共布线行为已同步回 `lidar_c`，只保留 MFOT 所需的最小新增模块和 A* 钩子。早期实验中额外的 crossing/postprocess repair、real-port repair 和 fanout-specific fallback 不属于当前版本的算法差异。
+
 ## 1. 总体目标变化
 
 原 Python LiDAR router 的重点是功能完整和研究验证；C++ 版本的目标是：
@@ -36,6 +38,36 @@ gdsfactory/kfactory GDS 渲染
 这些语义是结果接近标准 GDS 的基础。没有这层兼容，单纯实现一个通用 maze router 很容易 DRC 通过但 GDS 形态完全不同。
 
 ## 3. 主要算法改变
+
+### 3.0 MFOT-only Control Scope
+
+当前版本保留的 MFOT 差异包括：
+
+```text
+lidar_mfot.h / lidar_mfot.cpp
+LidarRouteConfig 中的 MFOT 参数
+routeAllNetsGrid() 中的 MFOT plan 构建
+routeSingleNetGrid() 中基于 MFOT priority 的 A* heuristic weight
+flow/YAML 中的 MFOT 过程指标输出
+```
+
+实际生效的主链路是：
+
+```text
+全局 MFOT plan -> 每条 net 的 priority/free-energy -> mfotSearchWeightForNet -> A* costF
+```
+
+也就是说，当前 MFOT 的主要作用是调整 A* 启发式权重，减少大规模 case 中的无效搜索展开。默认参数下以下分量没有实际施加代价或排序影响：
+
+```text
+mfotHardCorridor = false
+mfotOutsidePenalty = 0.0
+mfotPotentialScale = 0.0
+mfotHistoryScale = 0.0
+mfotPriorityScale = 0.0
+```
+
+因此当前结果适合用来做“只保留 MFOT plan/heuristic weighting”的对照实验，不应与包含额外 repair/fallback 的历史版本混淆。
 
 ### 3.1 Native Runtime View
 

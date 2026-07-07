@@ -2,10 +2,14 @@
 
 This document records the latest generated C++ LiDAR GDS results included in this package.
 
+The current snapshot is the MFOT-only control version. It keeps the common
+router behavior synchronized with `lidar_c` and preserves only the minimal MFOT
+planning and A* heuristic-weighting hooks.
+
 ## Output directory
 
 ```text
-results/reference_run/
+results/mfot_only_control_fullcase_20260706_115037/
 ```
 
 ## Generated GDS files
@@ -26,22 +30,47 @@ multiportmmi_32x32_cpp.gds
 
 | case | status | DRC clean | markers | routes | crossings | C++ core route time |
 |---|---|---:|---:|---:|---:|---:|
-| toy_example_gp | ok | 0 | 1 | 2 | 0 | 0.223614s |
-| mrr_weight_bank_4x4 | ok | 1 | 0 | 36 | 3 | 1.436542s |
-| mrr_weight_bank_8x8 | ok | 0 | 8 | 105 | 6 | 4.900504s |
-| mrr_weight_bank_16x16 | ok | 0 | 110 | 375 | 31 | 58.900260s |
-| clements_8x8 | ok | 1 | 0 | 79 | 0 | 1.308980s |
-| clements_16x16 | ok | 1 | 0 | 290 | 2 | 14.863009s |
-| multiportmmi_8x8 | ok | 1 | 0 | 177 | 33 | 28.720445s |
-| multiportmmi_16x16 | ok | 1 | 0 | 349 | 63 | 123.624393s |
-| multiportmmi_32x32 | ok | 1 | 0 | 695 | 125 | 735.129981s |
+| toy_example_gp | ok | 0 | 1 | 2 | 0 | 0.049993s |
+| mrr_weight_bank_4x4 | ok | 1 | 0 | 42 | 6 | 0.811489s |
+| mrr_weight_bank_8x8 | ok | 0 | 8 | 105 | 6 | 1.210653s |
+| mrr_weight_bank_16x16 | ok | 0 | 90 | 374 | 30 | 7.310558s |
+| clements_8x8 | ok | 1 | 0 | 79 | 0 | 0.702268s |
+| clements_16x16 | ok | 1 | 0 | 290 | 2 | 5.454614s |
+| multiportmmi_8x8 | ok | 1 | 0 | 177 | 33 | 10.190470s |
+| multiportmmi_16x16 | ok | 1 | 0 | 349 | 63 | 49.225611s |
+| multiportmmi_32x32 | ok | 0 | 1 | 694 | 124 | 113.991247s |
 
 Notes:
 
 ```text
 toy_example_gp has a known input component overlap marker.
-mrr_weight_bank_8x8 and mrr_weight_bank_16x16 need more MRR-specific cleanup.
-Clements and Multiport MMI cases are DRC clean in this latest run.
+mrr_weight_bank_8x8 and mrr_weight_bank_16x16 still have route geometry markers.
+multiportmmi_32x32 has 1 route geometry marker after removing the earlier
+extra repair/fallback logic. This is expected for the MFOT-only control run and
+confirms that prior repair/fallback changes affected quality.
+```
+
+## Comparison to archived original lidar_c reference
+
+| metric | archived lidar_c reference | MFOT-only control |
+|---|---:|---:|
+| clean cases | 6/9 | 5/9 |
+| total markers | 119 | 100 |
+| total crossings | 263 | 264 |
+| total routes | 2108 | 2112 |
+| total routed length | 596848.827 | 596156.786 |
+| total C++ route core time | 969.108s | 188.947s |
+| total wall time | 1941.114s | 535.443s |
+
+The current MFOT-only effect is mainly A* heuristic weighting based on the
+global MFOT plan. Corridor cost, history seeding, hard corridor constraints,
+and global priority reordering are disabled by default.
+
+The previous archived reference results remain available in:
+
+```text
+results/reference_run/
+results/reference_gds_compare/
 ```
 
 ## Standard-GDS comparison
